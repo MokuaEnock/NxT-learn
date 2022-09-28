@@ -1,11 +1,13 @@
 import React from "react";
 import NavBar from "./NavBar";
+import Logo from "./Logo";
 
 function Header() {
   return (
     <header>
-      Hello World!
+      <Logo />
       <NavBar />
+      <a href=""></a>
     </header>
   );
 }
