@@ -1,7 +1,9 @@
 import React from "react";
 
+
+
 function Main() {
-  return <main ></main>;
+  return <canvas id="canvas">{}</canvas>;
 }
 
 export default Main;
