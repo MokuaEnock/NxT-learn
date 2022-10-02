@@ -5,11 +5,11 @@ import Footer from "./footer";
 
 function Landing() {
   return (
-    <section>
+    <>
       <Header />
       <MainLanding />
       <Footer />
-    </section>
+    </>
   );
 }
 
