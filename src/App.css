@@ -64,7 +64,29 @@ main>* {
   height: 25%;
   border: thin solid #ffffff;
   text-align: center;
-  font-size: 200%;
+  font-size: 250%;
+}
+
+#main_par1 {
+  width: 100%;
+  height: 25%;
+  border: thin solid #ffffff;
+
+}
+
+.mainSpan {
+  width: 20%;
+  height: 100%;
+  border: thin solid #ffffff;
+}
+
+#main_par1>button {
+  width: 15%;
+  height: 25%;
+  font-size: 1.3em;
+  background-color: #5EDB12;
+  border: thin solid #5EDB12;
+  color: #ffffff;
 }
 
 #main_par2 {
