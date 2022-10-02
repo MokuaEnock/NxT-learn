@@ -35,7 +35,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 3rem;
+  height: 5vw;
   border: thin solid #ffffff;
 }
 
@@ -47,7 +47,7 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 95%;
-  height: 40rem;
+  height: 45vw;
   border: thin solid #ffffff;
 }
 
@@ -64,7 +64,7 @@ main>* {
   height: 25%;
   border: thin solid #ffffff;
   text-align: center;
-  font-size: 250%;
+  font-size: 3vw;
 }
 
 #main_par1 {
@@ -83,10 +83,17 @@ main>* {
 #main_par1>button {
   width: 15%;
   height: 25%;
-  font-size: 1.3em;
+  font-size: 1.3vw;
   background-color: #5EDB12;
   border: thin solid #5EDB12;
-  color: #ffffff;
+  color: #172E08;
+  border-radius: 0.5vw;
+  font-weight: 600;
+}
+
+#main_par1>button:hover {
+  width: 14%;
+  height: 23%;
 }
 
 #main_par2 {
@@ -116,13 +123,13 @@ main>* {
 }
 
 #main_par2>:nth-child(1) {
-  border-top-left-radius: 1em;
-  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
 }
 
 #main_par2>:nth-child(4) {
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 
 /* footer */
@@ -131,7 +138,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  height: 17rem;
+  height: 17vw;
   width: 100%;
   border: thin solid #ffffff;
 }
@@ -141,13 +148,13 @@ footer {
 #about {
   color: #ffffff;
   width: 100%;
-  min-height: 40rem;
+  min-height: 40vw;
 }
 
 #about>h2 {
   width: 100%;
   height: 10%;
-  font-size: 2em;
+  font-size: 2vw;
   background-color: rgb(94, 219, 18, .5);
   display: flex;
   flex-direction: row;
