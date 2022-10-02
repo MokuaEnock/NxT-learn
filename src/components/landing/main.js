@@ -13,10 +13,10 @@ function MainLanding() {
         <span className="mainSpan"></span>
       </p>
       <p id="main_par2">
-        <span className="mainSpan1"></span>
-        <span className="mainSpan1"></span>
-        <span className="mainSpan1"></span>
-        <span className="mainSpan1"></span>
+        <span className="mainSpan1">Self Paced</span>
+        <span className="mainSpan1">Project Paced</span>
+        <span className="mainSpan1">Experienced Instructors</span>
+        <span className="mainSpan1">Free Courses</span>
       </p>
     </main>
   );

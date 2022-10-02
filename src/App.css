@@ -17,6 +17,10 @@ body {
 
 #root {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #root>* {
@@ -30,6 +34,9 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  width: 100%;
+  height: 3rem;
+  border: thin solid #ffffff;
 }
 
 /* main */
@@ -39,6 +46,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 95%;
+  height: 40rem;
+  border: thin solid #ffffff;
 }
 
 main>* {
@@ -46,6 +56,51 @@ main>* {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+
+}
+
+#main_head1 {
+  width: 80%;
+  height: 25%;
+  border: thin solid #ffffff;
+  text-align: center;
+  font-size: 200%;
+}
+
+#main_par2 {
+  width: 100%;
+  height: 35%;
+}
+
+#main_par2>* {
+  width: 25%;
+  height: 100%;
+  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#main_par2>:nth-child(even) {
+  background-color: #5EDB12;
+  color: #172E08;
+
+}
+
+#main_par2>:nth-child(odd) {
+  background-color: #ffffff;
+  color: #172E08;
+}
+
+#main_par2>:nth-child(1) {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+#main_par2>:nth-child(4) {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 /* footer */
@@ -54,6 +109,9 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  height: 17rem;
+  width: 100%;
+  border: thin solid #ffffff;
 }
 
 /* about page ================================================================== */
