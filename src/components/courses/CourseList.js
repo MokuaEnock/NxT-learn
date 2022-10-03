@@ -5,6 +5,10 @@ function CourseList() {
   return (
     <ul>
       <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </ul>
   );
 }

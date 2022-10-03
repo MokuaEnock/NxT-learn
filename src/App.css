@@ -195,8 +195,40 @@ li {
   height: 55%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  color: white;
   align-items: center;
+  background-color: #172E08;
+
+}
+
+.jobCard_header>* {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.jobCard_titlle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 25%;
+  width: 95%;
+  border: thin solid #ffffff;
+  font-size: 1.7vw;
+}
+
+.jobCard_name {
+  font-size: 1.3vw;
+  height: 15%;
+  width: 95%;
+  border: thin solid #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 
 }
 
@@ -213,14 +245,12 @@ li {
   height: 70%;
   width: 100%;
   font-size: 1.7vw;
-  color: white;
-  background-color: #172E08;
+  color: #172E08;
 }
 
 .jobCard_spans {
   width: 100%;
   height: 30%;
-  background-color: #5EDB12;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -228,19 +258,20 @@ li {
 }
 
 .jobCard_span {
-  width: 25%;
-  height: 100%;
-  border: thin solid #172E08;
+  border-radius: 0.5vw;
+  width: 30%;
+  height: 90%;
+  background-color: #172E08;
 }
 
 .jobCard_footer {
   border-radius: 1vw;
   width: 60%;
-  height: 10%;
+  height: 12%;
   font-size: 2vw;
   border: thin solid;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
