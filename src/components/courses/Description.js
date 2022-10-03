@@ -1,7 +1,7 @@
 import React from "react";
 
 function Description() {
-  return <div></div>;
+  return <div id="description"></div>;
 }
 
 export default Description;

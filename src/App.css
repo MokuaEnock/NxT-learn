@@ -151,25 +151,36 @@ footer {
 
 #course {
   width: 100%;
-  height: max-content;
+  height: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* course list */
 ul {
-  width: 100%;
-  height: max-content;
-  border: thin solid white;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  row-gap: 2vw;
-  list-style: none;
+  width: 25%;
+  height: 50vw;
+  border: thin solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-y: scroll;
 }
 
+
 li {
-  height: 30vw;
-  margin-left: 2%;
-  margin-right: 2%;
+  width: 94%;
+  height: 60vw;
   border: thin solid #ffffff;
+  margin-top: .5vw;
+  margin-bottom: .5vw;
+}
+
+li>* {
+  margin-top: 0.4vw;
 }
 
 .job_card {
@@ -192,7 +203,7 @@ li {
 
 .jobCard_header {
   width: 94%;
-  height: 55%;
+  height: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -234,7 +245,7 @@ li {
 
 .jobCard_body {
   width: 94%;
-  height: 25%;
+  height: 5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -267,13 +278,31 @@ li {
 .jobCard_footer {
   border-radius: 1vw;
   width: 60%;
-  height: 12%;
+  height: 3vw;
   font-size: 2vw;
   border: thin solid;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+
+
+/* aside  */
+
+aside {
+  width: 10%;
+  height: 100%;
+  border: thin solid white;
+}
+
+/* description */
+
+#description {
+  width: 60%;
+  height: 100%;
+  border: thin solid #ffffff;
+  background-color: #5EDB12;
 }
 
 /* about page ================================================================== */

@@ -9,6 +9,7 @@ function CourseList() {
       <Card />
       <Card />
       <Card />
+      <Card />
     </ul>
   );
 }
