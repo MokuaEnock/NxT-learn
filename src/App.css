@@ -584,3 +584,56 @@ aside {
   color: white;
   border: thin solid #ffffff;
 }
+
+
+/* Home component ==================================================================================== */
+
+#home {
+  width: 100%;
+  height: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#home>section {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#home>section>h2 {
+  width: 100%;
+  height: 5%;
+  font-size: 2vw;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: thin solid #ffffff;
+  background-color: #5EDB12;
+}
+
+.Rec_course_list,
+.Rec_insts_list {
+  width: 100%;
+  height: 40%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.Rec_insts_item,
+.Rec_course_item {
+  width: 20%;
+  height: 96%;
+  border-radius: 0.5vw;
+}

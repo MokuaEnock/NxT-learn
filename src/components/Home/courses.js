@@ -9,11 +9,19 @@ function ReccomendCourses() {
     return (
       <ul className="Rec_course_list">
         <Item />
+        <Item />
+        <Item />
+        <Item />
       </ul>
     );
   }
 
-  return <List />;
+  return (
+    <>
+      <h2>Top Courses</h2>
+      <List />
+    </>
+  );
 }
 
 export default ReccomendCourses;

@@ -9,11 +9,19 @@ function ReccomendInsts() {
     return (
       <ul className="Rec_insts_list">
         <Item />
+        <Item />
+        <Item />
+        <Item />
       </ul>
     );
   }
 
-  return <List />;
+  return (
+    <>
+      <h2>Top Instructors</h2>
+      <List />
+    </>
+  );
 }
 
 export default ReccomendInsts;
