@@ -253,7 +253,7 @@ li>* {
 }
 
 .jobCard_title {
-  height: 70%;
+  height: 50%;
   width: 100%;
   font-size: 1.7vw;
   color: #172E08;
@@ -261,7 +261,7 @@ li>* {
 
 .jobCard_spans {
   width: 100%;
-  height: 30%;
+  height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
