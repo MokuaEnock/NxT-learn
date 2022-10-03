@@ -21,10 +21,38 @@ function InstructorDescription() {
       </p>
     );
   }
+
+  function InstDescItem() {
+    return (
+      <li className="instdescitem">
+        <div className="instdescitem1"></div>
+        <div className="instdescitem2">
+          <span>Machine Learning Fundamentals</span>
+          <div>
+            <span>Hello world</span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </li>
+    );
+  }
+
+  function InstDescList() {
+    return (
+      <ul className="InstDesc_list">
+        <InstDescItem />
+        <InstDescItem />
+        <InstDescItem />
+      </ul>
+    );
+  }
   return (
     <div id="instructor_desc">
       <Heading />
       <Details />
+      <InstDescList />
     </div>
   );
 }
