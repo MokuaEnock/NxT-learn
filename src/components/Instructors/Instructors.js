@@ -5,7 +5,7 @@ import InstructorList from "./InstructorsList";
 
 function Instructor() {
   return (
-    <section>
+    <section id="instructor">
       <Aside />
       <InstructorList />
       <InstructorDescription />

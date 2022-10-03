@@ -1,7 +1,7 @@
 import React from "react";
 
 function InstructorDescription() {
-  return <></>;
+  return <div id="instructor_desc"></div>;
 }
 
 export default InstructorDescription;
