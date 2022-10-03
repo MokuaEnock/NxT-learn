@@ -147,6 +147,31 @@ footer {
   border: thin solid #ffffff;
 }
 
+/* course ======================================================================= */
+
+#course {
+  width: 100%;
+  height: max-content;
+}
+
+/* course list */
+ul {
+  width: 100%;
+  height: max-content;
+  border: thin solid white;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  row-gap: 2vw;
+  list-style: none;
+}
+
+li {
+  height: 30vw;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: thin solid #ffffff;
+}
+
 /* about page ================================================================== */
 
 #about {

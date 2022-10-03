@@ -2,7 +2,7 @@ import React from "react";
 import CourseList from "./CourseList";
 function Courses() {
   return (
-    <section>
+    <section id="course">
       <CourseList />
     </section>
   );

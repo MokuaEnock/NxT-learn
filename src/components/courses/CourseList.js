@@ -2,7 +2,11 @@ import React from "react";
 import Card from "./CourseCard";
 
 function CourseList() {
-  return <ul></ul>;
+  return (
+    <ul>
+      <Card />
+    </ul>
+  );
 }
 
 export default CourseList;
