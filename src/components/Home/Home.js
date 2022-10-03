@@ -5,6 +5,8 @@ function Home() {
   return (
     <section id="home">
       <Aside />
+      <h2>Top Instructors</h2>
+      <h2>Top courses</h2>
     </section>
   );
 }
