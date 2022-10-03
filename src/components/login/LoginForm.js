@@ -1,7 +1,9 @@
 import React from "react";
 
 function LoginForm() {
-  return <form></form>;
+  return <form id="loginform">
+    <div></div>
+  </form>;
 }
 
 export default LoginForm;

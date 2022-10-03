@@ -6,9 +6,7 @@ import LoginForm from "./LoginForm";
 function Login() {
   return (
     <>
-      <Header />
       <LoginForm />
-      <Footer />
     </>
   );
 }

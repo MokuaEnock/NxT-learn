@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <Landing />
+      <Login />
       <Home />
       <Courses />
       <Instructor />
-      <Login />
       <About />
     </>
   );
