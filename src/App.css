@@ -302,7 +302,37 @@ aside {
   width: 60%;
   height: 100%;
   border: thin solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#description>* {
+  width: 100%;
+  border: thin solid #ffffff;
   background-color: #5EDB12;
+
+
+}
+
+.desc_rating {
+  height: 10%;
+}
+
+.desc_header {
+  height: 15%;
+}
+
+.desc_inst {
+  height: 10%;
+}
+
+.desc_body{
+  height: 45%;
+}
+.desc_footer{
+  height: 10%;
 }
 
 /* about page ================================================================== */
