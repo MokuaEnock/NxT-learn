@@ -1,4 +1,5 @@
 import React from "react";
+import DescriptionItem from "./DescriptionItem";
 
 function Description() {
   return (
@@ -11,8 +12,8 @@ function Description() {
       <div className="desc_inst">
         <div className="desc_inst_img"></div>
         <div className="desc_inst_info">
-          <h4></h4>
-          <p></p>
+          <h4>Enock Mokua</h4>
+          <p>Machine Learning Engineer</p>
         </div>
       </div>
       <p className="desc_desc">
@@ -20,8 +21,11 @@ function Description() {
         users the website implements this by providing courses based that
         incoporate projects in its learning.
       </p>
-      <ul className="desc_body"></ul>
-      <div className="desc_footer"></div>
+      <ul className="desc_body">
+        <DescriptionItem />
+        <DescriptionItem />
+        <DescriptionItem />
+      </ul>
     </div>
   );
 }
