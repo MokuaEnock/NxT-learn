@@ -3,7 +3,7 @@ import React from "react";
 function LoginForm() {
   return (
     <form id="loginform">
-      <div>
+      <div id="logform">
         <label htmlFor="username">User Name</label>
         <input type="text" id="username" required />
         <label htmlFor="email">Enter Email</label>
@@ -26,6 +26,7 @@ function LoginForm() {
         />
         <button>Create Account</button>
       </div>
+      <div id="imagform"></div>
     </form>
   );
 }
