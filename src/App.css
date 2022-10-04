@@ -643,7 +643,7 @@ aside {
 #loginform {
   width: 100%;
   height: 50vw;
-  background-color: white;
+  background-color: #5EDB12;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -655,4 +655,34 @@ aside {
   height: 55%;
   background-color: #172E08;
   border-radius: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#loginform>div>button {
+  width: 98%;
+  height: 15%;
+  font-size: 2vw;
+}
+
+label {
+  width: 98%;
+  height: 10%;
+  font-size: 1.7vw;
+  color: #ffffff;
+}
+
+input {
+  width: 98%;
+  height: 12%;
+  border: thin solid #ffffff;
+  font-size: 1.7vw;
+  text-align: center;
+  color: #172E08;
+}
+
+input:focus {
+  outline: none;
 }
