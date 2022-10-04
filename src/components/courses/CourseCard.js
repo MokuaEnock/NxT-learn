@@ -1,6 +1,8 @@
 import React from "react";
 
-function Card() {
+function Card({ course }) {
+
+  console.log(course)
   return (
     <li className="job_card">
       <div className="jobCard_header">
