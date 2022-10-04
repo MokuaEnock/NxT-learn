@@ -11,7 +11,7 @@ function Contact() {
           <div id="contact_socials">
             <a
               className="social"
-              rel="noopener"
+              rel="noopener noreferrer"
               href="https://github.com/MokuaEnock"
               target="_blank"
             >
@@ -26,7 +26,7 @@ function Contact() {
               className="social"
               href="https://twitter.com/254_enok"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <img src="/assets/images/twitter (1).png" alt="twitter" />
             </a>
@@ -34,7 +34,7 @@ function Contact() {
               className="social"
               href="https://www.instagram.com/enok_254/"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <img src="/assets/images/instagram.png" alt="instagram" />
             </a>
@@ -42,7 +42,7 @@ function Contact() {
               className="social"
               href="https://www.linkedin.com/in/enockmokua/"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <img src="/assets/images/linkedin (1).png" alt="linkedin" />
             </a>

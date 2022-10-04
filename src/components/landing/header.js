@@ -3,10 +3,14 @@ import React from "react";
 function Header() {
   return (
     <header>
-      <p>
-        NxT <strong>Learn</strong>
-      </p>
-      <nav></nav>
+      <a>
+        NxT<strong>Learn.</strong>
+      </a>
+      <nav>
+        <a>Home</a>
+        <a>About</a>
+        <a>Contact Us</a>
+      </nav>
     </header>
   );
 }
