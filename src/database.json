@@ -4699,9 +4699,7 @@
       "curriculum_items": [],
       "headline": "A flash course on managing and processing data in relational databases using MySQL with many exercises",
       "instructor_name": null
-    }
-  ],
-  "mobile": [
+    },
     {
       "_class": "course",
       "id": 529438,
@@ -9384,9 +9382,7 @@
       "curriculum_items": [],
       "headline": "Learn Android Game Development with Android Studio and Java by making a complete Flappy Bird game in SurfaceView",
       "instructor_name": null
-    }
-  ],
-  "frontend": [
+    },
     {
       "_class": "course",
       "id": 625204,
@@ -14345,9 +14341,7 @@
       "curriculum_items": [],
       "headline": "The Complete JavaScript Course for Everyone! Become Master in JavaScript By Building More Then 10 Real Life Projects.",
       "instructor_name": null
-    }
-  ],
-  "backend": [
+    },
     {
       "_class": "course",
       "id": 4754502,
@@ -19249,9 +19243,7 @@
       "curriculum_items": [],
       "headline": "Learn how to use Java Spring Boot + Netflix DGS to build GraphQL backend : read, modify, and subscribe for data change",
       "instructor_name": null
-    }
-  ],
-  "cyber_security": [
+    },
     {
       "_class": "course",
       "id": 614772,
@@ -23915,8 +23907,7 @@
       "curriculum_items": [],
       "headline": "Trigger your Cyber Security journey with the basics you need to learn.",
       "instructor_name": null
-    }
-  ],"data_science": [
+    },
     {
       "_class": "course",
       "id": 2776760,
@@ -28988,8 +28979,7 @@
       "curriculum_items": [],
       "headline": "Machine Learning Algorithms with Python(Data Science)  with Projects  examples, quizes  & test-series",
       "instructor_name": null
-    }
-  ], "python": [
+    },
     {
       "_class": "course",
       "id": 2843938,
@@ -33104,8 +33094,7 @@
       "curriculum_items": [],
       "headline": "Begin with Python Programming",
       "instructor_name": null
-    }
-  ], "software": [
+    },
     {
       "_class": "course",
       "id": 1134922,
@@ -37433,8 +37422,7 @@
       "curriculum_items": [],
       "headline": "A-Z Guide to discover the potential of various different online business model and choosing the right one for you.",
       "instructor_name": null
-    }
-  ],"javascript": [
+    },
     {
       "_class": "course",
       "id": 548068,
