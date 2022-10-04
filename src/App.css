@@ -34,6 +34,7 @@ header {
   width: 100%;
   height: 5vw;
   background-color: #ffffff;
+  border-bottom: 0.4vw solid #172e08;
   color: #172e08;
 }
 
@@ -72,6 +73,10 @@ header > nav > a {
   height: 80%;
   color: #ffffff;
   font-size: 1.8vw;
+  background-color: #172e08;
+}
+
+header > nav > a:hover {
   background-color: #172e08;
   background: linear-gradient(135deg, transparent 1vw, #172e08 0) top left,
     linear-gradient(45deg, transparent 1vw, #172e08 0) bottom right;
@@ -174,7 +179,7 @@ footer {
   justify-content: space-evenly;
   height: 17vw;
   width: 100%;
-  border-top: #5edb12 0.4vw solid;
+  border-top:#172e08 0.4vw solid;
   background-color: #172e08;
 }
 
