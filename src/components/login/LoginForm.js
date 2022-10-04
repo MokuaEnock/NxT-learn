@@ -5,13 +5,18 @@ function LoginForm() {
     <form id="loginform">
       <div>
         <label for="username">User Name</label>
-        <input type="text" id="username" />
+        <input type="text" id="username" required />
         <label for="email">Enter Email</label>
-        <input type="email" id="email" />
+        <input type="email" id="email" required />
         <label for="password1">Set password</label>
-        <input type="password" id="password1" placeholder="8+ Characters" />
+        <input
+          type="password"
+          id="password1"
+          placeholder="8+ Characters"
+          required
+        />
         <label for="password2">Repeat password</label>
-        <input type="password" id="password2" />
+        <input type="password" id="password2" required />
         <button>Create Account</button>
       </div>
     </form>
