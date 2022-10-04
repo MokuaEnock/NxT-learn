@@ -5,6 +5,8 @@ import Courses from "./components/courses/courses";
 import Instructor from "./components/Instructors/Instructors";
 import Login from "./components/login/login";
 import Home from "./components/Home/Home.js";
+import Contact from "./components/contact/contact";
+
 function App() {
   return (
     <>
@@ -14,6 +16,7 @@ function App() {
       <Courses />
       <Instructor />
       <About />
+      <Contact />
     </>
   );
 }
