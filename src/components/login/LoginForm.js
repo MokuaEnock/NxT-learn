@@ -7,7 +7,7 @@ function LoginForm() {
         <label for="username">User Name</label>
         <input type="text" id="username" required />
         <label for="email">Enter Email</label>
-        <input type="email" id="email" required />
+        <input type="email" id="emaill" required />
         <label for="password1">Set password</label>
         <input
           type="password"
