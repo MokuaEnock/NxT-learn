@@ -4,19 +4,26 @@ function LoginForm() {
   return (
     <form id="loginform">
       <div>
-        <label for="username">User Name</label>
+        <label htmlFor="username">User Name</label>
         <input type="text" id="username" required />
-        <label for="email">Enter Email</label>
+        <label htmlFor="email">Enter Email</label>
         <input type="email" id="emaill" required />
-        <label for="password1">Set password</label>
+        <label htmlFor="password1">Set password</label>
         <input
           type="password"
           id="password1"
           placeholder="8+ Characters"
           required
+          autoComplete="_blank"
         />
-        <label for="password2">Repeat password</label>
-        <input type="password" id="password2" required />
+        <label htmlFor="password2">Repeat password</label>
+        <input
+          type="password"
+          id="password2"
+          required
+          autoComplete="_blank"
+          placeholder="Reapeat password"
+        />
         <button>Create Account</button>
       </div>
     </form>

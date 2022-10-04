@@ -54,19 +54,19 @@ function Contact() {
               </h2>
               <p>We value your feedback.</p>
               <div id="form_cont_name">
-                <label for="name_input">Your Name</label>
+                <label htmlFor="name_input">Your Name</label>
                 <input type="text" name="name" id="name_input" />
               </div>
 
               <div id="form_cont_email">
-                <label for="email">Your Email</label>
+                <label htmlFor="email">Your Email</label>
                 <input type="email" id="email" />
               </div>
 
               <div id="form_cont_message">
-                <label for="message">Your Message</label>
+                <label htmlFor="message">Your Message</label>
                 <textarea type="text" id="message" rows="4" cols="50">
-                  {" "}
+                
                 </textarea>
               </div>
               <div id="form_cont_submit">
