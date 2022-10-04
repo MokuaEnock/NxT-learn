@@ -4,7 +4,8 @@ function MainLanding() {
   return (
     <main>
       <h1 id="main_head1">
-        Discover self paced learning <br /> based on real world projects.
+        We’re still not sure how we got here, but we’re excited about where
+        we’re going
       </h1>
       <p id="main_par1">
         <span className="mainSpan"></span>
@@ -15,7 +16,7 @@ function MainLanding() {
       <p id="main_par2">
         <span className="mainSpan1">Self paced</span>
         <span className="mainSpan1">Project based</span>
-        <span className="mainSpan1">Experienced instructors</span>
+        <span className="mainSpan1">Beginner Friendly</span>
         <span className="mainSpan1">Free courses</span>
       </p>
     </main>

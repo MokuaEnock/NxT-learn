@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <a>
-        NxT<strong>Learn.</strong>
+        NxT<strong>Learn</strong>.
       </a>
       <nav>
         <a>Home</a>

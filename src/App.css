@@ -9,7 +9,7 @@
 body {
   width: 100%;
   height: max-content;
-  background-color: #172e08;
+  background-color: #ffffff;
 }
 
 #root {
@@ -33,8 +33,8 @@ header {
   justify-content: space-evenly;
   width: 100%;
   height: 5vw;
-  border: thin solid #ffffff;
-  color: white;
+  background-color: #ffffff;
+  color: #172e08;
 }
 
 header * {
@@ -51,8 +51,8 @@ a {
 header > a {
   width: 15%;
   height: 100%;
-  font-size: 2vw;
-  border: white solid thin;
+  font-size: 3.7vw;
+  font-weight: 800;
   justify-content: center;
 }
 
@@ -63,27 +63,32 @@ header strong {
 header > nav {
   width: 80%;
   height: 80%;
-  border: thin solid #5edb12;
 }
 
 header > nav > a {
-  width: 15%;
-  height: 100%;
-  background-color: white;
-  color: #172e08;
+  width: max-content;
+  padding-left: 2%;
+  padding-right: 2%;
+  height: 80%;
+  color: #ffffff;
   font-size: 1.8vw;
+  background-color: #172e08;
+  background: linear-gradient(135deg, transparent 1vw, #172e08 0) top left,
+    linear-gradient(45deg, transparent 1vw, #172e08 0) bottom right;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
 }
 
 /* main */
 main {
-  color: #ffffff;
+  color: #172e08;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 95%;
   height: 45vw;
-  border: thin solid #ffffff;
+  background-color: #ffffff;
 }
 
 main > * {
@@ -96,7 +101,6 @@ main > * {
 #main_head1 {
   width: 80%;
   height: 25%;
-  border: thin solid #ffffff;
   text-align: center;
   font-size: 3vw;
 }
@@ -104,21 +108,22 @@ main > * {
 #main_par1 {
   width: 100%;
   height: 25%;
-  border: thin solid #ffffff;
 }
 
 .mainSpan {
   width: 20%;
   height: 100%;
-  border: thin solid #ffffff;
+  border: thin solid #172e08;
+  background-color: #172e08;
+  border-left: 1vw double #ffffff;
 }
 
 #main_par1 > button {
   width: 15%;
-  height: 25%;
-  font-size: 1.7vw;
-  background-color: #5edb12;
-  border: thin solid #5edb12;
+  height: 33%;
+  font-size: 1.8vw;
+  letter-spacing: 0.1vw;
+  background-color: transparent;
   color: #172e08;
   border-radius: 0.1vw;
   display: flex;
@@ -126,11 +131,12 @@ main > * {
   align-items: center;
   justify-content: space-evenly;
   font-weight: 600;
+  border: 0.5vw double #172e08;
 }
 
 #main_par1 > button:hover {
-  width: 14%;
-  height: 23%;
+  background-color: #172e08;
+  color: aliceblue;
 }
 
 #main_par2 {
@@ -141,7 +147,7 @@ main > * {
 #main_par2 > * {
   width: 25%;
   height: 100%;
-  font-size: 1.7vw;
+  font-size: 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,22 +156,14 @@ main > * {
 
 #main_par2 > :nth-child(even) {
   background-color: #5edb12;
+  border-left: 1vw double #ffffff;
   color: #172e08;
 }
 
 #main_par2 > :nth-child(odd) {
-  background-color: #ffffff;
-  color: #172e08;
-}
-
-#main_par2 > :nth-child(1) {
-  border-top-left-radius: 1vw;
-  border-bottom-left-radius: 1vw;
-}
-
-#main_par2 > :nth-child(4) {
-  border-top-right-radius: 1vw;
-  border-bottom-right-radius: 1vw;
+  border-left: 1vw double #ffffff;
+  background-color: #172e08;
+  color: #ffffff;
 }
 
 /* footer */
@@ -176,7 +174,8 @@ footer {
   justify-content: space-evenly;
   height: 17vw;
   width: 100%;
-  border: thin solid #ffffff;
+  border-top: #5edb12 0.4vw solid;
+  background-color: #172e08;
 }
 
 /* course ======================================================================= */
