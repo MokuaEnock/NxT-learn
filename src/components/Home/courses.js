@@ -14,7 +14,10 @@ function ReccomendCourses() {
         <div className="course_body">
           <div>
             <span className="inst_image">
-              <img src="#" alt="instructor" />
+              <img
+                src="https://img-c.udemycdn.com/user/100x100/39722184_a55b_2.jpg"
+                alt="instructor"
+              />
             </span>
             <span className="inst_name">
               <p>Enock Mokua</p>

@@ -809,6 +809,12 @@ button {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #ffffff;
+}
+
+.Rec_course_item {
+  border: 0.3vw solid #172e08;
+  background-color: #172e08;
 }
 
 .Rec_course_item > .course_head {
@@ -818,7 +824,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #5edb12;
+  border-bottom: 0.1vw solid #172e08;
 }
 
 .Rec_course_item > .course_head > h2 {
@@ -836,13 +842,15 @@ button {
   width: 100%;
   font-weight: 300;
   height: 30%;
+  background-color: #ffffff;
 }
 
 .Rec_course_item > .course_head > p > span {
   width: 40%;
   height: 100%;
   font-size: 1.2vw;
-  background-color: white;
+  color: #ffffff;
+  background-color: #172e08;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -850,6 +858,7 @@ button {
 }
 
 .Rec_course_item > .course_body {
+  background-color: #172e08;
   width: 100%;
   height: 45%;
 }
@@ -864,10 +873,14 @@ button {
   font-size: 0.6vw;
 }
 
+.inst_image > img {
+  width: 100%;
+  height: 100%;
+}
+
 .Rec_course_item > .course_body > div > .inst_image {
   width: 25%;
   height: 100%;
-  background-color: #5edb12;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -881,10 +894,11 @@ button {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  border: thin solid #ffffff;
 }
 
 .Rec_course_item > .course_body > div > .inst_name > * {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   height: 50%;
   width: 100%;
   color: white;
@@ -899,6 +913,26 @@ button {
   height: 15%;
   font-size: 1.7vw;
   color: #172e08;
+  border: thin solid #ffffff;
+}
+
+.Rec_course_item > .course_footer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15%;
+  font-size: 1.7vw;
+  color: #172e08;
+  border: 0.5vw #172e08 double;
+  background-color: #ffffff;
+}
+
+.Rec_course_item > .course_footer:hover {
+  color: #ffffff;
+  border: 0.5vw #ffffff double;
+  background-color: #172e08;
 }
 
 /* login form ========================================================================== */
