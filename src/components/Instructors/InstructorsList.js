@@ -3,7 +3,7 @@ import InstructorItem from "./InstructorItem";
 
 function InstructorList() {
   return (
-    <ul>
+    <ul id="inst_item_cont">
       <InstructorItem />
       <InstructorItem />
       <InstructorItem />
