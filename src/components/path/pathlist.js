@@ -3,16 +3,15 @@ import PathItem from "./pathitem";
 
 function PathList() {
   return (
-    <ul id="pathlist">
-
-      <PathItem />
-      <PathItem />
-      <PathItem />
-      <PathItem />
-      <PathItem />
-      <PathItem />
-      <PathItem />
-    </ul>
+    <section id="pathlist">
+      <div id="listbuttons">
+        <button>Your Instructors</button>
+        <button>Your Courses</button>
+      </div>
+      <ul>
+     
+      </ul>
+    </section>
   );
 }
 
