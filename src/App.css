@@ -326,11 +326,11 @@ li > * {
 aside {
   width: 10%;
   height: 100%;
-  border: thin solid white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  border-right: 00.5vw #172e08 solid;
 }
 
 aside > a {
@@ -338,12 +338,13 @@ aside > a {
   width: 80%;
   height: 15%;
   cursor: pointer;
+  background-color: #172e08;
+  color: #ffffff;
 }
 
 aside > nav {
   width: 100%;
   height: 80%;
-  border: thin solid #5edb12;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -353,14 +354,20 @@ aside > nav {
 aside > nav > a {
   width: 90%;
   height: 10%;
-  border: thin solid #ffffff;
   cursor: pointer;
-  font-size: 1.7vw;
-  color: #5edb12;
+  font-size: 1.5vw;
+  color: #ffffff;
+  background-color: #172e08;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+aside > nav > a:hover {
+  background-color: transparent;
+  color: #172e08;
+  border: 0.2vw #172e08 solid;
 }
 
 /* description */
@@ -989,7 +996,7 @@ button {
 
 #imagform {
   width: 60%;
-  color:#172e08;
+  color: #172e08;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
