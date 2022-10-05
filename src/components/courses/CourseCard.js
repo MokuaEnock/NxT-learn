@@ -4,23 +4,30 @@ function Card({ course }) {
 
   console.log(course)
   return (
-    <li className="job_card">
-      <div className="jobCard_header">
-        <h3 className="jobCard_titlle">Introduction To Machine Learning</h3>
-        <p className="jobCard_name">
-          <span>Enock Mokua</span> <span>Beginner</span>
-        </p>
-      </div>
-      <div className="jobCard_body">
-        <div className="jobCard_title"></div>
-        <div className="jobCard_spans">
-          <span className="jobCard_span"></span>
-          <span className="jobCard_span"></span>
-          <span className="jobCard_span"></span>
+    <li className="Rec_course_item">
+        <div className="course_head">
+          <h2>Data Cleaning Essentials.</h2>
+          <p>
+            <span>10 Modules</span>
+            <span>24 Hours</span>
+          </p>
         </div>
-      </div>
-      <button className="jobCard_footer">View More</button>
-    </li>
+        <div className="course_body">
+          <div>
+            <span className="inst_image">
+              <img
+                src="https://img-c.udemycdn.com/user/100x100/39722184_a55b_2.jpg"
+                alt="instructor"
+              />
+            </span>
+            <span className="inst_name">
+              <p>Enock Mokua</p>
+              <p>Machine Learning</p>
+            </span>
+          </div>
+        </div>
+        <button className="course_footer">View</button>
+      </li>
   );
 }
 

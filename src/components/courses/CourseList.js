@@ -3,7 +3,7 @@ import Card from "./CourseCard";
 
 function CourseList({ course }) {
   return (
-    <ul>
+    <ul id="main_course_list">
       <Card course={course} />
     </ul>
   );

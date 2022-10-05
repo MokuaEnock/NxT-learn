@@ -187,6 +187,7 @@ footer {
 
 #course,
 #instructor {
+  background-color: #172e08;
   width: 100%;
   height: 50vw;
   display: flex;
@@ -195,8 +196,12 @@ footer {
   align-items: center;
 }
 
+#course {
+  background-color: #ffffff;
+}
+
 /* course list */
-ul {
+#main_course_list {
   width: 25%;
   height: 50vw;
   border: thin solid #ffffff;
@@ -207,7 +212,7 @@ ul {
   overflow-y: scroll;
 }
 
-li {
+.job_card {
   width: 94%;
   height: 60vw;
   border: thin solid #ffffff;
@@ -215,9 +220,7 @@ li {
   margin-bottom: 0.5vw;
 }
 
-li > * {
-  margin-top: 0.4vw;
-}
+
 
 .job_card {
   height: 30vw;
@@ -711,8 +714,8 @@ aside > nav > a:hover {
 
 .Rec_insts_item,
 .Rec_course_item {
-  width: 20%;
-  height: 96%;
+  width: 18.5vw;
+  height: 21vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
