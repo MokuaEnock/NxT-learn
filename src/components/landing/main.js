@@ -8,9 +8,15 @@ function MainLanding() {
         we’re going
       </h1>
       <p id="main_par1">
-        <span className="mainSpan"></span>
-        <span className="mainSpan"></span>
-        <span className="mainSpan"></span>
+        <span className="mainSpan">
+          <img src="" alt="background" />
+        </span>
+        <span className="mainSpan">
+          <img src="#" alt="background" />
+        </span>
+        <span className="mainSpan">
+          <img src="#" alt="background" />
+        </span>
         <button>Get Started</button>
       </p>
       <p id="main_par2">

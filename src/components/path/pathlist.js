@@ -9,7 +9,7 @@ function PathList() {
         <button>Your Courses</button>
       </div>
       <ul>
-     
+        <PathItem />
       </ul>
     </section>
   );
