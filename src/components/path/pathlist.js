@@ -1,12 +1,17 @@
 import React from "react";
+import PathItem from "./pathitem";
 
 function PathList() {
   return (
     <ul id="pathlist">
-      <div id="listbuttons">
-        <button>Your Instructors</button>
-        <button>Your Courses</button>
-      </div>
+
+      <PathItem />
+      <PathItem />
+      <PathItem />
+      <PathItem />
+      <PathItem />
+      <PathItem />
+      <PathItem />
     </ul>
   );
 }

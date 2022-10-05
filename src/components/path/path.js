@@ -14,3 +14,9 @@ function Path() {
 }
 
 export default Path;
+
+
+/* <div id="listbuttons">
+        <button>Your Instructors</button>
+        <button>Your Courses</button>
+      </div> */
