@@ -5,6 +5,9 @@ function CourseList({ course }) {
   return (
     <ul id="main_course_list">
       <Card course={course} />
+      <Card course={course} />
+      <Card course={course} />
+      <Card course={course} />
     </ul>
   );
 }

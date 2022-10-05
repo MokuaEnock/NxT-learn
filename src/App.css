@@ -198,6 +198,7 @@ footer {
 
 #course {
   background-color: #ffffff;
+  overflow-y: scroll;
 }
 
 /* course list */
@@ -210,115 +211,6 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   overflow-y: scroll;
-}
-
-.job_card {
-  width: 94%;
-  height: 60vw;
-  border: thin solid #ffffff;
-  margin-top: 0.5vw;
-  margin-bottom: 0.5vw;
-}
-
-
-
-.job_card {
-  height: 30vw;
-  margin-left: 2%;
-  margin-right: 2%;
-  border: thin solid #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #ffffff;
-}
-
-.job_card > div {
-  border: thin solid #172e08;
-}
-
-.jobCard_header {
-  width: 94%;
-  height: 20vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  color: white;
-  align-items: center;
-  background-color: #172e08;
-}
-
-.jobCard_header > * {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-
-.jobCard_titlle {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  height: 25%;
-  width: 95%;
-  border: thin solid #ffffff;
-  font-size: 1.7vw;
-}
-
-.jobCard_name {
-  font-size: 1.3vw;
-  height: 15%;
-  width: 95%;
-  border: thin solid #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.jobCard_body {
-  width: 94%;
-  height: 5vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.jobCard_title {
-  height: 50%;
-  width: 100%;
-  font-size: 1.7vw;
-  color: #172e08;
-}
-
-.jobCard_spans {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.jobCard_span {
-  border-radius: 0.5vw;
-  width: 30%;
-  height: 90%;
-  background-color: #172e08;
-}
-
-.jobCard_footer {
-  width: 60%;
-  height: 3vw;
-  font-size: 2vw;
-  border: thin solid;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
 }
 
 /* aside  */
