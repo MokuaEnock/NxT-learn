@@ -5,11 +5,11 @@ import CourseView from "./courseview";
 
 function Path() {
   return (
-    <>
+    <section id="path">
       <Aside />
       <PathList />
       <CourseView />
-    </>
+    </section>
   );
 }
 
