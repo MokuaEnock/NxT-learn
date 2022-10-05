@@ -9,7 +9,10 @@ function ReccomendInsts() {
         </div>
         <div className="Rec_insts_item_body">
           <div className="image">
-            <img src="#" alt="headshot" />
+            <img
+              src="https://img-c.udemycdn.com/user/100x100/39722184_a55b_2.jpg"
+              alt="headshot"
+            />
           </div>
           <p>Machine Learning Engineer</p>
           <span>19 Courses</span>
