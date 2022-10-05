@@ -45,7 +45,12 @@ function LoginForm() {
           <button>Create Account</button>
         </span>
       </div>
-      <div id="imagform"></div>
+      <div id="imagform">
+        <h2>Made for developers by developers</h2>
+        <p>
+          Grow your technical skills by enrolling in one of our courses today
+        </p>
+      </div>
     </form>
   );
 }
