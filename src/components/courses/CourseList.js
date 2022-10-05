@@ -8,6 +8,7 @@ function CourseList({ course }) {
       <Card course={course} />
       <Card course={course} />
       <Card course={course} />
+     
     </ul>
   );
 }
