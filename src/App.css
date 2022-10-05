@@ -229,12 +229,10 @@ li > * {
   justify-content: space-evenly;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 1vw;
 }
 
 .job_card > div {
   border: thin solid #172e08;
-  border-radius: 1vw;
 }
 
 .jobCard_header {
@@ -310,7 +308,6 @@ li > * {
 }
 
 .jobCard_footer {
-  border-radius: 1vw;
   width: 60%;
   height: 3vw;
   font-size: 2vw;
@@ -1050,18 +1047,24 @@ button {
 /* contact ======================================================================== */
 
 #contact_me {
-  width: 99%;
+  width: 100%;
   margin-top: 1%;
-  height: 50vw;
-  background-color: #5edb12;
+  height: 45vw;
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
+#contact_me input {
+  text-align: center;
+  font-size: 1.5vw;
+  color: #172e08;
+}
+
 #contact_cont {
-  width: 90%;
+  width: 80%;
   height: 80%;
   background-color: #172e08;
   border-radius: 1.5vw;
@@ -1166,7 +1169,6 @@ button {
   height: 50%;
   border: none;
   background-color: #ffffff;
-  border-radius: 1vw;
 }
 
 #name_input:focus {
@@ -1192,7 +1194,7 @@ button {
   width: 100%;
   height: 50%;
   border: none;
-  border-radius: 1vw;
+
   background-color: #ffffff;
 }
 
@@ -1210,11 +1212,15 @@ button {
   align-items: flex-start;
 }
 
+#form_cont_message > textarea {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
 #message {
   width: 100%;
   height: 60%;
   border: none;
-  border-radius: 1vw;
   background-color: #ffffff;
 }
 
