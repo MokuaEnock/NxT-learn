@@ -1,10 +1,15 @@
 import React from "react";
 
-function InstructorDescription() {
+function InstructorDescription({ courses }) {
   function Heading() {
     return (
       <div className="desc_inst">
-        <div className="desc_inst_img"></div>
+        <div className="desc_inst_img">
+          <img
+            src="https://img-c.udemycdn.com/user/100x100/76984888_7658_2.jpg"
+            alt="headshot"
+          />
+        </div>
         <div className="desc_inst_info">
           <h4>Enock Mokua</h4>
           <p>Machine Learning Engineer</p>
@@ -25,7 +30,12 @@ function InstructorDescription() {
   function InstDescItem() {
     return (
       <li className="instdescitem">
-        <div className="instdescitem1"></div>
+        <div className="instdescitem1">
+          <img
+            src="https://img-c.udemycdn.com/course/240x135/1423418_54ba_3.jpg"
+            alt="course"
+          />
+        </div>
         <div className="instdescitem2">
           <span>Machine Learning Fundamentals</span>
           <div>
@@ -42,6 +52,9 @@ function InstructorDescription() {
   function InstDescList() {
     return (
       <ul className="InstDesc_list">
+        <InstDescItem />
+        <InstDescItem />
+        <InstDescItem />
         <InstDescItem />
         <InstDescItem />
         <InstDescItem />

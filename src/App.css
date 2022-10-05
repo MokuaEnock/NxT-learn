@@ -344,7 +344,7 @@ aside > nav > a:hover {
   justify-content: space-evenly;
   align-items: center;
   margin-left: 1%;
-  width: 40%;
+  width: 85%;
   height: 100%;
   background-color: #172e08;
 }
@@ -352,20 +352,19 @@ aside > nav > a:hover {
 .desc_inst_info > * {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  border: thin solid #ffffff;
   width: 100%;
 }
 
 .desc_inst_info > h4 {
   height: 60%;
-  font-size: 2.2vw;
+  font-size: 2vw;
 }
 
 .desc_inst_info > p {
   height: 40%;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 
 .desc_desc {
@@ -544,8 +543,11 @@ aside > nav > a:hover {
   width: 100%;
   height: 40vw;
   list-style: none;
-  border: thin solid #ffffff;
   overflow-y: scroll;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .instdescitem {
@@ -555,13 +557,21 @@ aside > nav > a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #172e08;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 .instdescitem1 {
-  width: 18%;
+  width: 20%;
   height: 100%;
-  border: thin solid #5edb12;
 }
+
+.instdescitem1 > img{
+  height: 100%;
+  width: 100%;
+}
+
 
 .instdescitem2 {
   display: flex;
@@ -570,7 +580,6 @@ aside > nav > a:hover {
   align-items: center;
   width: 80%;
   height: 100%;
-  border: thin solid #5edb12;
 }
 
 .instdescitem2 > span {
@@ -592,6 +601,8 @@ aside > nav > a:hover {
   justify-content: space-evenly;
   width: 100%;
   height: 40%;
+  border: thin solid #172e08;
+  background-color: #ffffff;
 }
 
 .instdescitem2 > div > span {
@@ -603,7 +614,7 @@ aside > nav > a:hover {
   height: 100%;
   font-size: 1.5vw;
   color: white;
-  border: thin solid #ffffff;
+  background-color: #172e08;
 }
 
 /* Home component ==================================================================================== */
