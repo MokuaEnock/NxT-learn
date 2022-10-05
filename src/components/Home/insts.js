@@ -8,7 +8,9 @@ function ReccomendInsts() {
           <h2>Enock Mokua</h2>
         </div>
         <div className="Rec_insts_item_body">
-          <div className="image"></div>
+          <div className="image">
+            <img src="#" alt="headshot" />
+          </div>
           <p>Machine Learning Engineer</p>
           <span>19 Courses</span>
         </div>
