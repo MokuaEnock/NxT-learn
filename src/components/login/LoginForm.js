@@ -8,7 +8,16 @@ function LoginForm() {
 
   function handleForm(e) {
     e.preventDefault();
-    console.log(title.replace, email, pass1, pass2);
+    if (pass1.length >= 8) {
+      if (pass1 === pass2) {
+        console.log("hope");
+      }
+      else{
+        console.log('hopeless')
+      }
+    } else {
+      console.log("horror");
+    }
   }
 
   return (
