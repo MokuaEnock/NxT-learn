@@ -26,9 +26,6 @@ function ReccomendInsts() {
     return (
       <ul className="Rec_insts_list">
         <Item />
-        <Item />
-        <Item />
-        <Item />
       </ul>
     );
   }

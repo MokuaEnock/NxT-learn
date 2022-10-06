@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function ReccomendCourses() {
+  let [course, setCourse] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/database")
+      .then((r) => r.json())
+      .then((c) => setCourse(c));
+  }, []);
+
+  console.log(course);
+
   function Item() {
     return (
       <li className="Rec_course_item">

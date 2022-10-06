@@ -2,7 +2,6 @@ import React from "react";
 
 function Card({ course }) {
 
-  console.log(course)
   return (
     <li className="Rec_course_item">
         <div className="course_head">

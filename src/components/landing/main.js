@@ -1,6 +1,9 @@
 import React from "react";
 
 function MainLanding() {
+
+  /* fetching data  */
+
   return (
     <main>
       <h1 id="main_head1">
