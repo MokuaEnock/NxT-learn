@@ -9,7 +9,7 @@ function MainLanding() {
       </h1>
       <p id="main_par1">
         <span className="mainSpan">
-          <img src="" alt="background" />
+          <img src="./assets/david-clode-xNSCi_K179c-unsplash.jpg" alt="background" />
         </span>
         <span className="mainSpan">
           <img src="#" alt="background" />
