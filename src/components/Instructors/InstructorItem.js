@@ -17,8 +17,10 @@ function InstructorItem({ allInstructors }) {
         <p>Machine Learning Engineer</p>
         <span>19 Courses</span>
       </div>
-      <button className="Rec_insts_item_footer">View</button>
-      <button className="Rec_insts_item_footer">Add to Path</button>
+      <div className="Rec_insts_item_f">
+          <button className="Rec_insts_item_footer">View</button>
+          <button className="Rec_insts_item_footer">Add to Path</button>
+        </div>
 
     </li>
   );

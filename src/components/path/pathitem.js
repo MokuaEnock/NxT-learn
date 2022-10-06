@@ -4,7 +4,7 @@ function PathItem() {
   return (
     <li className="Rec_insts_item">
       <div className="Rec_insts_item_head">
-        <h2>Enock Mokua</h2>
+        <h2>allInstructors</h2>
       </div>
       <div className="Rec_insts_item_body">
         <div className="image">
@@ -16,7 +16,10 @@ function PathItem() {
         <p>Machine Learning Engineer</p>
         <span>19 Courses</span>
       </div>
-      <button className="Rec_insts_item_footer">View</button>
+      <div className="Rec_insts_item_f">
+        <button className="Rec_insts_item_footer">View</button>
+        <button className="Rec_insts_item_footer">Remove</button>
+      </div>
     </li>
   );
 }
