@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CourseList from "./CourseList";
 import Aside from "./Aside";
 import Description from "./Description";
-function Courses({course}) {
 
+function Courses() {
+  let [course, setCourse] = useState([]);
 
+  useEffect(() => {
+    fetch("http://localhost:8000/database")
+      .then((r) => r.json())
+      .then((r) => setCourse(r));
+  }, []);
   return (
     <section id="course">
       <Aside />
