@@ -1,9 +1,7 @@
 import React from "react";
 
 function CourseList({ course }) {
-  for (let i of course) {
-    console.log(i.visible_instructors[0].display_name);
-  }
+ 
   let newCourse = course.map((element) => {
     return (
       <li className="Rec_course_item" key={element.id}>
