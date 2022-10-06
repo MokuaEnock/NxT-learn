@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Aside() {
+  let navigate = useNavigate();
   return (
     <aside>
       <a>
@@ -11,7 +13,7 @@ function Aside() {
         <a>Courses</a>
         <a>Instructors</a>
         <a>Your Path</a>
-        <a>Logout</a>
+        <a onClick={navigate("/")}>Logout</a>
       </nav>
     </aside>
   );
