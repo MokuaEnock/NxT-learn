@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -6,10 +7,11 @@ function Header() {
       <a>
         NxT<strong>Learn</strong>.
       </a>
+      
       <nav>
-        <a>Home</a>
-        <a>About</a>
-        <a>Contact Us</a>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact Us</NavLink>
       </nav>
     </header>
   );

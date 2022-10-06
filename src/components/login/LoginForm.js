@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function LoginForm() {
   let [title, setTitle] = useState("");
@@ -6,14 +7,15 @@ function LoginForm() {
   let [pass1, setPass1] = useState("");
   let [pass2, setPass2] = useState("");
 
+  let navigate = useNavigate();
+
   function handleForm(e) {
     e.preventDefault();
     if (pass1.length >= 8) {
       if (pass1 === pass2) {
-        console.log("hope");
-      }
-      else{
-        console.log('hopeless')
+        navigate("/home");
+      } else {
+        console.log("hopeless");
       }
     } else {
       console.log("horror");

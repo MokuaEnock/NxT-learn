@@ -1,9 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function MainLanding() {
-
-  /* fetching data  */
-
+  let navigate = useNavigate();
   return (
     <main>
       <h1 id="main_head1">
@@ -12,7 +11,10 @@ function MainLanding() {
       </h1>
       <p id="main_par1">
         <span className="mainSpan">
-          <img src="./assets/david-clode-xNSCi_K179c-unsplash.jpg" alt="background" />
+          <img
+            src="./assets/david-clode-xNSCi_K179c-unsplash.jpg"
+            alt="background"
+          />
         </span>
         <span className="mainSpan">
           <img src="#" alt="background" />
@@ -20,7 +22,13 @@ function MainLanding() {
         <span className="mainSpan">
           <img src="#" alt="background" />
         </span>
-        <button>Get Started</button>
+        <button
+          onClick={() => {
+            navigate("/login");
+          }}
+        >
+          Get Started
+        </button>
       </p>
       <p id="main_par2">
         <span className="mainSpan1">Self paced</span>

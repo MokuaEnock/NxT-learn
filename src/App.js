@@ -1,4 +1,6 @@
 import "./App.css";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/about/about";
 import Landing from "./components/landing/landing";
 import Login from "./components/login/login";
@@ -9,22 +11,7 @@ import Courses from "./components/courses/courses";
 import Path from "./components/path/path";
 function App() {
   return (
-    <>
-      <Landing />
-      <Login />
-      <Home />
-      <Instructor />
-      <Courses />
-      <Path />
-      <About />
-      <Contact />
-    </>
-  );
-}
-
-export default App;
-
-/*  <BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
@@ -35,4 +22,10 @@ export default App;
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter> */
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
+/*  */
