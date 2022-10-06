@@ -28,4 +28,15 @@ function App() {
 
 export default App;
 
-/*  */
+/* <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/instructor" element={<Instructor />} />
+        <Route path="/path" element={<Path />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter> */

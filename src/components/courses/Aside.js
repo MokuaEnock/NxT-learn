@@ -9,11 +9,11 @@ function Aside() {
         <img src=".../assets/" alt="logo" />
       </a>
       <nav>
-        <a>Home</a>
-        <a>Courses</a>
-        <a>Instructors</a>
-        <a>Your Path</a>
-        <a onClick={navigate("/")}>Logout</a>
+        <a href="/home">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/instructor">Instructors</a>
+        <a href="/path">Your Path</a>
+        <a href="/">Logout</a>
       </nav>
     </aside>
   );

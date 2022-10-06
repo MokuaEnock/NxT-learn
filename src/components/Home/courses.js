@@ -1,11 +1,9 @@
 import React from "react";
 
 function ReccomendCourses({ course }) {
-  console.log(course);
-  let set_course = course.sort();
-  console.log(set_course);
-
-  function Item({course}) {
+  let course1 = course.slice(0, 4);
+  console.log("course 11111111111111", course1);
+  function Item({ course }) {
     return (
       <li className="Rec_course_item">
         <div className="course_head">

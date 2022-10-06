@@ -11,15 +11,16 @@ function LoginForm() {
 
   function handleForm(e) {
     e.preventDefault();
-    if (pass1.length >= 8) {
+    navigate("/home")
+   /*  if (pass1.length >= 8) {
       if (pass1 === pass2) {
-        navigate("/home");
+        ;
       } else {
         console.log("hopeless");
       }
     } else {
       console.log("horror");
-    }
+    } */
   }
 
   return (
@@ -36,7 +37,7 @@ function LoginForm() {
             <input
               type="text"
               id="username"
-              required
+
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
@@ -47,7 +48,7 @@ function LoginForm() {
             <input
               type="email"
               id="emaill"
-              required
+
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -59,7 +60,7 @@ function LoginForm() {
               type="password"
               id="password1"
               placeholder="8+ Characters"
-              required
+
               autoComplete="_blank"
               value={pass1}
               onChange={(e) => setPass1(e.target.value)}
@@ -71,7 +72,7 @@ function LoginForm() {
             <input
               type="password"
               id="password2"
-              required
+
               autoComplete="_blank"
               placeholder="Repeat password"
               value={pass2}

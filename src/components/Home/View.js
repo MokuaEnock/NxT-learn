@@ -11,6 +11,7 @@ function View() {
       .then((r) => r.json())
       .then((c) => setCourse(c));
   }, []);
+  
 
   return (
     <section>
