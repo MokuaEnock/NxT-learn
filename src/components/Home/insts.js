@@ -1,6 +1,6 @@
 import React from "react";
 
-function ReccomendInsts() {
+function ReccomendInsts({ course }) {
   function Item() {
     return (
       <li className="Rec_insts_item">
