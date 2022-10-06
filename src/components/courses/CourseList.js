@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./CourseCard";
 
 function CourseList({ course }) {
   for (let i of course) {

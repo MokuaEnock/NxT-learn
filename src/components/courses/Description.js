@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import DescriptionItem from "./DescriptionItem";
+import React from "react";
 
 function Description({ course }) {
   let alldesc = course.map((element) => {
