@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import ReccomendCourses from "./courses";
 import ReccomendInsts from "./insts";
 
+
 function View() {
   let [course, setCourse] = useState([]);
 
