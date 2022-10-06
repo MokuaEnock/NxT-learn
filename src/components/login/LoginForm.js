@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 function LoginForm() {
+  let [title, setTitle] = useState("");
+  let [email, setEmail] = useState("");
+  let [pass1, setPass1] = useState("");
+  let [pass2, setPass2] = useState("");
+
+  function handleForm(e) {
+    e.preventDefault();
+    console.log(title.replace, email, pass1, pass2);
+  }
+
   return (
-    <form id="loginform">
+    <form id="loginform" onSubmit={handleForm}>
       <div id="logform">
         <span>
           <span>
@@ -12,12 +22,24 @@ function LoginForm() {
 
           <span>
             <label htmlFor="username">User Name</label>
-            <input type="text" id="username" required />
+            <input
+              type="text"
+              id="username"
+              required
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
           </span>
 
           <span>
             <label htmlFor="email">Enter Email</label>
-            <input type="email" id="emaill" required />
+            <input
+              type="email"
+              id="emaill"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </span>
 
           <span>
@@ -28,6 +50,8 @@ function LoginForm() {
               placeholder="8+ Characters"
               required
               autoComplete="_blank"
+              value={pass1}
+              onChange={(e) => setPass1(e.target.value)}
             />
           </span>
 
@@ -39,6 +63,8 @@ function LoginForm() {
               required
               autoComplete="_blank"
               placeholder="Repeat password"
+              value={pass2}
+              onChange={(e) => setPass2(e.target.value)}
             />
           </span>
 
