@@ -29,12 +29,11 @@ function Instructor() {
     };
   });
 
-  console.log("all istructors asap", allInstructors);
   return (
     <section id="instructor">
       <Aside />
-      <InstructorList instructor={allInstructors} />
-      <InstructorDescription instructor={allInstructors} />
+      <InstructorList allInstructors={allInstructors} />
+      <InstructorDescription allInstructors={allInstructors} />
     </section>
   );
 }
