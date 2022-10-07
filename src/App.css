@@ -9,7 +9,8 @@
 body {
   width: 100%;
   height: max-content;
-  background-color: #ffffff;
+  background-color: rgb(94, 219, 18, .1);
+
 }
 
 #root {
@@ -93,7 +94,6 @@ main {
   justify-content: space-between;
   width: 95%;
   height: 45vw;
-  background-color: #ffffff;
 }
 
 main > * {
