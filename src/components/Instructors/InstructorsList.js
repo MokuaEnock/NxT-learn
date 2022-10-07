@@ -1,8 +1,47 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
 
-function InstructorList({ allInstructors, handleview }) {
+function InstructorList({ allInstructors, course, instructors }) {
   function handlePath(item) {
     console.log(item);
+  }
+
+  function handleView() {
+    function getRandomArbitrary(min, max) {
+      return Math.round(Math.random() * (max - min) + min);
+    }
+    let y = getRandomArbitrary(11, 20);
+    let x = getRandomArbitrary(0, 10);
+    let slicedInsts = instructors.slice(x, y);
+    let list = document.querySelector(".InstDesc_list");
+    list.innerHTML = [];
+    let mapped = slicedInsts.map((e) => {
+      return (
+        <li className="instdescitem" key={e.course_id}>
+          <div className="instdescitem1">
+            <img src={e.image_480x270} alt="course" />
+          </div>
+          <div className="instdescitem2">
+            <span>{e.title}</span>
+            <div>
+              <span>Rating: {Math.round(e.rating * 100) / 100}</span>
+              <span>Enrolled:{e.num_reviews}</span>
+              <span>Lectures: {e.num_published_lectures}</span>
+              <a
+                href={`www.udemy.com${e.url}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Start
+              </a>
+            </div>
+          </div>
+        </li>
+      );
+    });
+    /* dangerouslySetInnerHTML={{ __html: list.mapped }} */
+    /*  console.log(slicedList);
+    list.innerHTML = slicedList; */
   }
 
   let allInstructs = allInstructors.map((element, index) => {
@@ -18,7 +57,7 @@ function InstructorList({ allInstructors, handleview }) {
           <p>{element.job_title}</p>
         </div>
         <div className="Rec_insts_item_f">
-          <button className="Rec_insts_item_footer" onClick={handleview}>
+          <button className="Rec_insts_item_footer" onClick={handleView}>
             View
           </button>
           <button className="Rec_insts_item_footer" onClick={handlePath}>

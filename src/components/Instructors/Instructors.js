@@ -36,20 +36,16 @@ function Instructor() {
     };
   });
 
-  function handleView() {
-    function getRandomArbitrary(min, max) {
-      return Math.round(Math.random() * (max - min) + min);
-    }
-    let y = getRandomArbitrary(11, 20);
-    let x = getRandomArbitrary(0, 10);
-    console.log(y, x);
-    
-  }
+
 
   return (
     <section id="instructor">
       <Aside />
-      <InstructorList allInstructors={allInstructors} handleView={handleView} />
+      <InstructorList
+        allInstructors={allInstructors}
+        course={course}
+        instructors={instructors}
+      />
       <InstructorDescription
         allInstructors={allInstructors}
         course={course}
