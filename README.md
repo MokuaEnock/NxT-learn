@@ -58,4 +58,8 @@ The NxT learn was implemented to overcome these challenges it seeks to change th
 
 2. **Learner-centered** - Learning is student-centered and learners solve challenges within themselves and only have access to the instructor when they face a blocker. The instructor only guides the learner through motivation and rewards.
 
+---
 
+## Licensing[![](./docs/img/pin.svg)](#licensing)
+
+The NxT Learn is an open-source platform and everyone can learn and contribute to its development, it is issued under a free open-source license **Apache**](https://opensource.org/licenses/MIT)**
