@@ -183,6 +183,15 @@ footer {
   background-color: #172e08;
 }
 
+#footer_cont1 > img {
+  width: 60%;
+}
+
+#footer_cont1 > p {
+  font: size 1.2vw;
+  margin-left: 5%;
+}
+
 #footer_cont1,
 #footer_cont3 {
   width: 20%;

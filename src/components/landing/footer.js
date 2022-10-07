@@ -3,11 +3,15 @@ import twitter from "../assets/twitter.png";
 import linkedin from "../assets/linkedin.png";
 import instagram from "../assets/instagram.png";
 import github from "../assets/github-logo.png";
+import logo from "../assets/logo.png";
 
 function Footer() {
   return (
     <footer>
-      <div id="footer_cont1"></div>
+      <div id="footer_cont1">
+        <img src={logo} alt="logo" />
+        <p>From the brain that wrote "Hello World"</p>
+      </div>
 
       <div id="footer_cont2">
         <a href="https://github.com/MokuaEnock">
