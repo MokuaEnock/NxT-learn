@@ -4,7 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-rddd.md
 # testing
 /coverage
 
@@ -23,3 +22,5 @@ yarn-debug.log*
 yarn-error.log*
 rd.md
 package-lock.json
+rddd.md
+
