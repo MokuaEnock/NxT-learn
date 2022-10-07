@@ -190,10 +190,20 @@ footer {
   border: thin solid white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
+  color: #ffffff;
+  font-size: 1.7vw;
+  word-spacing: 0.5vw;
 }
 
+#footer_cont3 > * {
+  margin-left: 2%;
+}
+
+#footer_cont3 a {
+  color: #5edb12;
+}
 #footer_cont2 {
   width: 60%;
   height: 30%;
@@ -212,7 +222,6 @@ footer {
   align-items: center;
   justify-content: space-evenly;
 }
-
 
 #footer_cont2 > a > img {
   width: 100%;

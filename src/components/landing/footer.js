@@ -11,16 +11,10 @@ function Footer() {
 
       <div id="footer_cont2">
         <a href="https://github.com/MokuaEnock">
-          <img
-            src={github}
-            alt="github"
-          />
+          <img src={github} alt="github" />
         </a>
         <a href="https://www.linkedin.com/in/enock-mokua-b7a37224b/">
-          <img
-            src={linkedin}
-            alt="linkedin"
-          />
+          <img src={linkedin} alt="linkedin" />
         </a>
         <a href="https://twitter.com/254_enok">
           <img src={twitter} alt="twitter" />
@@ -30,7 +24,14 @@ function Footer() {
           <img src={instagram} alt="instagram" />
         </a>
       </div>
-      <div id="footer_cont3"></div>
+      <div id="footer_cont3">
+        <p>
+          Report an <a href="https://github.com/MokuaEnock">issue</a>
+        </p>
+        <p>
+          Suggest a <a href="https://github.com/MokuaEnock">feature</a>
+        </p>
+      </div>
     </footer>
   );
 }
