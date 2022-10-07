@@ -77,7 +77,23 @@ Here's a brief high-level overview of the tech stack the NxT project uses:
 - The app uses the font ["Chakra Petch"](https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap) as its main font, and the design of the app adheres to the material design guidelines.
 
 ---
+# ✍️ Contributing
+
+Interested in contributing to the Well app project? Thanks so much for your interest! We are always looking for improvements to the project and contributions from open-source developers are greatly appreciated.
+
+---
+
+# 🌟 Spread the word
+
+If you want to say thank you and/or support the active development of the Well app:
+
+- Add a GitHub Star to the project!
+- Tweet about the project on your Twitter!
+  - Tag [@254_enok\_](https://twitter.com/254_enok_) and/or `#NxTLearn`
+
+---
 
 ## Licensing[![](./docs/img/pin.svg)](#licensing)
 
 The NxT Learn is an open-source platform and everyone can learn and contribute to its development, it is issued under a free open-source license **Apache**](<https://opensource.org/licenses/MIT>)\*\*
+
