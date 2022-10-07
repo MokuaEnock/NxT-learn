@@ -5,13 +5,18 @@ import InstructorList from "./InstructorsList";
 
 function Instructor() {
   let [course, setCourse] = useState([]);
-
-
+  let [instructors, setInstructors] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:8000/database")
       .then((r) => r.json())
       .then((r) => setCourse(r));
+  }, []);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/courses")
+      .then((r) => r.json())
+      .then((r) => setInstructors(r));
   }, []);
 
   let allInstructors = course.map((el) => {
@@ -31,11 +36,25 @@ function Instructor() {
     };
   });
 
+  function handleView() {
+    function getRandomArbitrary(min, max) {
+      return Math.round(Math.random() * (max - min) + min);
+    }
+    let y = getRandomArbitrary(11, 20);
+    let x = getRandomArbitrary(0, 10);
+    console.log(y, x);
+    
+  }
+
   return (
     <section id="instructor">
       <Aside />
-      <InstructorList allInstructors={allInstructors} />
-      <InstructorDescription allInstructors={allInstructors} />
+      <InstructorList allInstructors={allInstructors} handleView={handleView} />
+      <InstructorDescription
+        allInstructors={allInstructors}
+        course={course}
+        instructors={instructors}
+      />
     </section>
   );
 }

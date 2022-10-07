@@ -1,12 +1,10 @@
 import React from "react";
-import InstructorItem from "./InstructorItem";
 
-function InstructorList({ allInstructors }) {
+function InstructorList({ allInstructors, handleview }) {
   function handlePath(item) {
     console.log(item);
   }
 
-  console.log("Instructors", allInstructors);
   let allInstructs = allInstructors.map((element, index) => {
     return (
       <li className="Rec_insts_item" key={index}>
@@ -20,7 +18,9 @@ function InstructorList({ allInstructors }) {
           <p>{element.job_title}</p>
         </div>
         <div className="Rec_insts_item_f">
-          <button className="Rec_insts_item_footer">View</button>
+          <button className="Rec_insts_item_footer" onClick={handleview}>
+            View
+          </button>
           <button className="Rec_insts_item_footer" onClick={handlePath}>
             Add to Path
           </button>

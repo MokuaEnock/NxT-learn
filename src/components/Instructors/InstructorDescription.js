@@ -1,6 +1,6 @@
 import React from "react";
 
-function InstructorDescription({ courses }) {
+function InstructorDescription({ course, instructors, allInstructors }) {
   function Heading() {
     return (
       <div className="desc_inst">
@@ -27,39 +27,29 @@ function InstructorDescription({ courses }) {
     );
   }
 
-  function InstDescItem() {
+  let instList = instructors.map((e) => {
     return (
-      <li className="instdescitem">
+      <li className="instdescitem" key={e.course_id}>
         <div className="instdescitem1">
-          <img
-            src="https://img-c.udemycdn.com/course/240x135/1423418_54ba_3.jpg"
-            alt="course"
-          />
+          <img src={e.image_480x270} alt="course" />
         </div>
         <div className="instdescitem2">
-          <span>Machine Learning Fundamentals</span>
+          <span>{e.title}</span>
           <div>
-            <span>Hello world</span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span>Rating: {Math.round(e.rating * 100) / 100}</span>
+            <span>Enrolled:{e.num_reviews}</span>
+            <span>Lectures: {e.num_published_lectures}</span>
+            <a href={`www.udemy.com${e.url}`} target="_blank" rel="noreferrer">
+              Start
+            </a>
           </div>
         </div>
       </li>
     );
-  }
+  });
 
   function InstDescList() {
-    return (
-      <ul className="InstDesc_list">
-        <InstDescItem />
-        <InstDescItem />
-        <InstDescItem />
-        <InstDescItem />
-        <InstDescItem />
-        <InstDescItem />
-      </ul>
-    );
+    return <ul className="InstDesc_list">{instList}</ul>;
   }
   return (
     <div id="instructor_desc">
