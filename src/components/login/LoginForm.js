@@ -13,9 +13,8 @@ function LoginForm() {
   function handleForm(e) {
     e.preventDefault();
     navigate("/home");
-     if (pass1.length >= 8) {
+    if (pass1.length >= 8) {
       if (pass1 === pass2) {
-        ;
       } else {
         console.log("hopeless");
       }
@@ -88,10 +87,14 @@ function LoginForm() {
         id="imagform"
         style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
       >
-        <h2>Made for developers by developers</h2>
-        <p>
-          Grow your technical skills by enrolling in one of our courses today
-        </p>
+        <div>
+          <h2>Made for developers by developers</h2>
+          <p>
+            Grow your technical skills by enrolling in one of our courses today
+          </p>
+        </div>
+
+        <p>Towards project based learning</p>
       </div>
     </form>
   );

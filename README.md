@@ -18,7 +18,7 @@
 
 ## Introduction[![](./docs/img/pin.svg)](#introduction)
 
-**[NxT Learn](https://sulu.io/)** is an open source E-Learning platform that relies on the learner guided education philosophy. NxT learn focuses on overcoming the traditional learning strategies such as exams at the end of the module but rather offers learners skill-based projects during the module and after the module.
+**[NxT Learn](https://sulu.io/)** is an open source E-Learning platform that relies on the learner-guided education philosophy. NxT learn focuses on overcoming the traditional learning strategies such as exams at the end of the module but rather offers learners skill-based projects during the module and after the module.
 
 Have a look at the official [NxT Learn](nxt-learn.vercel.app) for a comprehensive list of Sulu's features, core values and use cases.
 
@@ -32,7 +32,7 @@ Traditional avenues for education are resource intensive and have been criticize
 
 The NxT learn was implemented to overcome these challenges it seeks to change the avenues of education by implementing the following.
 
-1. **Project-based** - Learners doing real world projects throughout the course and after the course.
+1. **Project-based** - Learners doing real-world projects throughout the course and after the course.
 
 2. **Learner-centered** - Learning is student-centered and learners solve challenges within themselves and only have access to the instructor when they face a blocker. The instructor only guides the learner through motivation and rewards.
 
