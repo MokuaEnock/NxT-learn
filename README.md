@@ -26,31 +26,6 @@ If you want to join the NxT learn as a learner or an instructor you can join us 
 
 ---
 
-## Table of contents[![](./docs/img/pin.svg)](#table-of-contents)
-
-- [Project Status![](#project-status)](#project-status)
-- [Introduction![](#introduction)](#introduction)
-- [Table of contents![](#table-of-contents)](#table-of-contents)
-- [Motivation![](#motivation)](#motivation)
-- [More than embedded![](#more-than-embedded)](#more-than-embedded)
-- [Composition![](#composition)](#composition)
-- [Software build![](#software-build)](#software-build)
-- [Software integration![](#software-integration)](#software-integration)
-  - [Mulitcast router](#mulitcast-router)
-  - [Logging service](#logging-service)
-  - [Development](#development)
-- [Use cases and benefits![](#use-cases-and-benefits)](#use-cases-and-benefits)
-  - [Distributed solution](#distributed-solution)
-  - [Driverless devices](#driverless-devices)
-  - [Real-time solutions](#real-time-solutions)
-  - [Digital twin](#digital-twin)
-  - [Simulation and test automations](#simulation-and-test-automations)
-- [Examples![](#examples)](#examples)
-- [Licensing![](#licensing)](#licensing)
-- [Call for action![](#call-for-action)](#call-for-action)
-
----
-
 ## Motivation[![](./docs/img/pin.svg)](#motivation)
 
 Traditional avenues for education are resource intensive and have been criticized for a long time for not allowing room for differently-abled learners to explore their options, this has led to education rewarding individuals who are good at cramming and not necessarily at problem-solving. The crammers after completing their education and being released into the world are faced with very different problems that do not require cramming.
