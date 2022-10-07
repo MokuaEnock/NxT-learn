@@ -9,8 +9,7 @@
 body {
   width: 100%;
   height: max-content;
-  background-color: rgb(94, 219, 18, .1);
-
+  background-color: rgb(94, 219, 18, 0.1);
 }
 
 #root {
@@ -121,6 +120,20 @@ main > * {
   border: thin solid #172e08;
   background-color: #172e08;
   border-left: 1vw double #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainSpan > h3 {
+  color: #ffffff;
+  font-size: 2vw;
+}
+
+.mainSpan > p {
+  color: #ffffff;
+  font-size: 1.5vw;
 }
 
 #main_par1 > button {
