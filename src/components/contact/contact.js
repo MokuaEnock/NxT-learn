@@ -1,6 +1,12 @@
 import React from "react";
 import Footer from "../landing/footer";
 import Header from "../landing/header";
+import twitter from "../assets/twitter.png";
+import linkedin from "../assets/linkedin.png";
+import instagram from "../assets/instagram.png";
+import github from "../assets/github-logo.png";
+import logo from "../assets/logo.png";
+import illustrator from "../assets/illustrator.svg";
 
 function Contact() {
   return (
@@ -15,12 +21,7 @@ function Contact() {
               href="https://github.com/MokuaEnock"
               target="_blank"
             >
-              <img
-                src="/assets/images/github (1).png"
-                alt="github"
-                target="_blank"
-                rel="noopener"
-              />
+              <img src={github} alt="github" target="_blank" rel="noopener" />
             </a>
             <a
               className="social"
@@ -28,7 +29,7 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/assets/images/twitter (1).png" alt="twitter" />
+              <img src={twitter} alt="twitter" />
             </a>
             <a
               className="social"
@@ -36,7 +37,7 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/assets/images/instagram.png" alt="instagram" />
+              <img src={instagram} alt="instagram" />
             </a>
             <a
               className="social"
@@ -44,7 +45,7 @@ function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/assets/images/linkedin (1).png" alt="linkedin" />
+              <img src={linkedin} alt="linkedin" />
             </a>
           </div>
           <div id="contact_body">
@@ -65,9 +66,12 @@ function Contact() {
 
               <div id="form_cont_message">
                 <label htmlFor="message">Your Message</label>
-                <textarea type="text" id="message" rows="4" cols="50">
-                
-                </textarea>
+                <textarea
+                  type="text"
+                  id="message"
+                  rows="4"
+                  cols="50"
+                ></textarea>
               </div>
               <div id="form_cont_submit">
                 <button type="submit">
@@ -81,10 +85,7 @@ function Contact() {
           </div>
           <div id="contact_image">
             <div id="contact_img">
-              <img
-                src="/assets/images/undraw_letter_re_8m03.svg"
-                alt="illustration"
-              />
+              <img src={illustrator} alt="illustration" />
             </div>
           </div>
         </div>
