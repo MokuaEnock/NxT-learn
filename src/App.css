@@ -20,7 +20,7 @@ body {
   justify-content: space-evenly;
 }
 
-#root > * {
+#root>* {
   margin-bottom: 0.2%;
 }
 
@@ -49,7 +49,7 @@ a {
   cursor: pointer;
 }
 
-header > a {
+header>a {
   width: 15%;
   height: 100%;
   font-size: 3.7vw;
@@ -61,12 +61,12 @@ header strong {
   color: #5edb12;
 }
 
-header > nav {
+header>nav {
   width: 80%;
   height: 80%;
 }
 
-header > nav > a {
+header>nav>a {
   width: max-content;
   padding-left: 2%;
   padding-right: 2%;
@@ -76,7 +76,7 @@ header > nav > a {
   background-color: #172e08;
 }
 
-header > nav > a:hover {
+header>nav>a:hover {
   background-color: #172e08;
   background: linear-gradient(135deg, transparent 1vw, #172e08 0) top left,
     linear-gradient(45deg, transparent 1vw, #172e08 0) bottom right;
@@ -95,7 +95,7 @@ main {
   height: 45vw;
 }
 
-main > * {
+main>* {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -126,17 +126,17 @@ main > * {
   justify-content: center;
 }
 
-.mainSpan > h3 {
+.mainSpan>h3 {
   color: #ffffff;
   font-size: 2vw;
 }
 
-.mainSpan > p {
+.mainSpan>p {
   color: #ffffff;
   font-size: 1.5vw;
 }
 
-#main_par1 > button {
+#main_par1>button {
   width: 15%;
   height: 33%;
   font-size: 1.8vw;
@@ -152,7 +152,7 @@ main > * {
   border: 0.5vw double #172e08;
 }
 
-#main_par1 > button:hover {
+#main_par1>button:hover {
   background-color: #172e08;
   color: aliceblue;
 }
@@ -162,7 +162,7 @@ main > * {
   height: 35%;
 }
 
-#main_par2 > * {
+#main_par2>* {
   width: 25%;
   height: 100%;
   font-size: 2vw;
@@ -172,13 +172,13 @@ main > * {
   justify-content: space-evenly;
 }
 
-#main_par2 > :nth-child(even) {
+#main_par2> :nth-child(even) {
   background-color: #5edb12;
   border-left: 1vw double #ffffff;
   color: #172e08;
 }
 
-#main_par2 > :nth-child(odd) {
+#main_par2> :nth-child(odd) {
   border-left: 1vw double #ffffff;
   background-color: #172e08;
   color: #ffffff;
@@ -196,11 +196,11 @@ footer {
   background-color: #172e08;
 }
 
-#footer_cont1 > img {
+#footer_cont1>img {
   width: 60%;
 }
 
-#footer_cont1 > p {
+#footer_cont1>p {
   font: size 1.2vw;
   margin-left: 5%;
 }
@@ -219,13 +219,14 @@ footer {
   word-spacing: 0.5vw;
 }
 
-#footer_cont3 > * {
+#footer_cont3>* {
   margin-left: 2%;
 }
 
 #footer_cont3 a {
   color: #5edb12;
 }
+
 #footer_cont2 {
   width: 60%;
   height: 30%;
@@ -234,7 +235,8 @@ footer {
   align-items: center;
   justify-content: space-evenly;
 }
-#footer_cont2 > a {
+
+#footer_cont2>a {
   font-size: 1vw;
   width: 8%;
   height: 90%;
@@ -245,10 +247,11 @@ footer {
   justify-content: space-evenly;
 }
 
-#footer_cont2 > a > img {
+#footer_cont2>a>img {
   width: 100%;
   height: 100%;
 }
+
 /* course ======================================================================= */
 
 #course,
@@ -280,7 +283,7 @@ footer {
   position: relative;
 }
 
-#main_course_list > li {
+#main_course_list>li {
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
@@ -297,7 +300,7 @@ aside {
   border-right: 00.5vw #172e08 solid;
 }
 
-aside > a {
+aside>a {
   width: 80%;
   height: 15%;
   cursor: pointer;
@@ -306,11 +309,12 @@ aside > a {
   color: #ffffff;
 }
 
-aside > a > img {
+aside>a>img {
   width: 100%;
   height: 100%;
 }
-aside > nav {
+
+aside>nav {
   width: 100%;
   height: 80%;
   display: flex;
@@ -319,7 +323,7 @@ aside > nav {
   align-items: center;
 }
 
-aside > nav > a {
+aside>nav>a {
   width: 90%;
   height: 10%;
   cursor: pointer;
@@ -332,7 +336,7 @@ aside > nav > a {
   align-items: center;
 }
 
-aside > nav > a:hover {
+aside>nav>a:hover {
   background-color: transparent;
   color: #172e08;
   border: 0.2vw #172e08 solid;
@@ -349,7 +353,7 @@ aside > nav > a:hover {
   align-items: center;
 }
 
-#description > * {
+#description>* {
   width: 100%;
   border: thin solid #ffffff;
 }
@@ -364,7 +368,7 @@ aside > nav > a:hover {
   background-color: #172e08;
 }
 
-.desc_rating > span {
+.desc_rating>span {
   width: 20%;
   height: 100%;
   background-color: #ffffff;
@@ -405,10 +409,12 @@ aside > nav > a:hover {
   width: 13%;
   background: #172e08;
 }
-.desc_inst_img > img {
+
+.desc_inst_img>img {
   width: 100%;
   height: 100%;
 }
+
 .desc_inst_info {
   display: flex;
   flex-direction: column;
@@ -420,7 +426,7 @@ aside > nav > a:hover {
   background-color: #172e08;
 }
 
-.desc_inst_info > * {
+.desc_inst_info>* {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -428,12 +434,12 @@ aside > nav > a:hover {
   width: 100%;
 }
 
-.desc_inst_info > h4 {
+.desc_inst_info>h4 {
   height: 60%;
   font-size: 2vw;
 }
 
-.desc_inst_info > p {
+.desc_inst_info>p {
   height: 40%;
   font-size: 1.3vw;
 }
@@ -477,7 +483,7 @@ aside > nav > a:hover {
   align-items: center;
 }
 
-.item_img > img {
+.item_img>img {
   width: 100%;
   height: 100%;
 }
@@ -492,7 +498,7 @@ aside > nav > a:hover {
   border-left: 0.5vw double white;
 }
 
-.item_details > * {
+.item_details>* {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -535,7 +541,7 @@ aside > nav > a:hover {
   justify-content: flex-start;
 }
 
-#about > h2 {
+#about>h2 {
   width: 100%;
   height: 10%;
   font-size: 3vw;
@@ -548,7 +554,7 @@ aside > nav > a:hover {
   justify-content: center;
 }
 
-#about > p {
+#about>p {
   width: 90%;
   min-height: 10%;
   font-size: 1.7vw;
@@ -567,7 +573,7 @@ aside > nav > a:hover {
   align-items: center;
 }
 
-#instructor > aside {
+#instructor>aside {
   background-color: #ffffff;
 }
 
@@ -605,7 +611,7 @@ aside > nav > a:hover {
   overflow-y: scroll;
 }
 
-#inst_item_cont > li {
+#inst_item_cont>li {
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
@@ -638,7 +644,7 @@ aside > nav > a:hover {
   height: 100%;
 }
 
-.instdescitem1 > img {
+.instdescitem1>img {
   height: 100%;
   width: 100%;
 }
@@ -652,7 +658,7 @@ aside > nav > a:hover {
   height: 100%;
 }
 
-.instdescitem2 > span {
+.instdescitem2>span {
   width: 100%;
   height: 60%;
   color: white;
@@ -664,7 +670,7 @@ aside > nav > a:hover {
   justify-content: space-evenly;
 }
 
-.instdescitem2 > div {
+.instdescitem2>div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -674,7 +680,7 @@ aside > nav > a:hover {
   background-color: #ffffff;
 }
 
-.instdescitem2 > div > span {
+.instdescitem2>div>span {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -687,7 +693,7 @@ aside > nav > a:hover {
   text-decoration: none;
 }
 
-.instdescitem2 > div > a {
+.instdescitem2>div>a {
   width: 20%;
   font-size: 1.2vw;
   height: 100%;
@@ -712,7 +718,7 @@ aside > nav > a:hover {
   align-items: center;
 }
 
-#home > section {
+#home>section {
   width: 90%;
   height: 100%;
   display: flex;
@@ -721,7 +727,7 @@ aside > nav > a:hover {
   align-items: center;
 }
 
-#home > section > h2 {
+#home>section>h2 {
   width: 100%;
   height: 5%;
   font-size: 2vw;
@@ -744,7 +750,7 @@ aside > nav > a:hover {
   align-items: center;
 }
 
-.Rec_insts_item{
+.Rec_insts_item {
   width: 18.5vw;
   height: 21vw;
   display: flex;
@@ -753,10 +759,9 @@ aside > nav > a:hover {
   align-items: center;
   border: 0.2vw solid #172e08;
   background-color: #172e08;
-
 }
 
-.Rec_course_item{
+.Rec_course_item {
   width: 18.5vw;
   height: 21vw;
   display: flex;
@@ -765,7 +770,6 @@ aside > nav > a:hover {
   align-items: center;
   border: 0.2vw solid #172e08;
   background-color: #172e08;
-
 }
 
 .Rec_insts_item_head {
@@ -777,7 +781,7 @@ aside > nav > a:hover {
   align-items: center;
 }
 
-.Rec_insts_item_head > h2 {
+.Rec_insts_item_head>h2 {
   color: white;
   width: max-content;
   margin-bottom: 5%;
@@ -795,7 +799,7 @@ aside > nav > a:hover {
   align-items: center;
 }
 
-.Rec_insts_item_body > .image {
+.Rec_insts_item_body>.image {
   width: 6vw;
   height: 6vw;
   border-radius: 50%;
@@ -804,7 +808,7 @@ aside > nav > a:hover {
   border: 0.2vw #172e08 solid;
 }
 
-.Rec_insts_item_body > .image > img {
+.Rec_insts_item_body>.image>img {
   width: 100%;
   height: 100%;
   font-size: 1vw;
@@ -815,7 +819,7 @@ aside > nav > a:hover {
   align-items: center;
 }
 
-.Rec_insts_item_body > p {
+.Rec_insts_item_body>p {
   width: 100%;
   height: 30%;
   font-size: 1.3vw;
@@ -826,7 +830,7 @@ button {
   cursor: pointer;
 }
 
-.Rec_insts_item_body > span {
+.Rec_insts_item_body>span {
   font-size: 1.2vw;
   text-align: center;
 }
@@ -839,6 +843,7 @@ button {
   justify-content: space-evenly;
   align-items: center;
 }
+
 .Rec_insts_item_footer {
   width: 45%;
   display: flex;
@@ -857,17 +862,8 @@ button {
   border: 0.3vw #ffffff double;
   background-color: #172e08;
 }
-/*
-.Rec_course_item{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 0.3vw solid #172e08;
-  background-color: #172e08;
-} */
 
-.Rec_course_item > * {
+.Rec_course_item>* {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -875,7 +871,7 @@ button {
   background-color: #ffffff;
 }
 
-.Rec_course_item > .course_head {
+.Rec_course_item>.course_head {
   width: 100%;
   height: 40%;
   display: flex;
@@ -885,14 +881,14 @@ button {
   border-bottom: 0.1vw solid #172e08;
 }
 
-.Rec_course_item > .course_head > h2 {
+.Rec_course_item>.course_head>h2 {
   width: 100%;
   height: max-content;
   font-size: 1.3vw;
   text-align: left;
 }
 
-.Rec_course_item > .course_head > p {
+.Rec_course_item>.course_head>p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -904,7 +900,7 @@ button {
   background-color: #ffffff;
 }
 
-.Rec_course_item > .course_head > p > span {
+.Rec_course_item>.course_head>p>span {
   width: 40%;
   height: 100%;
   font-size: 1.2vw;
@@ -916,13 +912,13 @@ button {
   align-items: center;
 }
 
-.Rec_course_item > .course_body {
+.Rec_course_item>.course_body {
   background-color: #172e08;
   width: 100%;
   height: 45%;
 }
 
-.Rec_course_item > .course_body > div {
+.Rec_course_item>.course_body>div {
   width: 100%;
   height: 50%;
   display: flex;
@@ -932,12 +928,12 @@ button {
   font-size: 0.6vw;
 }
 
-.inst_image > img {
+.inst_image>img {
   width: 100%;
   height: 100%;
 }
 
-.Rec_course_item > .course_body > div > .inst_image {
+.Rec_course_item>.course_body>div>.inst_image {
   width: 25%;
   height: 100%;
   display: flex;
@@ -946,7 +942,7 @@ button {
   align-items: center;
 }
 
-.Rec_course_item > .course_body > div > .inst_name {
+.Rec_course_item>.course_body>div>.inst_name {
   width: 75%;
   height: 100%;
   display: flex;
@@ -957,7 +953,7 @@ button {
   color: white;
 }
 
-.Rec_course_item > .course_body > div > .inst_name > .a {
+.Rec_course_item>.course_body>div>.inst_name>.a {
   text-align: left;
   height: 50%;
   width: 100%;
@@ -969,10 +965,7 @@ button {
   font-size: 1.5vw;
 }
 
-
-
-
-.Rec_course_item > .course_footer {
+.Rec_course_item>.course_footer {
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -985,7 +978,7 @@ button {
   background-color: #ffffff;
 }
 
-.Rec_course_item > .course_footer:hover {
+.Rec_course_item>.course_footer:hover {
   color: #ffffff;
   border: 0.5vw #ffffff double;
   background-color: #172e08;
@@ -999,7 +992,6 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
 }
 
 #loginform {
@@ -1012,7 +1004,7 @@ button {
   background-color: #172e08;
 }
 
-#loginform > div {
+#loginform>div {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1027,7 +1019,7 @@ button {
   align-items: center;
 }
 
-#logform > span {
+#logform>span {
   width: 90%;
   height: 80%;
   font-size: 1.3vw;
@@ -1038,16 +1030,16 @@ button {
   align-items: center;
 }
 
-#logform > span > span {
+#logform>span>span {
   width: 100%;
   height: 15%;
 }
 
-#logform > span > span > h2 {
+#logform>span>span>h2 {
   width: 100%;
   height: 60%;
 
-  color: #5edb12;
+  color: #ffffff;
   font-size: 2vw;
   display: flex;
   flex-direction: column;
@@ -1055,22 +1047,23 @@ button {
   align-items: flex-start;
 }
 
-#logform > span > span > p {
+#logform>span>span>p {
   width: 100%;
   height: 40%;
 
-  color: #5edb12;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-#logform > span > span > label {
+#logform>span>span>label {
   width: 100%;
   height: 60%;
 }
-#logform > span > span > input {
+
+#logform>span>span>input {
   width: 99%;
   height: 40%;
 
@@ -1079,11 +1072,11 @@ button {
   color: #172e08;
 }
 
-#logform > span > span > input:focus {
+#logform>span>span>input:focus {
   outline: none;
 }
 
-#logform > span > button {
+#logform>span>button {
   height: 10%;
   width: 80%;
   font-size: 1.8vw;
@@ -1099,7 +1092,7 @@ button {
   border: 0.5vw double #172e08;
 }
 
-#logform > span > button:hover {
+#logform>span>button:hover {
   background-color: #172e08;
   color: #ffffff;
   border: 0.5vw double #ffffff;
@@ -1108,7 +1101,6 @@ button {
 #imagform {
   width: 60%;
   color: #172e08;
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1118,23 +1110,23 @@ button {
   border: thin solid #172e08;
 }
 
-#imagform > h2 {
+#imagform>h2 {
   margin-top: 2%;
   font-size: 1.9vw;
   width: 80%;
   height: 10%;
-  border: thin solid #ffffff;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#imagform > p {
+#imagform>p {
   font-size: 1.3vw;
   width: 80%;
   height: 10%;
-  border: thin solid #ffffff;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1189,14 +1181,14 @@ button {
   cursor: pointer;
 }
 
-.social > img {
+.social>img {
   width: 100%;
   height: 100%;
   opacity: 0.5;
   font-size: 1.7vw;
 }
 
-.social > img:hover {
+.social>img:hover {
   opacity: 1;
 }
 
@@ -1219,7 +1211,7 @@ button {
   border-bottom-right-radius: inherit;
 }
 
-#contact_body > form {
+#contact_body>form {
   width: 100%;
   height: 100%;
   color: white;
@@ -1229,7 +1221,7 @@ button {
   align-items: center;
 }
 
-#contact_body > form > h2 {
+#contact_body>form>h2 {
   width: 100%;
   height: 10%;
   font-size: 4vw;
@@ -1237,11 +1229,11 @@ button {
   align-items: center;
 }
 
-#contact_body > form > h2 > strong {
+#contact_body>form>h2>strong {
   color: #ffffff;
 }
 
-#contact_body > form > p {
+#contact_body>form>p {
   width: 100%;
   font-size: 2vw;
   height: 10%;
@@ -1272,7 +1264,7 @@ button {
   outline: none;
 }
 
-#form_cont_name > label {
+#form_cont_name>label {
   width: 100%;
   height: 20%;
 }
@@ -1309,7 +1301,7 @@ button {
   align-items: flex-start;
 }
 
-#form_cont_message > textarea {
+#form_cont_message>textarea {
   font-size: 1.5vw;
   text-align: center;
 }
@@ -1334,7 +1326,7 @@ button {
   align-items: center;
 }
 
-#form_cont_submit > button {
+#form_cont_submit>button {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -1369,7 +1361,7 @@ button {
   align-items: center;
 }
 
-.button_span2 > img {
+.button_span2>img {
   height: 65%;
 }
 
@@ -1387,7 +1379,7 @@ button {
   border-bottom-right-radius: inherit;
 }
 
-#contact_img > img {
+#contact_img>img {
   width: 65%;
 }
 
@@ -1412,7 +1404,7 @@ button {
   align-items: center;
 }
 
-#pathlist > ul {
+#pathlist>ul {
   height: 91%;
   width: 100%;
   display: flex;
@@ -1423,7 +1415,7 @@ button {
   overflow-y: scroll;
 }
 
-#pathlist > ul > li {
+#pathlist>ul>li {
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
@@ -1440,7 +1432,7 @@ button {
   background-color: #172e08;
 }
 
-#listbuttons > button {
+#listbuttons>button {
   width: 49%;
   height: 90%;
   font-size: 1.7vw;
@@ -1449,7 +1441,7 @@ button {
   background-color: transparent;
 }
 
-#listbuttons > button:hover {
+#listbuttons>button:hover {
   background-color: #ffffff;
   color: #172e08;
   border: double 0.5vw #172e08;

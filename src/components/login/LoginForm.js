@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import bg from "../assets/pexels-eva-bronzini-7641223.jpg";
 
 function LoginForm() {
   let [title, setTitle] = useState("");
@@ -11,8 +12,8 @@ function LoginForm() {
 
   function handleForm(e) {
     e.preventDefault();
-    navigate("/home")
-   /*  if (pass1.length >= 8) {
+    navigate("/home");
+    /*  if (pass1.length >= 8) {
       if (pass1 === pass2) {
         ;
       } else {
@@ -37,7 +38,6 @@ function LoginForm() {
             <input
               type="text"
               id="username"
-
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
@@ -48,7 +48,6 @@ function LoginForm() {
             <input
               type="email"
               id="emaill"
-
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -60,7 +59,6 @@ function LoginForm() {
               type="password"
               id="password1"
               placeholder="8+ Characters"
-
               autoComplete="_blank"
               value={pass1}
               onChange={(e) => setPass1(e.target.value)}
@@ -72,7 +70,6 @@ function LoginForm() {
             <input
               type="password"
               id="password2"
-
               autoComplete="_blank"
               placeholder="Repeat password"
               value={pass2}
@@ -83,7 +80,7 @@ function LoginForm() {
           <button>Create Account</button>
         </span>
       </div>
-      <div id="imagform">
+      <div id="imagform" style={{ backgroundImage: `url(${bg})` , backgroundSize:"cover" }}>
         <h2>Made for developers by developers</h2>
         <p>
           Grow your technical skills by enrolling in one of our courses today
