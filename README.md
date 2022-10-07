@@ -12,6 +12,9 @@
 </h1>
 
 ---
+![Viewers](https://gpvc.arturio.dev/MokuaEnock)
+
+---
 
 ## Introduction[![](./docs/img/pin.svg)](#introduction)
 
@@ -60,6 +63,21 @@ The NxT learn was implemented to overcome these challenges it seeks to change th
 
 ---
 
+## 👨‍💻 Tech stack
+
+Here's a brief high-level overview of the tech stack the NxT project uses:
+
+
+
+- This project uses **[Raect Js](https://reactjs.org/)** as the frontend framework.
+-
+- The styling of the project has been done using custom pure CSS3 and it is encouraged for any future contribution this will be the default styling language.
+- The uses JSON for data handling.
+-  🚨 Currently, the app is still in development and more features will be added in the coming week.
+- The app uses the font ["Chakra Petch"](https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap) as its main font, and the design of the app adheres to the material design guidelines.
+
+---
+
 ## Licensing[![](./docs/img/pin.svg)](#licensing)
 
-The NxT Learn is an open-source platform and everyone can learn and contribute to its development, it is issued under a free open-source license **Apache**](https://opensource.org/licenses/MIT)**
+The NxT Learn is an open-source platform and everyone can learn and contribute to its development, it is issued under a free open-source license **Apache**](<https://opensource.org/licenses/MIT>)\*\*
