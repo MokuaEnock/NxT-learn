@@ -6,6 +6,8 @@ import InstructorList from "./InstructorsList";
 function Instructor() {
   let [course, setCourse] = useState([]);
 
+
+
   useEffect(() => {
     fetch("http://localhost:8000/database")
       .then((r) => r.json())

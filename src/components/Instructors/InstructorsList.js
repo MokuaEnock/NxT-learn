@@ -2,6 +2,10 @@ import React from "react";
 import InstructorItem from "./InstructorItem";
 
 function InstructorList({ allInstructors }) {
+  function handlePath(item) {
+    console.log(item);
+  }
+
   console.log("Instructors", allInstructors);
   let allInstructs = allInstructors.map((element, index) => {
     return (
@@ -14,11 +18,12 @@ function InstructorList({ allInstructors }) {
             <img src={element.image_100x100} alt="headshot" />
           </div>
           <p>{element.job_title}</p>
-          {/*  <span>19 Courses</span> */}
         </div>
         <div className="Rec_insts_item_f">
           <button className="Rec_insts_item_footer">View</button>
-          <button className="Rec_insts_item_footer">Add to Path</button>
+          <button className="Rec_insts_item_footer" onClick={handlePath}>
+            Add to Path
+          </button>
         </div>
       </li>
     );
