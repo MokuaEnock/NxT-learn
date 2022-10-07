@@ -5,7 +5,6 @@ import twitter from "../assets/twitter.png";
 import linkedin from "../assets/linkedin.png";
 import instagram from "../assets/instagram.png";
 import github from "../assets/github-logo.png";
-import logo from "../assets/logo.png";
 import illustrator from "../assets/illustrator.svg";
 
 function Contact() {
