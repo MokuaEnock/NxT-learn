@@ -183,6 +183,26 @@ footer {
   background-color: #172e08;
 }
 
+#footer_cont1,
+#footer_cont3 {
+  width: 20%;
+  height: 100%;
+  border: thin solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#footer_cont2 {
+  width: 60%;
+  height: 30%;
+  border: thin solid white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
 /* course ======================================================================= */
 
 #course,
