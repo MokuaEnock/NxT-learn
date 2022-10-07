@@ -13,7 +13,7 @@ function LoginForm() {
   function handleForm(e) {
     e.preventDefault();
     navigate("/home");
-    /*  if (pass1.length >= 8) {
+     if (pass1.length >= 8) {
       if (pass1 === pass2) {
         ;
       } else {
@@ -21,7 +21,7 @@ function LoginForm() {
       }
     } else {
       console.log("horror");
-    } */
+    }
   }
 
   return (
@@ -40,6 +40,7 @@ function LoginForm() {
               id="username"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
+              required
             />
           </span>
 
@@ -49,6 +50,7 @@ function LoginForm() {
               type="email"
               id="emaill"
               value={email}
+              required
               onChange={(e) => setEmail(e.target.value)}
             />
           </span>
@@ -61,6 +63,7 @@ function LoginForm() {
               placeholder="8+ Characters"
               autoComplete="_blank"
               value={pass1}
+              required
               onChange={(e) => setPass1(e.target.value)}
             />
           </span>
@@ -73,6 +76,7 @@ function LoginForm() {
               autoComplete="_blank"
               placeholder="Repeat password"
               value={pass2}
+              required
               onChange={(e) => setPass2(e.target.value)}
             />
           </span>
@@ -80,7 +84,10 @@ function LoginForm() {
           <button>Create Account</button>
         </span>
       </div>
-      <div id="imagform" style={{ backgroundImage: `url(${bg})` , backgroundSize:"cover" }}>
+      <div
+        id="imagform"
+        style={{ backgroundImage: `url(${bg})`, backgroundSize: "cover" }}
+      >
         <h2>Made for developers by developers</h2>
         <p>
           Grow your technical skills by enrolling in one of our courses today
