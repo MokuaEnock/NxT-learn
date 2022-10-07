@@ -301,10 +301,15 @@ aside > a {
   width: 80%;
   height: 15%;
   cursor: pointer;
-  background-color: #172e08;
+  background-color: transparent;
+  border: thin solid #172e08;
   color: #ffffff;
 }
 
+aside > a > img {
+  width: 100%;
+  height: 100%;
+}
 aside > nav {
   width: 100%;
   height: 80%;
@@ -739,8 +744,7 @@ aside > nav > a:hover {
   align-items: center;
 }
 
-.Rec_insts_item,
-.Rec_course_item {
+.Rec_insts_item{
   width: 18.5vw;
   height: 21vw;
   display: flex;
@@ -749,6 +753,19 @@ aside > nav > a:hover {
   align-items: center;
   border: 0.2vw solid #172e08;
   background-color: #172e08;
+
+}
+
+.Rec_course_item{
+  width: 18.5vw;
+  height: 21vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.2vw solid #172e08;
+  background-color: #172e08;
+
 }
 
 .Rec_insts_item_head {
@@ -840,19 +857,22 @@ button {
   border: 0.3vw #ffffff double;
   background-color: #172e08;
 }
+/*
+.Rec_course_item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 0.3vw solid #172e08;
+  background-color: #172e08;
+} */
 
-.Rec_course_item,
 .Rec_course_item > * {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background-color: #ffffff;
-}
-
-.Rec_course_item {
-  border: 0.3vw solid #172e08;
-  background-color: #172e08;
 }
 
 .Rec_course_item > .course_head {
@@ -879,6 +899,7 @@ button {
   align-items: center;
   width: 100%;
   font-weight: 300;
+  font-size: 1.3vw;
   height: 30%;
   background-color: #ffffff;
 }
@@ -948,25 +969,8 @@ button {
   font-size: 1.5vw;
 }
 
-/* .Rec_course_item > .course_body > div > .inst_name > .b {
-  text-align: left;
-  height: 50%;
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 1.2vw;
-} */
 
-.Rec_course_item > .course_footer {
-  width: 60%;
-  height: 15%;
-  font-size: 1.7vw;
-  color: #172e08;
-  border: thin solid #ffffff;
-}
+
 
 .Rec_course_item > .course_footer {
   width: 60%;

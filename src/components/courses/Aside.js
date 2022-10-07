@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Aside() {
-  let navigate = useNavigate();
   return (
     <aside>
       <a>
-        <img src=".../assets/" alt="logo" />
+        <img src={logo} alt="logo" />
       </a>
       <nav>
         <a href="/home">Home</a>
