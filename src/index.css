@@ -42,8 +42,9 @@ header {
 
 main {
   width: 100%;
-  border: thin solid black;
   height: 35.5vw;
+  border: thin solid black;
+
 }
 
 footer {
