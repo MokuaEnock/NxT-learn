@@ -12,11 +12,12 @@ function LoginForm() {
 
   function handleForm(e) {
     e.preventDefault();
-    navigate("/home");
     if (pass1.length >= 8) {
       if (pass1 === pass2) {
+        navigate("/home");
       } else {
-        console.log("hopeless");
+        // eslint-disable-next-line no-lone-blocks
+        {alert("Passwords do not match.")}
       }
     } else {
       console.log("horror");
