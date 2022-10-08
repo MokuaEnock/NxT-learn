@@ -2,24 +2,49 @@ import React from "react";
 
 function Login() {
   return (
-    <form id="login">
+    <section id="login">
       <section>
-        <div id="get_started">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div id="log_in">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <form id="get_started">
+          <span>Get Started</span>
+          <span>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </span>
+
+          <span>
+            <input type="email" placeholder="Your Email" />
+            <input type="text" placeholder="Your GitHub" />
+          </span>
+          <span>
+            <input type="password" placeholder="Enter password" />
+            <input type="password" placeholder="Re-enter password" />
+          </span>
+          <span>
+            <button type="submit">Get Started</button>
+          </span>
+
+          <span>
+            Already a member <a href="#">Log In</a>
+          </span>
+        </form>
+        <form id="log_in">
+          <span>Log In</span>
+          <span>
+            <label></label>
+            <input type="text" placeholder="Username or Email" />
+          </span>
+          <span>
+            <input type="text" placeholder="Password" />
+          </span>
+          <span>
+            <button type="submit">Log In</button>
+          </span>
+          <span>
+            Not a member <a href="#">Join Us</a>
+          </span>
+        </form>
       </section>
-    </form>
+    </section>
   );
 }
 
