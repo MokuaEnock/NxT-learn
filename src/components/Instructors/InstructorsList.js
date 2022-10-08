@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 
 function InstructorList({ allInstructors, course, instructors }) {
@@ -29,7 +30,6 @@ function InstructorList({ allInstructors, course, instructors }) {
               <a
                 href={`www.udemy.com${e.url}`}
                 target="_blank"
-                rel="noreferrer"
               >
                 Start
               </a>

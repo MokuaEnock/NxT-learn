@@ -34,10 +34,10 @@ function Footer() {
       </div>
       <div id="footer_cont3">
         <p>
-          Report an <a href="https://github.com/MokuaEnock">issue</a>
+          Report an <a href="https://github.com/MokuaEnock" target="_blank">issue</a>
         </p>
         <p>
-          Suggest a <a href="https://github.com/MokuaEnock">feature</a>
+          Suggest a <a href="https://github.com/MokuaEnock" target="_blank">feature</a>
         </p>
       </div>
     </footer>
