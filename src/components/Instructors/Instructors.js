@@ -8,13 +8,13 @@ function Instructor() {
   let [instructors, setInstructors] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/database")
+    fetch("https://nxt-learn-database.herokuapp.com/database")
       .then((r) => r.json())
       .then((r) => setCourse(r));
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:8000/courses")
+    fetch("https://nxt-learn-database.herokuapp.com/courses")
       .then((r) => r.json())
       .then((r) => setInstructors(r));
   }, []);

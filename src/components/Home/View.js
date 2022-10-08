@@ -7,11 +7,11 @@ function View() {
   let [course, setCourse] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/database")
+    fetch("https://nxt-learn-database.herokuapp.com/database")
       .then((r) => r.json())
       .then((c) => setCourse(c));
   }, []);
-  
+
 
   return (
     <section>

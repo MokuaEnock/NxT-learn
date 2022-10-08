@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 
 function InstructorList({ allInstructors, course, instructors }) {
   function handlePath(item) {
