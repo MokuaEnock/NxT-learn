@@ -19,6 +19,8 @@ function Instructor() {
       .then((r) => setInstructors(r));
   }, []);
 
+  console.log(instructors);
+
   let allInstructors = course.map((el) => {
     let element = el.visible_instructors[0];
     return {
@@ -35,8 +37,6 @@ function Instructor() {
       course_image_480x270: el.image_480x270,
     };
   });
-
-
 
   return (
     <section id="instructor">

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import twitter from "../assets/twitter.png";
 import linkedin from "../assets/linkedin.png";
@@ -14,17 +15,20 @@ function Footer() {
       </div>
 
       <div id="footer_cont2">
-        <a href="https://github.com/MokuaEnock">
+        <a href="https://github.com/MokuaEnock" target="_blank">
           <img src={github} alt="github" />
         </a>
-        <a href="https://www.linkedin.com/in/enock-mokua-b7a37224b/">
+        <a
+          href="https://www.linkedin.com/in/enock-mokua-b7a37224b/"
+          target="_blank"
+        >
           <img src={linkedin} alt="linkedin" />
         </a>
-        <a href="https://twitter.com/254_enok">
+        <a href="https://twitter.com/254_enok" target="_blank">
           <img src={twitter} alt="twitter" />
         </a>
 
-        <a href="https://www.instagram.com/enok_254/">
+        <a href="https://www.instagram.com/enok_254/" target="_blank">
           <img src={instagram} alt="instagram" />
         </a>
       </div>
