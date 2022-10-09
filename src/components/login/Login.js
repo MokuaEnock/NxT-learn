@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 function Login() {
+  let [start, seStart] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    github: "",
+    password: "",
+  });
+  let [login, setLogin] = useState({ email: "", password: "" });
   return (
     <section id="login">
       <section>
