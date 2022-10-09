@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { json } from "server/reply";
 
 function Login() {
   let [start, setStart] = useState({
@@ -11,7 +10,8 @@ function Login() {
     password2: "",
   });
 
-  function submit() {
+  function submit(e) {
+    e.preventDefault();
     console.log(JSON.stringify(start));
   }
 
