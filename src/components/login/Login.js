@@ -8,16 +8,6 @@ function Login() {
     github: "",
     password: "",
   });
-  let [login, setLogin] = useState({ email: "", password: "" });
-
-  function handleStart(e) {
-    e.preventDefault();
-    let { name, value } = e.target;
-    setStart((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  }
 
   function submit() {
     console.log(start);
@@ -29,46 +19,17 @@ function Login() {
         <form id="get_started" onSubmit={submit}>
           <span>Get Started</span>
           <span>
-            <input
-              type="text"
-              placeholder="First Name"
-              onChange={handleStart}
-              value={start.first_name}
-            />
-            <input
-              type="text"
-              placeholder="Last Name"
-              onChange={handleStart}
-              value={start.last_name}
-            />
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
           </span>
 
           <span>
-            <input
-              type="email"
-              placeholder="Your Email"
-              onChange={handleStart}
-              value={start.email}
-            />
-            <input
-              type="text"
-              placeholder="Your GitHub"
-              onChange={handleStart}
-              value={start.github}
-            />
+            <input type="email" placeholder="Your Email" />
+            <input type="text" placeholder="Your GitHub" />
           </span>
           <span>
-            <input
-              type="password"
-              placeholder="Enter password"
-              onChange={handleStart}
-              value={start.password}
-            />
-            <input
-              type="password"
-              placeholder="Re-enter password"
-              onChange={handleStart}
-            />
+            <input type="password" placeholder="Enter password" />
+            <input type="password" placeholder="Re-enter password" />
           </span>
           <span>
             <button type="submit">Get Started</button>
@@ -78,7 +39,7 @@ function Login() {
             Already a member <a href="#">Log In</a>
           </span>
         </form>
-        <form id="log_in" onSubmit={handleStart}>
+        <form id="log_in">
           <span>Log In</span>
           <span>
             <label></label>
