@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function Login() {
-  let [start, seStart] = useState({
+  let [start, setStart] = useState({
     first_name: "",
     last_name: "",
     email: "",
@@ -9,6 +9,17 @@ function Login() {
     password: "",
   });
   let [login, setLogin] = useState({ email: "", password: "" });
+
+  function handleStart(e) {
+    e.preventDefault();
+    let { name, value } = e.target;
+    setStart((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  }
+
+  console.log(start);
   return (
     <section id="login">
       <section>
@@ -35,7 +46,7 @@ function Login() {
             Already a member <a href="#">Log In</a>
           </span>
         </form>
-        <form id="log_in">
+        <form id="log_in" onSubmit={handleStart}>
           <span>Log In</span>
           <span>
             <label></label>
