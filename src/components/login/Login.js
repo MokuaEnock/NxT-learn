@@ -6,7 +6,8 @@ function Login() {
     last_name: "",
     email: "",
     github: "",
-    password: "",
+    password1: "",
+    password2: "",
   });
 
   function submit() {
@@ -19,17 +20,38 @@ function Login() {
         <form id="get_started" onSubmit={submit}>
           <span>Get Started</span>
           <span>
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+            <input
+              type="text"
+              placeholder="First Name"
+              value={start.first_name}
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              value={start.last_name}
+            />
           </span>
 
           <span>
-            <input type="email" placeholder="Your Email" />
-            <input type="text" placeholder="Your GitHub" />
+            <input
+              type="email"
+              placeholder="Your Email"
+              value={start.email}
+              onChange={(e) => setStart({ email: e.target.value })}
+            />
+            <input type="text" placeholder="Your GitHub" value={start.github} />
           </span>
           <span>
-            <input type="password" placeholder="Enter password" />
-            <input type="password" placeholder="Re-enter password" />
+            <input
+              type="password"
+              placeholder="Enter password"
+              value={start.password1}
+            />
+            <input
+              type="password"
+              placeholder="Re-enter password"
+              value={start.password2}
+            />
           </span>
           <span>
             <button type="submit">Get Started</button>
