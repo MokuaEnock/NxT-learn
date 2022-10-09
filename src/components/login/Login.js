@@ -19,24 +19,56 @@ function Login() {
     }));
   }
 
-  console.log(start);
+  function submit() {
+    console.log(start);
+  }
+
   return (
     <section id="login">
       <section>
-        <form id="get_started">
+        <form id="get_started" onSubmit={submit}>
           <span>Get Started</span>
           <span>
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+            <input
+              type="text"
+              placeholder="First Name"
+              onChange={handleStart}
+              value={start.first_name}
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              onChange={handleStart}
+              value={start.last_name}
+            />
           </span>
 
           <span>
-            <input type="email" placeholder="Your Email" />
-            <input type="text" placeholder="Your GitHub" />
+            <input
+              type="email"
+              placeholder="Your Email"
+              onChange={handleStart}
+              value={start.email}
+            />
+            <input
+              type="text"
+              placeholder="Your GitHub"
+              onChange={handleStart}
+              value={start.github}
+            />
           </span>
           <span>
-            <input type="password" placeholder="Enter password" />
-            <input type="password" placeholder="Re-enter password" />
+            <input
+              type="password"
+              placeholder="Enter password"
+              onChange={handleStart}
+              value={start.password}
+            />
+            <input
+              type="password"
+              placeholder="Re-enter password"
+              onChange={handleStart}
+            />
           </span>
           <span>
             <button type="submit">Get Started</button>
