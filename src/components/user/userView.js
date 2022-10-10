@@ -9,6 +9,7 @@ function UserView() {
       <UserAside />
       <UserForm />
       <UserHome />
+      <UserFooter />
     </>
   );
 }
