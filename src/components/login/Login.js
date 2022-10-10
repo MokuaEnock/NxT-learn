@@ -32,8 +32,6 @@ function Login() {
 
   function submitStart(e) {
     e.preventDefault(start);
-    let details = { user_id: 1, user_details: [start] };
-    console.log(details);
     fetch("http://localhost:8000/users")
       .then((r) => r.json())
       .then((items) => {
@@ -41,7 +39,10 @@ function Login() {
           let id = item.user_id;
           return id;
         });
-
+        let len = data.length;
+        console.log(len);
+        let details = { user_id: len++, user_details: [start] };
+        console.log("il wevufewwwwwwwewwwwwwwwwwwwwww", details);
         fetch("http://localhost:8000/users", {
           method: "POST",
           headers: {
@@ -53,19 +54,7 @@ function Login() {
           .then((r) => r.json())
           .then((r) => console.log(r));
         console.log(data);
-        
       });
-
-    fetch("http://localhost:8000/users", {
-      method: "POST",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(details),
-    })
-      .then((r) => r.json())
-      .then((r) => console.log(r));
   }
 
   return (
