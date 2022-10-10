@@ -1,16 +1,14 @@
 import React from "react";
-import UserForm from "./userForm";
 import UserAside from "./userAside";
 import UserFooter from "./userFooter";
-import UserHome from "./userHome";
-function UserView() {
+function UserHome() {
   return (
     <>
       <UserAside />
-      <UserForm />
-      <UserHome />
+      <section id="userHome">User Home component</section>
+      <UserFooter />
     </>
   );
 }
 
-export default UserView;
+export default UserHome;
