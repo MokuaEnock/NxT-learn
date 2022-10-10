@@ -10,7 +10,16 @@ function Login() {
     password2: "",
   });
 
-  function submit(e) {
+  let [login, setLogin] = useState({
+    email: "",
+    password: "",
+  });
+
+  function submitLogin(e) {
+    e.preventDefault();
+    console.log(login);
+  }
+  function submitStart(e) {
     e.preventDefault();
     console.log(JSON.stringify(start));
   }
@@ -18,7 +27,7 @@ function Login() {
   return (
     <section id="login">
       <section>
-        <form id="get_started" onSubmit={submit}>
+        <form id="get_started" onSubmit={submitStart}>
           <span>Get Started</span>
           <span>
             <input
@@ -79,14 +88,25 @@ function Login() {
             Already a member <a href="#">Log In</a>
           </span>
         </form>
-        <form id="log_in">
+
+        <form id="log_in" onSubmit={submitLogin}>
           <span>Log In</span>
           <span>
             <label></label>
-            <input type="text" placeholder="Username or Email" />
+            <input
+              type="text"
+              placeholder="Username or Email"
+              value={login.email}
+              onChange={(e) => setStart({ ...start, email: e.target.value })}
+            />
           </span>
           <span>
-            <input type="text" placeholder="Password" />
+            <input
+              type="text"
+              placeholder="Password"
+              value={login.password}
+              onChange={(e) => setStart({ ...start, password: e.target.value })}
+            />
           </span>
           <span>
             <button type="submit">Log In</button>
