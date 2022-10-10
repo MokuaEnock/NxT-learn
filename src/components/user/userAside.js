@@ -1,7 +1,7 @@
 import React from "react";
 
 function UserAside() {
-  return <></>;
+  return <header>User header</header>;
 }
 
 export default UserAside;

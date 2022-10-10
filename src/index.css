@@ -135,11 +135,28 @@ footer {
   outline: none;
 }
 
+/* user Aside ============================================*/
+header {
+  width: 100%;
+  height: 5vw;
+  border: thin solid black;
+  background-color: lightgreen;
+}
+
+/* user form ======================================================== */
+
+form {
+  width: 100%;
+  height: 100vh;
+}
+
+
 /* about ============================================================ */
 #about {
   width: 100%;
   height: 35.5vw;
 }
+
 
 
 /* contact ================================================================== */

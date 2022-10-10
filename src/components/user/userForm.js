@@ -1,7 +1,7 @@
 import React from "react";
 
-function UserForm(){
-    return <></>
+function UserForm() {
+  return <form>User Registration form</form>;
 }
 
-export default UserForm
+export default UserForm;
