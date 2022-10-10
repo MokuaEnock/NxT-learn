@@ -18,11 +18,43 @@ function Login() {
   function submitLogin(e) {
     e.preventDefault();
     console.log(login);
+    let details = [];
+    fetch("http://localhost:8000/users")
+      .then((r) => r.json())
+      .then((items) => {
+        let data = items.map((item) => {
+          let id = item.user_id;
+          return id;
+        });
+        console.log(data);
+      });
   }
+
   function submitStart(e) {
     e.preventDefault(start);
     let details = { user_id: 1, user_details: [start] };
     console.log(details);
+    fetch("http://localhost:8000/users")
+      .then((r) => r.json())
+      .then((items) => {
+        let data = items.map((item) => {
+          let id = item.user_id;
+          return id;
+        });
+
+        fetch("http://localhost:8000/users", {
+          method: "POST",
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(details),
+        })
+          .then((r) => r.json())
+          .then((r) => console.log(r));
+        console.log(data);
+        
+      });
 
     fetch("http://localhost:8000/users", {
       method: "POST",
