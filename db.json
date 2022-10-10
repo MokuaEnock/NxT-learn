@@ -1,3 +1,32 @@
 {
-  "users": []
+  "users": [
+    {
+      "user_id": 0,
+      "user_details": [
+        {
+          "first_name": "Enock",
+          "last_name": "Mokua",
+          "email": "mokuaenock0@gmail.com",
+          "github": "MokuaEnock",
+          "password1": "12345678",
+          "password2": "123456789"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "user_id": 1,
+      "user_details": [
+        {
+          "first_name": "Enock",
+          "last_name": "Mokua",
+          "email": "mokuaenock0@gmail.com",
+          "github": "MokuaEnock",
+          "password1": "12345678",
+          "password2": "123456789"
+        }
+      ],
+      "id": 2
+    }
+  ]
 }
