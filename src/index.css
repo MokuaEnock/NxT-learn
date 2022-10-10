@@ -199,8 +199,14 @@ header {
   font-size: 1.5vw;
 }
 
-#path_type {
-  width: 30%;
+select:focus {
+  outline: thin solid black;
+}
+
+#path_type,
+#job_experience,
+#skill_level {
+  width: 35%;
   height: 50%;
   font-size: 1.3vw;
   display: flex;
