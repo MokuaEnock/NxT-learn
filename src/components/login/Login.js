@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 function Login() {
   let [start, setStart] = useState({
@@ -18,7 +18,6 @@ function Login() {
   function submitLogin(e) {
     e.preventDefault();
     console.log(login);
-    let details = [];
     fetch("http://localhost:8000/users")
       .then((r) => r.json())
       .then((items) => {
@@ -39,10 +38,7 @@ function Login() {
           let id = item.user_id;
           return id;
         });
-        let len = data.length;
-        console.log(len);
-        let details = { user_id: len++, user_details: [start] };
-        console.log("il wevufewwwwwwwewwwwwwwwwwwwwww", details);
+        let details = { user_id: data.length++, user_details: [start] };
         fetch("http://localhost:8000/users", {
           method: "POST",
           headers: {
