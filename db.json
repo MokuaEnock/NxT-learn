@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "user_id": "0",
+      "id": "0",
       "user_details": [
         {
           "user_first_name": "John",
@@ -11,6 +11,60 @@
           "user_password": "password"
         }
       ]
+    },
+    {
+      "user_details": [
+        {
+          "first_name": "welsdwe",
+          "last_name": "eweweww",
+          "email": "e@gmail.com",
+          "github": "wedew",
+          "password1": "weeweqed",
+          "password2": "edewedqe"
+        }
+      ],
+      "id": "oPfvlhL"
+    },
+    {
+      "user_details": [
+        {
+          "first_name": "ewvqwvvv",
+          "last_name": "ervqv",
+          "email": "rr@gmail.com",
+          "github": "vqrrr",
+          "password1": "vqbeeevrr",
+          "password2": "qervr123"
+        }
+      ],
+      "id": "MJdQmeD"
+    },
+    {
+      "user_id": 1,
+      "user_details": [
+        {
+          "first_name": "ewvqwvvv",
+          "last_name": "ervqv",
+          "email": "rr@gmail.com",
+          "github": "vqrrr",
+          "password1": "vqbeeevrr",
+          "password2": "qervr123"
+        }
+      ],
+      "id": "qztpdXX"
+    },
+    {
+      "user_id": 1,
+      "user_details": [
+        {
+          "first_name": "ewvqwvvv",
+          "last_name": "ervqv",
+          "email": "rr@gmail.com",
+          "github": "vqrrr",
+          "password1": "vqbeeevrr",
+          "password2": "qervr123"
+        }
+      ],
+      "id": "wqd4rqX"
     }
   ]
 }

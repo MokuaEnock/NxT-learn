@@ -20,8 +20,20 @@ function Login() {
     console.log(login);
   }
   function submitStart(e) {
-    e.preventDefault();
-    console.log(JSON.stringify(start));
+    e.preventDefault(start);
+    let details = { user_id: 1, user_details: [start] };
+    console.log(details);
+
+    fetch("http://localhost:8000/users", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(details),
+    })
+      .then((r) => r.json())
+      .then((r) => console.log(r));
   }
 
   return (
