@@ -34,12 +34,16 @@ function Login() {
               type="text"
               placeholder="First Name"
               value={start.first_name}
+              autoComplete="on"
+              required
               onChange={(e) =>
                 setStart({ ...start, first_name: e.target.value })
               }
             />
             <input
               type="text"
+              autoComplete="on"
+              required
               placeholder="Last Name"
               value={start.last_name}
               onChange={(e) =>
@@ -51,12 +55,16 @@ function Login() {
           <span>
             <input
               type="email"
+              autoComplete="on"
+              required
               placeholder="Your Email"
               value={start.email}
               onChange={(e) => setStart({ ...start, email: e.target.value })}
             />
             <input
               type="text"
+              autoComplete="on"
+              required
               placeholder="Your GitHub"
               value={start.github}
               onChange={(e) => setStart({ ...start, github: e.target.value })}
@@ -64,6 +72,8 @@ function Login() {
           </span>
           <span>
             <input
+              required
+              autoComplete="on"
               type="password"
               placeholder="Enter password"
               value={start.password1}
@@ -73,6 +83,8 @@ function Login() {
             />
             <input
               type="password"
+              required
+              autoComplete="on"
               placeholder="Re-enter password"
               value={start.password2}
               onChange={(e) =>
@@ -94,18 +106,22 @@ function Login() {
           <span>
             <label></label>
             <input
-              type="text"
+              type="email"
+              required
+              autoComplete="on"
               placeholder="Username or Email"
               value={login.email}
-              onChange={(e) => setStart({ ...start, email: e.target.value })}
+              onChange={(e) => setLogin({ ...login, email: e.target.value })}
             />
           </span>
           <span>
             <input
-              type="text"
+              type="paassword"
+              required
+              autoComplete="on"
               placeholder="Password"
               value={login.password}
-              onChange={(e) => setStart({ ...start, password: e.target.value })}
+              onChange={(e) => setLogin({ ...login, password: e.target.value })}
             />
           </span>
           <span>
