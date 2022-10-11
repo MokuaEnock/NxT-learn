@@ -27,6 +27,15 @@
         }
       ],
       "id": 2
+    },
+    {
+      "user_path": "self_led",
+      "user_programing_level": "competent",
+      "user_job_experience": "a_beginner",
+      "user_job_interest": "yes_exp",
+      "user_career_objectives": "RVRVQ2EWWE",
+      "user_programming_level": "a_beginner",
+      "id": 3
     }
   ]
 }

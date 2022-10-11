@@ -11,7 +11,16 @@ function UserForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    
+    fetch("http://localhost:8000/users", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    })
+      .then((r) => r.json())
+      .then((r) => console.log(r));
   }
 
   return (
