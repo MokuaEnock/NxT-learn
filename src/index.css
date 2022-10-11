@@ -223,9 +223,40 @@ select:focus {
   height: 35.5vw;
 }
 
+/* userHome ==================================================================== */
 #userHome {
   width: 100%;
   height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#userHome>* {
+  display: flex;
+  align-items: center;
+  border: thin solid black;
+}
+
+#userHome>h2 {
+  width: 100%;
+  height: 5%;
+  font-size: 1.7vw;
+  justify-content: center;
+
+}
+
+#userHome>form {
+  width: 100%;
+  height: 10%;
+}
+
+#userHome>div {
+  width: 100%;
+  height: 85%;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /* contact ================================================================== */
