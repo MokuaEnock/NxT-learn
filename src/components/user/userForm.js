@@ -8,11 +8,12 @@ function UserForm() {
     user_job_interest: "",
     user_career_objectives: "",
   });
+
   function handleSubmit(e) {
     e.preventDefault();
-    console.log("hello World");
-    console.log(form);
+    
   }
+
   return (
     <section id="userForm">
       <p>Hello there Enock</p>
@@ -26,6 +27,7 @@ function UserForm() {
             <select
               name="path_type"
               id="path_type"
+              value={form}
               onChange={(e) => setForm({ ...form, user_path: e.target.value })}
             >
               <option>Select Path</option>
@@ -40,9 +42,10 @@ function UserForm() {
             </label>
             <select
               name="skill_levels"
+              value={form}
               id="skill_level"
               onChange={(e) =>
-                setForm({ ...form, user_programming_level: e.target.value })
+                setForm({ ...form, user_programing_level: e.target.value })
               }
             >
               <option>Select Experience Level</option>
@@ -59,6 +62,7 @@ function UserForm() {
             </label>
             <select
               name="job_experience"
+              value={form}
               id="job_experience"
               onChange={(e) =>
                 setForm({ ...form, user_job_experience: e.target.value })
@@ -79,6 +83,7 @@ function UserForm() {
             </label>
             <select
               name="work_experience"
+              value={form}
               id="work_experience"
               onChange={(e) =>
                 setForm({ ...form, user_job_interest: e.target.value })
@@ -95,7 +100,7 @@ function UserForm() {
             <textarea
               id="career_objectives"
               rows="5"
-              value={form.first_name}
+              value={form.user_career_objectives}
               columns="33"
               onChange={(e) =>
                 setForm({ ...form, user_career_objectives: e.target.value })
