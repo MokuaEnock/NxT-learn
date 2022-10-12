@@ -147,7 +147,7 @@ header {
 
 #userForm {
   width: 100%;
-  height: 80vh;
+  height: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,7 +226,7 @@ select:focus {
 /* userHome ==================================================================== */
 #userHome {
   width: 100%;
-  height: 80vh;
+  height: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,6 +272,12 @@ select:focus {
   width: 100%;
   height: 85%;
   background-color: aqua;
+}
+
+#course_card {
+  width: 25%;
+  height: 30vw80vw;
+  border: thin solid black;
 }
 
 /* contact ================================================================== */

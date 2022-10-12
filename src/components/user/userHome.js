@@ -26,7 +26,9 @@ function UserHome() {
           </select>
         </form>
         <div id="user_home_container">
-
+          <li id="course_card">
+            
+          </li>
         </div>
       </section>
       <UserFooter />
