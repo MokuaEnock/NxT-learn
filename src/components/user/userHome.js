@@ -25,8 +25,8 @@ function UserHome() {
             <option value="svelte">Svelte</option>
           </select>
         </form>
-        <div>
-          
+        <div id="user_home_container">
+
         </div>
       </section>
       <UserFooter />
