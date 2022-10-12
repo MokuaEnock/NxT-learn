@@ -2,6 +2,9 @@ import React from "react";
 import UserAside from "./userAside";
 import UserFooter from "./userFooter";
 function UserHome() {
+  function CourseItem() {
+    return <li id="course_card"></li>;
+  }
   return (
     <>
       <UserAside />
@@ -26,9 +29,20 @@ function UserHome() {
           </select>
         </form>
         <div id="user_home_container">
-          <li id="course_card">
-            
-          </li>
+          <h2>View Top Courses</h2>
+          <ul className="course_list">
+            <CourseItem />
+            <CourseItem />
+            <CourseItem />
+            <CourseItem />
+          </ul>
+          <h2>View New Courses</h2>
+          <ul className="course_list">
+            <CourseItem />
+            <CourseItem />
+            <CourseItem />
+            <CourseItem />
+          </ul>
         </div>
       </section>
       <UserFooter />
