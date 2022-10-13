@@ -29,20 +29,7 @@ function UserHome() {
           </select>
         </form>
         <div id="user_home_container">
-          <h2>View Top Courses</h2>
-          <ul className="course_list">
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-          </ul>
-          <h2>View New Courses</h2>
-          <ul className="course_list">
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-          </ul>
+          <ul id="course_list"></ul>
         </div>
       </section>
       <UserFooter />
