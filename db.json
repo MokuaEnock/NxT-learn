@@ -45,5 +45,219 @@
       "user_career_objectives": "",
       "id": 4
     }
+  ],
+  "results": [
+    {
+      "_class": "course",
+      "id": 2776760,
+      "title": "100 Days of Code: The Complete Python Pro Bootcamp for 2022",
+      "url": "/course/100-days-of-code/",
+      "is_paid": true,
+      "price": "$84.99",
+      "price_detail": {
+        "amount": 84.99,
+        "currency": "USD",
+        "price_string": "$84.99",
+        "currency_symbol": "$"
+      },
+      "price_serve_tracking_id": "j0oCUBOhRQ-D5izVxRIeLw",
+      "visible_instructors": [
+        {
+          "_class": "user",
+          "id": 31334738,
+          "title": "Dr. Angela Yu",
+          "name": "Dr. Angela",
+          "display_name": "Dr. Angela Yu",
+          "job_title": "Developer and Lead Instructor",
+          "image_50x50": "https://img-c.udemycdn.com/user/50x50/31334738_a13c_3.jpg",
+          "image_100x100": "https://img-c.udemycdn.com/user/100x100/31334738_a13c_3.jpg",
+          "initials": "DY",
+          "url": "/user/4b4368a3-b5c8-4529-aa65-2056ec31f37e/"
+        }
+      ],
+      "image_125_H": "https://img-c.udemycdn.com/course/125_H/2776760_f176_10.jpg",
+      "image_240x135": "https://img-c.udemycdn.com/course/240x135/2776760_f176_10.jpg",
+      "is_practice_test_course": false,
+      "image_480x270": "https://img-c.udemycdn.com/course/480x270/2776760_f176_10.jpg",
+      "published_title": "100-days-of-code",
+      "tracking_id": "",
+      "predictive_score": null,
+      "relevancy_score": null,
+      "input_features": null,
+      "lecture_search_result": null,
+      "curriculum_lectures": [],
+      "order_in_results": null,
+      "curriculum_items": [],
+      "headline": "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
+      "instructor_name": null
+    },
+    {
+      "_class": "course",
+      "id": 629302,
+      "title": "Learn Python Programming Masterclass",
+      "url": "/course/python-the-complete-python-developer-course/",
+      "is_paid": true,
+      "price": "$84.99",
+      "price_detail": {
+        "amount": 84.99,
+        "currency": "USD",
+        "price_string": "$84.99",
+        "currency_symbol": "$"
+      },
+      "price_serve_tracking_id": "c_qcMwqLQcSlH5sPsOU-Fg",
+      "visible_instructors": [
+        {
+          "_class": "user",
+          "id": 599932,
+          "title": "Tim Buchalka",
+          "name": "Tim",
+          "display_name": "Tim Buchalka",
+          "job_title": "Java Python Android and C# Expert Developer - 1.22M students",
+          "image_50x50": "https://img-c.udemycdn.com/user/50x50/599932_71aa_5.jpg",
+          "image_100x100": "https://img-c.udemycdn.com/user/100x100/599932_71aa_5.jpg",
+          "initials": "TB",
+          "url": "/user/timbuchalka/"
+        },
+        {
+          "_class": "user",
+          "id": 11566988,
+          "title": "Jean-Paul Roberts",
+          "name": "Jean-Paul",
+          "display_name": "Jean-Paul Roberts",
+          "job_title": "Computer programmer, analyst and teacher",
+          "image_50x50": "https://img-c.udemycdn.com/user/50x50/11566988_f5b1_2.jpg",
+          "image_100x100": "https://img-c.udemycdn.com/user/100x100/11566988_f5b1_2.jpg",
+          "initials": "JR",
+          "url": "/user/jeanpaulroberts/"
+        },
+        {
+          "_class": "user",
+          "id": 35101150,
+          "title": "Tim Buchalka's Learn Programming Academy",
+          "name": "Tim Buchalka's Learn",
+          "display_name": "Tim Buchalka's Learn Programming Academy",
+          "job_title": "Professional Programmers and Teachers - 1.65M students",
+          "image_50x50": "https://img-c.udemycdn.com/user/50x50/35101150_6f0c_4.jpg",
+          "image_100x100": "https://img-c.udemycdn.com/user/100x100/35101150_6f0c_4.jpg",
+          "initials": "TP",
+          "url": "/user/learn-programming-academy/"
+        }
+      ],
+      "image_125_H": "https://img-c.udemycdn.com/course/125_H/629302_8a2d_2.jpg",
+      "image_240x135": "https://img-c.udemycdn.com/course/240x135/629302_8a2d_2.jpg",
+      "is_practice_test_course": false,
+      "image_480x270": "https://img-c.udemycdn.com/course/480x270/629302_8a2d_2.jpg",
+      "published_title": "python-the-complete-python-developer-course",
+      "tracking_id": "",
+      "predictive_score": null,
+      "relevancy_score": null,
+      "input_features": null,
+      "lecture_search_result": null,
+      "curriculum_lectures": [],
+      "order_in_results": null,
+      "curriculum_items": [],
+      "headline": "This Python For Beginners Course Teaches You The Python Language  Fast.  Includes Python Online Training With Python 3",
+      "instructor_name": null
+    },
+    {
+      "_class": "course",
+      "id": 2473048,
+      "title": "Complete Python Developer in 2022: Zero to Mastery",
+      "url": "/course/complete-python-developer-zero-to-mastery/",
+      "is_paid": true,
+      "price": "$84.99",
+      "price_detail": {
+        "amount": 84.99,
+        "currency": "USD",
+        "price_string": "$84.99",
+        "currency_symbol": "$"
+      },
+      "price_serve_tracking_id": "lAM0J75dR9eAVg_fR0wAOQ",
+      "visible_instructors": [
+        {
+          "_class": "user",
+          "id": 38516954,
+          "title": "Andrei Neagoie",
+          "name": "Andrei",
+          "display_name": "Andrei Neagoie",
+          "job_title": "Founder of zerotomastery.io",
+          "image_50x50": "https://img-c.udemycdn.com/user/50x50/38516954_b11c_3.jpg",
+          "image_100x100": "https://img-c.udemycdn.com/user/100x100/38516954_b11c_3.jpg",
+          "initials": "AN",
+          "url": "/user/andrei-neagoie/"
+        },
+        {
+          "_class": "user",
+          "id": 173002169,
+          "title": "Zero To Mastery",
+          "name": "Zero To",
+          "display_name": "Zero To Mastery",
+          "job_title": "Learn In-Demand Skills. Get Hired.",
+          "image_50x50": "https://img-c.udemycdn.com/user/50x50/173002169_0cf4_2.jpg",
+          "image_100x100": "https://img-c.udemycdn.com/user/100x100/173002169_0cf4_2.jpg",
+          "initials": "ZM",
+          "url": "/user/zero-to-mastery-2/"
+        }
+      ],
+      "image_125_H": "https://img-c.udemycdn.com/course/125_H/2473048_8255_5.jpg",
+      "image_240x135": "https://img-c.udemycdn.com/course/240x135/2473048_8255_5.jpg",
+      "is_practice_test_course": false,
+      "image_480x270": "https://img-c.udemycdn.com/course/480x270/2473048_8255_5.jpg",
+      "published_title": "complete-python-developer-zero-to-mastery",
+      "tracking_id": "",
+      "predictive_score": null,
+      "relevancy_score": null,
+      "input_features": null,
+      "lecture_search_result": null,
+      "curriculum_lectures": [],
+      "order_in_results": null,
+      "curriculum_items": [],
+      "headline": "How to become a Python 3 Developer and get hired! Build 12+ projects, learn Web Development, Machine Learning + more!",
+      "instructor_name": null
+    },
+    {
+      "_class": "course",
+      "id": 692188,
+      "title": "The Python Mega Course: Build 10 Real World Applications",
+      "url": "/course/the-python-mega-course/",
+      "is_paid": true,
+      "price": "$84.99",
+      "price_detail": {
+        "amount": 84.99,
+        "currency": "USD",
+        "price_string": "$84.99",
+        "currency_symbol": "$"
+      },
+      "price_serve_tracking_id": "BXg-Rtg1SJ-CpUy49Li2FQ",
+      "visible_instructors": [
+        {
+          "_class": "user",
+          "id": 717783,
+          "title": "Ardit Sulce",
+          "name": "Ardit",
+          "display_name": "Ardit Sulce",
+          "job_title": "Python Programmer. Founder and Author, PythonHow.",
+          "image_50x50": "https://img-c.udemycdn.com/user/50x50/717783_3157_7.jpg",
+          "image_100x100": "https://img-c.udemycdn.com/user/100x100/717783_3157_7.jpg",
+          "initials": "AS",
+          "url": "/user/adiune/"
+        }
+      ],
+      "image_125_H": "https://img-c.udemycdn.com/course/125_H/692188_9da7_29.jpg",
+      "image_240x135": "https://img-c.udemycdn.com/course/240x135/692188_9da7_29.jpg",
+      "is_practice_test_course": false,
+      "image_480x270": "https://img-c.udemycdn.com/course/480x270/692188_9da7_29.jpg",
+      "published_title": "the-python-mega-course",
+      "tracking_id": "",
+      "predictive_score": null,
+      "relevancy_score": null,
+      "input_features": null,
+      "lecture_search_result": null,
+      "curriculum_lectures": [],
+      "order_in_results": null,
+      "curriculum_items": [],
+      "headline": "Become a Python programmer by learning how to build any Python program from scratch, GUIs, web apps, APIs, and more.",
+      "instructor_name": null
+    }
   ]
 }
