@@ -9,13 +9,17 @@ function UserHome() {
       .then((r) => setItem(r));
   }, []);
 
+  function handleViewClick() {
+    this.style.display = "none";
+  }
+
   let itemList = item.map((e) => {
     return (
       <li id="course_card" key={e.id}>
         <h2>{e.title}</h2>
         <span>
           <button>View</button>
-          <button>Add to Path</button>
+          <button onClick={handleViewClick}>Add to Path</button>
         </span>
       </li>
     );
