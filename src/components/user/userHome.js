@@ -3,7 +3,14 @@ import UserAside from "./userAside";
 import UserFooter from "./userFooter";
 function UserHome() {
   function CourseItem() {
-    return <li id="course_card"></li>;
+    return (
+      <li id="course_card">
+        <span>
+          <button>View</button>
+          <button>Add to Path</button>
+        </span>
+      </li>
+    );
   }
   return (
     <>
