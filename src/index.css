@@ -285,6 +285,7 @@ select:focus {
 }
 
 #course_card {
+  font-size: 1.3vw;
   width: 20vw;
   height: 25vw;
   border: thin solid;

@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import UserAside from "./userAside";
 import UserFooter from "./userFooter";
 function UserHome() {
-  function CourseItem() {
+  let [item, setItem] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:8000/results")
+      .then((r) => r.json())
+      .then((r) => setItem(r));
+  }, []);
+
+  let itemList = item.map((e) => {
     return (
-      <li id="course_card">
+      <li id="course_card" key={e.id}>
+        <h2>{e.title}</h2>
         <span>
           <button>View</button>
           <button>Add to Path</button>
         </span>
       </li>
     );
-  }
+  });
+
   return (
     <>
       <UserAside />
@@ -36,21 +45,7 @@ function UserHome() {
           </select>
         </form>
         <div id="user_home_container">
-          <ul id="course_list">
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-            <CourseItem />
-          </ul>
+          <ul id="course_list">{itemList}</ul>
         </div>
       </section>
       <UserFooter />
