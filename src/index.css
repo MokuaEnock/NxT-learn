@@ -280,8 +280,18 @@ select:focus {
   width: 30%;
   height: 100%;
   border: thin solid;
+  list-style: none;
+  overflow-y: scroll;
 }
 
+#course_card {
+  width: 20vw;
+  height: 25vw;
+  border: thin solid;
+  margin-top: .5vw;
+  margin-bottom: .5vw;
+  margin-left: 14%;
+}
 
 /* contact ================================================================== */
 #contact {
