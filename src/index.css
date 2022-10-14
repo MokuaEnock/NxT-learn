@@ -329,7 +329,30 @@ select:focus {
 #user_path {
   height: 60vw;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
+#path_list {
+  width: 30%;
+  height: 100%;
+  border: thin solid;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+#path_description {
+  width: 70%;
+  height: 100%;
+  border: thin solid;
+  list-style: none;
+  overflow-y: scroll;
+  background-color: olivedrab;
+}
+
+
 
 /* contact ================================================================== */
 #contact {
