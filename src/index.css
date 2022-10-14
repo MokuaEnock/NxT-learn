@@ -289,6 +289,7 @@ select:focus {
   height: 100%;
   border: thin solid;
   background-color: aqua;
+  list-style: none;
 }
 
 #course_card {
