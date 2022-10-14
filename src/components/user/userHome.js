@@ -9,17 +9,17 @@ function UserHome() {
       .then((r) => setItem(r));
   }, []);
 
-  function handleViewClick() {
-    this.style.display = "none";
-  }
+  const handler = (index) => () => {
+    console.log(index);
+  };
 
-  let itemList = item.map((e) => {
+  let itemList = item.map((e, index) => {
     return (
-      <li id="course_card" key={e.id}>
+      <li id="course_card" key={index}>
         <h2>{e.title}</h2>
         <span>
           <button>View</button>
-          <button onClick={handleViewClick}>Add to Path</button>
+          <button onClick={handler(index)}>Add to Path</button>
         </span>
       </li>
     );
