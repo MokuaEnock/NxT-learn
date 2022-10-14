@@ -16,15 +16,14 @@ function UserHome() {
     return setNewItem([newItem]);
   };
 
-  console.log("hopeleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", newItem);
 
   let itemList = item.map((e, index) => {
     return (
       <li id="course_card" key={index}>
         <h2>{e.title}</h2>
         <span>
-          <button>View</button>
-          <button onClick={handler(index)}>Add to Path</button>
+          <button>Add to Path</button>
+          <button onClick={handler(index)}>View</button>
         </span>
       </li>
     );
