@@ -13,7 +13,7 @@ function UserHome() {
 
   const handler = (index) => () => {
     let newItem = item[index];
-    return setNewItem(newItem);
+    return setNewItem([newItem]);
   };
 
   console.log("hopeleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", newItem);
@@ -26,6 +26,14 @@ function UserHome() {
           <button>View</button>
           <button onClick={handler(index)}>Add to Path</button>
         </span>
+      </li>
+    );
+  });
+
+  let itemDescriptor = newItem.map((e) => {
+    return (
+      <li key={e.id}>
+        <h2>{e.title}</h2>
       </li>
     );
   });
@@ -55,7 +63,7 @@ function UserHome() {
         </form>
         <div id="user_home_container">
           <ul id="course_list">{itemList}</ul>
-          <ul id="course_detail"></ul>
+          <ul id="course_detail">{itemDescriptor}</ul>
         </div>
       </section>
       <UserFooter />
