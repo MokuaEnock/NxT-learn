@@ -284,6 +284,13 @@ select:focus {
   overflow-y: scroll;
 }
 
+#course_detail {
+  width: 70%;
+  height: 100%;
+  border: thin solid;
+  background-color: aqua;
+}
+
 #course_card {
   font-size: 1.3vw;
   width: 20vw;

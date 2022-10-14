@@ -10,9 +10,13 @@ function UserHome() {
   }, []);
 
   const handler = (index) => () => {
-    console.log(index);
+    let newItem = item[index];
+    return (
+      <li key={newItem.id}>
+        <h2>{newItem.title}</h2>
+      </li>
+    );
   };
-
   let itemList = item.map((e, index) => {
     return (
       <li id="course_card" key={index}>
@@ -50,6 +54,7 @@ function UserHome() {
         </form>
         <div id="user_home_container">
           <ul id="course_list">{itemList}</ul>
+          <ul id="course_detail"></ul>
         </div>
       </section>
       <UserFooter />
