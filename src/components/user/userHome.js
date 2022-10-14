@@ -3,6 +3,8 @@ import UserAside from "./userAside";
 import UserFooter from "./userFooter";
 function UserHome() {
   let [item, setItem] = useState([]);
+  let [newItem, setNewItem] = useState([]);
+
   useEffect(() => {
     fetch("http://localhost:8000/results")
       .then((r) => r.json())
@@ -11,12 +13,11 @@ function UserHome() {
 
   const handler = (index) => () => {
     let newItem = item[index];
-    return (
-      <li key={newItem.id}>
-        <h2>{newItem.title}</h2>
-      </li>
-    );
+    return setNewItem(newItem);
   };
+
+  console.log("hopeleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", newItem);
+
   let itemList = item.map((e, index) => {
     return (
       <li id="course_card" key={index}>
