@@ -41,6 +41,17 @@ function UserHome() {
     );
   });
 
+  let cartItems = cart.map((e, index) => {
+    return (
+      <li id="cart_card" key={index}>
+        <h2>{e.title}</h2>
+        <span>
+          <button>Remove</button>
+        </span>
+      </li>
+    );
+  });
+
   function displayCart(e) {
     e.preventDefault();
     let cart = document.querySelector("#items_cart");
@@ -57,7 +68,7 @@ function UserHome() {
       list.style.display = "block";
     } else {
       list.style.display = "none";
-    } 
+    }
   }
 
   return (
@@ -89,7 +100,9 @@ function UserHome() {
         <div id="user_home_container">
           <ul id="course_list">{itemList}</ul>
           <ul id="course_detail">{itemDescriptor}</ul>
-          <ul id="items_cart" style={{ display: "none" }}></ul>
+          <ul id="items_cart" style={{ display: "none" }}>
+            {cartItems}
+          </ul>
         </div>
       </section>
       <UserFooter />

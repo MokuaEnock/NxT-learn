@@ -298,7 +298,23 @@ select:focus {
   border: thin solid;
   background-color: peru;
   list-style: none;
-  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#cart_card {
+  font-size: 1.3vw;
+
+  width: 17vw;
+  height: 40%;
+  border: thin solid;
+  background-color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #course_card {
@@ -316,7 +332,8 @@ select:focus {
   justify-content: flex-end;
 }
 
-#course_card>span {
+#course_card>span,
+#cart_card>span {
   width: 100%;
   height: 20%;
   background-color: aqua;
@@ -328,6 +345,13 @@ select:focus {
 }
 
 #course_card>span>button {
+  width: 40%;
+  height: 60%;
+  font-size: 1.3vw;
+  border: thin solid;
+}
+
+#cart_card>span>button {
   width: 40%;
   height: 60%;
   font-size: 1.3vw;
