@@ -66,6 +66,12 @@ main {
 
 }
 
+#main_section {
+  width: 100%;
+  height: 35vw;
+  background-color: white;
+}
+
 footer {
   width: 100%;
   height: 10vw;
@@ -300,7 +306,7 @@ select:focus {
   list-style: none;
   grid-gap: 2vw;
   overflow-y: scroll;
-  grid-template-rows: repeat(4, 25vw);
+  grid-template-rows: repeat(2, 25vw);
   grid-template-columns: repeat(4, 20vw);
 }
 
