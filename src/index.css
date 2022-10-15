@@ -285,11 +285,20 @@ select:focus {
 }
 
 #course_detail {
-  width: 70%;
+  width: 30%;
   height: 100%;
   border: thin solid;
   background-color: aqua;
   list-style: none;
+}
+
+#items_cart {
+  width: 30%;
+  height: 100%;
+  border: thin solid;
+  background-color: peru;
+  list-style: none;
+  overflow-y: scroll;
 }
 
 #course_card {

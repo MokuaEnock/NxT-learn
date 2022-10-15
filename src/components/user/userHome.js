@@ -43,6 +43,7 @@ function UserHome() {
 
   function displayCart(e) {
     e.preventDefault();
+    let cart = document.querySelector("#items_cart");
     let list = document.querySelector("#course_list");
     let detail = document.querySelector("#course_detail");
     if (detail.style.display === "none") {
@@ -54,7 +55,12 @@ function UserHome() {
       list.style.display = "block";
     } else {
       list.style.display = "none";
-    }
+    } /*
+    if (cart.style.display === "none") {
+      cart.style.display = "block";
+    } else {
+      cart.style.display = "none";
+    } */
   }
 
   return (
@@ -82,9 +88,15 @@ function UserHome() {
 
           <button onClick={displayCart}>{cart.length} Courses Selected</button>
         </form>
+
         <div id="user_home_container">
-          <ul id="course_list">{itemList}</ul>
-          <ul id="course_detail">{itemDescriptor}</ul>
+          <ul id="course_list" style={{  width: "10%" }}>
+            {itemList}
+          </ul>
+          <ul id="course_detail" style={{ width: "10%" }}>
+            {itemDescriptor}
+          </ul>
+          <ul id="items_cart" style={{ width: "10%" }}></ul>
         </div>
       </section>
       <UserFooter />
