@@ -298,17 +298,17 @@ select:focus {
   border: thin solid;
   background-color: peru;
   list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  grid-gap: 2vw;
+  overflow-y: scroll;
+  grid-template-rows: repeat(4, 25vw);
+  grid-template-columns: repeat(4, 20vw);
 }
 
 #cart_card {
   font-size: 1.3vw;
-
-  width: 17vw;
-  height: 40%;
+  margin-left: 2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
   border: thin solid;
   background-color: darkcyan;
   display: flex;

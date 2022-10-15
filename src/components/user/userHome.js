@@ -47,6 +47,7 @@ function UserHome() {
         <h2>{e.title}</h2>
         <span>
           <button>Remove</button>
+          <button>Checkout</button>
         </span>
       </li>
     );
@@ -62,7 +63,7 @@ function UserHome() {
       detail.style.display = "flex";
     } else {
       detail.style.display = "none";
-      cart.style.display = "flex";
+      cart.style.display = "grid";
     }
     if (list.style.display === "none") {
       list.style.display = "block";
