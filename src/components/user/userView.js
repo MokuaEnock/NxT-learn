@@ -5,6 +5,7 @@ import UserFooter from "./userFooter";
 import UserHome from "./userHome";
 import UserPath from "./userPath";
 function UserView() {
+  
   return (
     <>
       <UserAside />

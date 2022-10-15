@@ -4,7 +4,7 @@ import UserFooter from "./userFooter";
 function UserHome() {
   let [item, setItem] = useState([]);
   let [newItem, setNewItem] = useState([]);
-
+  let [cart, setCart] = useState([]);
   useEffect(() => {
     fetch("http://localhost:8000/results")
       .then((r) => r.json())
@@ -16,13 +16,21 @@ function UserHome() {
     return setNewItem([newItem]);
   };
 
+  let addnew = (index) => () => {
+    let newItem = item[index];
+    setCart([...cart, newItem]);
+    console.log(newItem);
+  };
+
+
+  console.log(cart);
 
   let itemList = item.map((e, index) => {
     return (
       <li id="course_card" key={index}>
         <h2>{e.title}</h2>
         <span>
-          <button>Add to Path</button>
+          <button onClick={addnew(index)}>Add to Path</button>
           <button onClick={handler(index)}>View</button>
         </span>
       </li>
