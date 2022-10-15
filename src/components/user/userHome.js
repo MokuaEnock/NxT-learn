@@ -45,9 +45,16 @@ function UserHome() {
     e.preventDefault();
     let list = document.querySelector("#course_list");
     let detail = document.querySelector("#course_detail");
-    detail.style.display = "none";
-    list.style.display = "none";
-    console.log(list, detail);
+    if (detail.style.display === "none") {
+      detail.style.display = "flex";
+    } else {
+      detail.style.display = "none";
+    }
+    if (list.style.display === "none") {
+      list.style.display = "block";
+    } else {
+      list.style.display = "none";
+    }
   }
 
   return (
