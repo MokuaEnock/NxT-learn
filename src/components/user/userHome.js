@@ -19,11 +19,7 @@ function UserHome() {
   let addnew = (index) => () => {
     let newItem = item[index];
     setCart([...cart, newItem]);
-    console.log(newItem);
   };
-
-
-  console.log(cart);
 
   let itemList = item.map((e, index) => {
     return (
@@ -44,6 +40,15 @@ function UserHome() {
       </li>
     );
   });
+
+  function displayCart(e) {
+    e.preventDefault();
+    let list = document.querySelector("#course_list");
+    let detail = document.querySelector("#course_detail");
+    detail.style.display = "none";
+    list.style.display = "none";
+    console.log(list, detail);
+  }
 
   return (
     <>
@@ -67,6 +72,8 @@ function UserHome() {
             <option value="bootstrap">Bootstrap</option>
             <option value="svelte">Svelte</option>
           </select>
+
+          <button onClick={displayCart}>{cart.length} Courses Selected</button>
         </form>
         <div id="user_home_container">
           <ul id="course_list">{itemList}</ul>
