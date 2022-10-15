@@ -47,20 +47,17 @@ function UserHome() {
     let list = document.querySelector("#course_list");
     let detail = document.querySelector("#course_detail");
     if (detail.style.display === "none") {
+      cart.style.display = "none";
       detail.style.display = "flex";
     } else {
       detail.style.display = "none";
+      cart.style.display = "flex";
     }
     if (list.style.display === "none") {
       list.style.display = "block";
     } else {
       list.style.display = "none";
-    } /*
-    if (cart.style.display === "none") {
-      cart.style.display = "block";
-    } else {
-      cart.style.display = "none";
-    } */
+    } 
   }
 
   return (
@@ -90,13 +87,9 @@ function UserHome() {
         </form>
 
         <div id="user_home_container">
-          <ul id="course_list" style={{  width: "10%" }}>
-            {itemList}
-          </ul>
-          <ul id="course_detail" style={{ width: "10%" }}>
-            {itemDescriptor}
-          </ul>
-          <ul id="items_cart" style={{ width: "10%" }}></ul>
+          <ul id="course_list">{itemList}</ul>
+          <ul id="course_detail">{itemDescriptor}</ul>
+          <ul id="items_cart" style={{ display: "none" }}></ul>
         </div>
       </section>
       <UserFooter />
