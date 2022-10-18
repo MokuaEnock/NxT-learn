@@ -302,9 +302,9 @@ select:focus {
   width: 100%;
   height: 100%;
   border: thin solid;
-  background-color: peru;
+  background-color: white;
   list-style: none;
-  grid-gap: 2vw;
+  column-gap: 1vw;
   overflow-y: scroll;
   grid-template-rows: repeat(2, 30vw);
   grid-template-columns: repeat(3, 27vw);
@@ -349,20 +349,21 @@ select:focus {
   margin-left: 2vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
-  border: thin solid;
-  background-color: darkcyan;
+  border: thin solid #81D4FA;
+  background-color: #81D4FA;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   border-radius: .5vw;
+  box-shadow: .02vw .02vw 1vw grey;
+
 }
 
 #cart_title {
   width: 100%;
   max-height: 15%;
   font-size: 1.7vw;
-
 }
 
 #cart_instructors {
@@ -372,12 +373,13 @@ select:focus {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
 #cart_instructors>a {
   width: 15%;
   height: 95%;
-  background-color: aquamarine;
+  background-color: white;
   margin-left: 0.1vw;
   margin-right: 0.1vw;
   border-radius: 50%;
@@ -385,22 +387,26 @@ select:focus {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border: 0.1vw solid #81d4fa;
+}
+
+#cart_instructors>a>img {
+  font-size: 1vw;
+  border: inherit;
+  border-radius: inherit;
 }
 
 #cart_details {
   text-align: justify;
   width: 100%;
   max-height: 17%;
-  border: thin solid black;
   background-color: white;
   font-size: 1.2vw;
 }
 
 #cart_requires {
   width: 100%;
-  height: 60%;
-  border: thin solid black;
-  background-color: chartreuse;
+  height: 55%;
 }
 
 #cart_requires>p {
@@ -415,36 +421,47 @@ select:focus {
   background-color: aliceblue;
 }
 
-
 #cart_buttons {
   width: 100%;
-  height: 15%;
-  background-color: aqua;
-  border: thin solid;
+  height: 20%;
+  background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  border-radius: inherit;
 }
 
 #cart_buttons #remove {
   width: 25%;
-  height: 100%;
-  font-size: 1.3vw;
+  height: 90%;
+  font-size: 1.5vw;
+  font-weight: 600;
   border: thin solid transparent;
+  background-color: red;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  color: white;
+  border: inherit;
 }
 
 #cart_buttons #start {
   width: 45%;
-  height: 100%;
-  font-size: 1.3vw;
+  height: 90%;
+  font-size: 1.5vw;
   border: thin solid transparent;
+  background-color: #81d4fa;
 }
 
 #cart_buttons #enroll {
   width: 25%;
-  height: 100%;
-  font-size: 1.3vw;
+  height: 90%;
+  color: white;
+  background-color: green;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  font-size: 1.5vw;
+  font-weight: 600;
   border: thin solid transparent;
 }
 

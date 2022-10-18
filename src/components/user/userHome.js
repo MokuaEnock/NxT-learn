@@ -59,7 +59,7 @@ function UserHome() {
         </span>
         <span id="cart_buttons">
           <button id="remove">Remove</button>
-          <button id="start">Starts:OCT 17</button>
+          <button id="start">Starts: OCT 17</button>
           <button id="enroll">Enroll</button>
         </span>
       </li>
