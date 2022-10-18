@@ -22,9 +22,18 @@ function UserHome() {
   };
 
   let itemList = item.map((e, index) => {
+    let instructors = e.visible_instructors;
+    let insts = instructors.map((i, index) => {
+      return (
+        <a href={i.url} key={index} id="course_card_instructor_items">
+          <img src={i.image_100x100} alt="instructor" />
+        </a>
+      );
+    });
     return (
       <li id="course_card" key={index}>
-        <h2>{e.title}</h2>
+        <h2 id="course_card_title">{e.title}</h2>
+        <ul id="course_card_instructors">{insts}</ul>
         <span id="course_card_buttons">
           <button onClick={addnew(index)}>Add to Path</button>
           <button onClick={handler(index)}>View</button>
