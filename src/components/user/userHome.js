@@ -16,7 +16,6 @@ function UserHome() {
     return setNewItem([newItem]);
   };
 
-  console.log(item);
 
   let addnew = (index) => () => {
     let newItem = item[index];
