@@ -44,19 +44,20 @@ function UserHome() {
   });
 
   let cartItems = cart.map((e, index) => {
+    let instructors = e.visible_instructors;
+    let insts = instructors.map((i, index) => {
+      return (
+        <a href={i.url} key={index}>
+          <img src={i.image_100x100} alt="instructor" />
+        </a>
+      );
+    });
     return (
       <li id="cart_card" key={index}>
         <h2 id="cart_title">{e.title}</h2>
         <span id="cart_details">{e.headline}</span>
-        <span id="cart_instructors">
-          <a href="#">Img</a>
-          <a href="#">Img</a>
-          <a href="#">Img</a>
-          <a href="#">Img</a>
-        </span>
-        <span id="cart_requires">
-          <p>Requirements</p>
-        </span>
+        <span id="cart_instructors">{insts}</span>
+        <span id="cart_requires"></span>
         <span id="cart_buttons">
           <button id="remove">Remove</button>
           <button id="start">Starts: OCT 17</button>
