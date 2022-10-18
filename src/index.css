@@ -306,40 +306,11 @@ select:focus {
   list-style: none;
   grid-gap: 2vw;
   overflow-y: scroll;
-  grid-template-rows: repeat(2, 25vw);
-  grid-template-columns: repeat(4, 20vw);
+  grid-template-rows: repeat(2, 30vw);
+  grid-template-columns: repeat(3, 27vw);
 }
 
-#cart_card {
-  font-size: 1.3vw;
-  margin-left: 2vw;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-  border: thin solid;
-  background-color: darkcyan;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-#course_card {
-  font-size: 1.3vw;
-  width: 20vw;
-  height: 25vw;
-  border: thin solid;
-  margin-top: .5vw;
-  margin-bottom: .5vw;
-  background-color: darksalmon;
-  margin-left: 14%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-#course_card>span,
-#cart_card>span {
+#course_card>span {
   width: 100%;
   height: 20%;
   background-color: aqua;
@@ -357,11 +328,76 @@ select:focus {
   border: thin solid;
 }
 
-#cart_card>span>button {
-  width: 40%;
-  height: 60%;
+
+#course_card {
   font-size: 1.3vw;
+  width: 20vw;
+  height: 25vw;
   border: thin solid;
+  margin-top: .5vw;
+  margin-bottom: .5vw;
+  background-color: darksalmon;
+  margin-left: 14%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#cart_card {
+  font-size: 1.3vw;
+  margin-left: 2vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  border: thin solid;
+  background-color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: .5vw;
+}
+
+#cart_title {
+  width: 100%;
+  max-height: 15%;
+  font-size: 1.7vw;
+  
+}
+
+#cart_details {
+  text-align: justify;
+  width: 100%;
+  max-height: 17%;
+  border: thin solid black;
+  background-color: white;
+  font-size: 1.2vw;
+}
+
+#cart_requires {
+  width: 100%;
+  height: 60%;
+  border: thin solid black;
+  background-color: chartreuse;
+}
+
+
+#cart_buttons {
+  width: 100%;
+  height: 10%;
+  background-color: aqua;
+  border: thin solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#cart_buttons>button {
+  width: 40%;
+  height: 100%;
+  font-size: 1.3vw;
+  border: thin solid transparent;
 }
 
 /* user_path =================================================================== */

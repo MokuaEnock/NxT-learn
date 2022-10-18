@@ -16,6 +16,8 @@ function UserHome() {
     return setNewItem([newItem]);
   };
 
+  console.log(item);
+
   let addnew = (index) => () => {
     let newItem = item[index];
     setCart([...cart, newItem]);
@@ -44,8 +46,10 @@ function UserHome() {
   let cartItems = cart.map((e, index) => {
     return (
       <li id="cart_card" key={index}>
-        <h2>{e.title}</h2>
-        <span>
+        <h2 id="cart_title">{e.title}</h2>
+        <span id="cart_details">{e.headline}</span>
+        <span id="cart_requires"></span>
+        <span id="cart_buttons">
           <button>Remove</button>
           <button>Checkout</button>
         </span>
