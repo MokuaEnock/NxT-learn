@@ -305,7 +305,7 @@ select:focus {
 #course_list {
   width: 30%;
   height: 100%;
-  background-color: #81D4FA;
+  background-color: azure;
   list-style: none;
   overflow-y: scroll;
 }
@@ -329,38 +329,40 @@ select:focus {
   grid-template-columns: repeat(3, 27vw);
 }
 
-#course_card>span {
-  width: 100%;
-  height: 20%;
-  background-color: aqua;
-  border: thin solid;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#course_card>span>button {
-  width: 40%;
-  height: 60%;
-  font-size: 1.3vw;
-  border: thin solid;
-}
-
-
 #course_card {
   font-size: 1.3vw;
   width: 20vw;
   height: 25vw;
-  border: thin solid;
   margin-top: .5vw;
+  border: thin solid #81d4fa;
+  background-color: #81D4FA;
   margin-bottom: .5vw;
-  background-color: darksalmon;
+  border-radius: .5vw;
   margin-left: 14%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+}
+
+#course_card_buttons {
+  background-color: white;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: inherit;
+}
+
+#course_card_buttons>button {
+  border-radius: inherit;
+  background-color: #81D4FA;
+  width: 45%;
+  height: 90%;
+  font-size: 1.3vw;
+  border: thin solid #81D4FA;
 }
 
 #cart_card {

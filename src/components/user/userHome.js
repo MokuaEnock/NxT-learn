@@ -16,7 +16,6 @@ function UserHome() {
     return setNewItem([newItem]);
   };
 
-
   let addnew = (index) => () => {
     let newItem = item[index];
     setCart([...cart, newItem]);
@@ -26,7 +25,7 @@ function UserHome() {
     return (
       <li id="course_card" key={index}>
         <h2>{e.title}</h2>
-        <span>
+        <span id="course_card_buttons">
           <button onClick={addnew(index)}>Add to Path</button>
           <button onClick={handler(index)}>View</button>
         </span>
