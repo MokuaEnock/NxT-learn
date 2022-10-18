@@ -52,17 +52,20 @@ button {
 
 /* home  =========================================================================== */
 
-header {
+#header {
   width: 100%;
   height: 5vw;
-  border: thin solid black;
-  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #81D4FA;
+  border-bottom: thin solid white;
 }
 
 main {
   width: 100%;
   height: 35.5vw;
-  border: thin solid black;
 
 }
 
@@ -75,8 +78,8 @@ main {
 footer {
   width: 100%;
   height: 10vw;
-  border: thin solid black;
-  background-color: bisque;
+  border: thin solid white;
+  background-color: #81D4FA;
 
 }
 
@@ -145,8 +148,12 @@ footer {
 header {
   width: 100%;
   height: 5vw;
-  border: thin solid black;
-  background-color: lightgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #81D4FA;
+  border-bottom: thick solid white;
 }
 
 /* user form ======================================================== */
@@ -557,7 +564,7 @@ select:focus {
   border: thin solid;
   list-style: none;
   overflow-y: scroll;
-  background-color: olivedrab;
+  background-color: azure;
 }
 
 
