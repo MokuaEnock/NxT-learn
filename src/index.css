@@ -151,6 +151,10 @@ main>div>span>button {
   height: 95%;
   border: thin solid #81D4FA;
   background-color: #81D4FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #main_cards {
@@ -200,6 +204,37 @@ main>div>span>button {
   border: thin solid #81D4FA;
   background-color: #81D4FA;
   border-radius: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#main_container2>li>span {
+  width: 95%;
+  border: thin solid azure;
+  background-color: azure;
+}
+
+#main_container2>li>#instructors {
+  height: 20%;
+}
+
+#main_container2>li>#card_rating {
+  height: 10%;
+}
+
+#main_container2>li>#card_title {
+  height: 30%;
+}
+
+#main_container2>li>button {
+  height: 15%;
+  width: 50%;
+  font-size: 1.7vw;
+  border: thin solid #81D4FA;
+  background-color: azure;
+  border-radius: .5vw;
 }
 
 footer {

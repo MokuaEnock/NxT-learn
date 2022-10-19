@@ -46,9 +46,23 @@ function Main() {
           </span>
         </div>
         <ul id="main_container2">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <span id="instructors"></span>
+            <span id="card_rating"></span>
+            <span id="card_title"></span>
+            <button>Enroll Course</button>
+          </li>
+          <li>
+            <span id="instructors"></span>
+            <span id="card_rating"></span>
+            <span id="card_title"></span>
+            <button>Enroll Course</button>
+          </li><li>
+            <span id="instructors"></span>
+            <span id="card_rating"></span>
+            <span id="card_title"></span>
+            <button>Enroll Course</button>
+          </li>
         </ul>
       </section>
     </>
