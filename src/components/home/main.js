@@ -38,7 +38,18 @@ function Main() {
       </section>
 
       <section id="main_cards">
-        
+        <div id="main_container1">
+          <span>Our popular courses as voted by our students</span>
+          <span>
+            <p>View in demand courses on our site.</p>
+            <button>View all courses</button>
+          </span>
+        </div>
+        <ul id="main_container2">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </section>
     </>
   );
