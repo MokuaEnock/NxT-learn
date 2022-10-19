@@ -31,9 +31,21 @@ function Main() {
           </div>
         </div>
         <ul id="sect_container2">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <span id="image"></span>
+            <span id="title"> </span>
+            <span id="detail"></span>
+          </li>
+          <li>
+            <span id="image"></span>
+            <span id="title"> </span>
+            <span id="detail"></span>
+          </li>
+          <li>
+            <span id="image"></span>
+            <span id="title"> </span>
+            <span id="detail"></span>
+          </li>
         </ul>
       </section>
 
@@ -57,7 +69,8 @@ function Main() {
             <span id="card_rating"></span>
             <span id="card_title"></span>
             <button>Enroll Course</button>
-          </li><li>
+          </li>
+          <li>
             <span id="instructors"></span>
             <span id="card_rating"></span>
             <span id="card_title"></span>
