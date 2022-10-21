@@ -16,10 +16,6 @@ function UserView() {
 
   let intro_python = module.sort().splice(0, 8);
 
-  let intro = intro_python.map((item) => {
-    return item.contributors_url;
-  });
-
   /*  function fetchContributors(url) {
     let y = [];
     fetch(url, { y })
@@ -27,6 +23,9 @@ function UserView() {
       .then((r) => y.push(r));
     return y;
   }
+  let intro = intro_python.map((item) => {
+    return item.contributors_url;
+  });
 
   let unique = (arr) => [...new Set(arr)];
   let intro_python_instructors = unique(intro);
@@ -38,7 +37,7 @@ function UserView() {
     return fetchContributors(item);
   }); */
 
-  let course = {
+  let introductionToPython = {
     course_id: 1,
     course_title: "Introduction to Python",
     course_description:
@@ -50,8 +49,12 @@ function UserView() {
       "https://img-c.udemycdn.com/course/480x270/2776760_f176_10.jpg",
     course_instructors: ["MokuaEnock"],
     course_modules: intro_python,
+    course_hours: `${intro_python.length * 1} hours`,
     rating: 4.6,
   };
+
+  let courses = [introductionToPython];
+  console.log(courses);
 
   return (
     <>
