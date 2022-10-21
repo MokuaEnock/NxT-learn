@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 
 function Main() {
-  useEffect(() => {
+/*   useEffect(() => {
     fetch("https://api.github.com/users/MokuaEnock")
       .then((r) => r.json())
       .then((r) => console.log(r));
-  }, []);
+  }, []); */
   return (
     <>
       <main>

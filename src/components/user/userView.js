@@ -5,16 +5,52 @@ import UserFooter from "./userFooter";
 import UserHome from "./userHome";
 import UserPath from "./userPath";
 function UserView() {
-  let [item, setItem] = useState([]);
+  let [module, setModule] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8001/courses")
+    fetch("https://api.github.com/users/Code-and-Data/repos")
       .then((r) => r.json())
-      .then((r) => setItem(r))
+      .then((r) => setModule(r))
       .catch((error) => console.log(error));
   }, []);
 
-  console.log(item);
+  let intro_python = module.sort().splice(0, 8);
+
+  let intro = intro_python.map((item) => {
+    return item.contributors_url;
+  });
+
+  let unique = (arr) => [...new Set(arr)];
+  let intro_python_instructors = unique(intro);
+  let s1 = intro_python[0];
+
+  function fetchContributors(url) {
+    let y = [];
+    fetch(url, { y })
+      .then((r) => r.json())
+      .then((r) => y.push(r));
+    return y;
+  }
+
+  let python = intro_python_instructors.map((item) => {
+    return fetchContributors(item);
+  });
+
+  console.log(python);
+  let course = {
+    course_id: 1,
+    course_title: "Introduction to machine learning",
+    course_description:
+      "A comprehensive introduction to machine learning consepts.",
+    course_category: ["Machine Mearning", "Data", "Python"],
+    "course_pre-requisets": [1, 2, 3, 4, 5],
+    course_instructional_level: "Beginner",
+    course_image:
+      "https://img-c.udemycdn.com/course/480x270/2776760_f176_10.jpg",
+    course_instructors: [""],
+    course_modules: intro_python,
+    rating: 4.6,
+  };
 
   return (
     <>
