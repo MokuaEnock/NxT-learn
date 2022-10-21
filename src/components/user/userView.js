@@ -43,12 +43,12 @@ function UserView() {
     course_title: "Introduction to Python",
     course_description:
       "A comprehensive introduction to machine learning consepts.",
-    course_category: ["Machine Mearning", "Data", "Python"],
+    course_category: ["Python"],
     "course_pre-requisets": [1, 2, 3, 4, 5],
     course_instructional_level: "Beginner",
     course_image:
       "https://img-c.udemycdn.com/course/480x270/2776760_f176_10.jpg",
-    course_instructors: [""],
+    course_instructors: ["MokuaEnock"],
     course_modules: intro_python,
     rating: 4.6,
   };
