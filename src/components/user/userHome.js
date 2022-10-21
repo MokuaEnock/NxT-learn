@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import UserAside from "./userAside";
 import UserFooter from "./userFooter";
-function UserHome() {
+function UserHome({ courses }) {
   let [item, setItem] = useState([]);
   let [newItem, setNewItem] = useState([]);
   let [cart, setCart] = useState([]);
-  
+
   useEffect(() => {
     fetch("http://localhost:8000/results")
       .then((r) => r.json())

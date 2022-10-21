@@ -17,8 +17,6 @@ function UserView() {
   let intro_python = module1.sort().splice(0, 8);
   let module2 = [...module];
   let mach_learn = module2.sort().splice(9, 18);
-  console.log(module);
-  console.log(mach_learn);
   /*  function fetchContributors(url) {
     let y = [];
     fetch(url, { y })
@@ -77,7 +75,7 @@ function UserView() {
     <>
       <UserAside />
       <UserForm />
-      <UserHome />
+      <UserHome courses={courses} />
       <UserPath />
       <UserFooter />
     </>
