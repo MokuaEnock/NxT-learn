@@ -13,9 +13,12 @@ function UserView() {
       .then((r) => setModule(r))
       .catch((error) => console.log(error));
   }, []);
-
-  let intro_python = module.sort().splice(0, 8);
-
+  let module1 = [...module];
+  let intro_python = module1.sort().splice(0, 8);
+  let module2 = [...module];
+  let mach_learn = module2.sort().splice(9, 18);
+  console.log(module);
+  console.log(mach_learn);
   /*  function fetchContributors(url) {
     let y = [];
     fetch(url, { y })
@@ -40,8 +43,7 @@ function UserView() {
   let introductionToPython = {
     course_id: 1,
     course_title: "Introduction to Python",
-    course_description:
-      "A comprehensive introduction to machine learning consepts.",
+    course_description: "A comprehensive introduction to python programming.",
     course_category: ["Python"],
     "course_pre-requisets": [1, 2, 3, 4, 5],
     course_instructional_level: "Beginner",
@@ -52,8 +54,23 @@ function UserView() {
     course_hours: `${intro_python.length * 1} hours`,
     rating: 4.6,
   };
+  let machineLearning = {
+    course_id: 2,
+    course_title: "Machine Learning",
+    course_description:
+      "A comprehensive introduction to machine learning consepts.",
+    course_category: ["Python"],
+    "course_pre-requisets": [1, 2, 3, 4, 5],
+    course_instructional_level: "Intermediate",
+    course_image:
+      "https://img-c.udemycdn.com/course/480x270/2776760_f176_10.jpg",
+    course_instructors: ["MokuaEnock"],
+    course_modules: mach_learn,
+    course_hours: `${mach_learn.length * 1} hours`,
+    rating: 4.6,
+  };
 
-  let courses = [introductionToPython];
+  let courses = [introductionToPython, machineLearning];
   console.log(courses);
 
   return (
