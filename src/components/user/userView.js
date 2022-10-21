@@ -20,11 +20,7 @@ function UserView() {
     return item.contributors_url;
   });
 
-  let unique = (arr) => [...new Set(arr)];
-  let intro_python_instructors = unique(intro);
-  let s1 = intro_python[0];
-
-  function fetchContributors(url) {
+  /*  function fetchContributors(url) {
     let y = [];
     fetch(url, { y })
       .then((r) => r.json())
@@ -32,14 +28,19 @@ function UserView() {
     return y;
   }
 
-  let python = intro_python_instructors.map((item) => {
-    return fetchContributors(item);
-  });
+  let unique = (arr) => [...new Set(arr)];
+  let intro_python_instructors = unique(intro);
 
-  console.log(python);
+  console.log(intro_python_instructors);
+  */
+
+  /*   let python = intro_python_instructors.map((item) => {
+    return fetchContributors(item);
+  }); */
+
   let course = {
     course_id: 1,
-    course_title: "Introduction to machine learning",
+    course_title: "Introduction to Python",
     course_description:
       "A comprehensive introduction to machine learning consepts.",
     course_category: ["Machine Mearning", "Data", "Python"],
