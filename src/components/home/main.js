@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 function Main() {
-/*   useEffect(() => {
+  /*   useEffect(() => {
     fetch("https://api.github.com/users/MokuaEnock")
       .then((r) => r.json())
       .then((r) => console.log(r));
@@ -23,16 +23,14 @@ function Main() {
 
       <section id="main_section">
         <div id="sect_container1">
-          <div>
+          <div id="div1">
             <h2>From writing your first</h2>
             <code> Hello World </code>
             <h2>to creating a neural network.</h2>
           </div>
 
-          <div>
-            <h2>
-              Fully committed to equiping learners with real World skills.
-            </h2>
+          <div id="div2">
+            <p>Fully committed to equiping learners with real world skills.</p>
           </div>
         </div>
         <ul id="sect_container2">
@@ -56,8 +54,8 @@ function Main() {
 
       <section id="main_cards">
         <div id="main_container1">
-          <span>Our popular courses as voted by our students</span>
-          <span>
+          <span id="span1"> Our popular courses as voted by our students</span>
+          <span id="span2">
             <p>View in demand courses on our site.</p>
             <button>View all courses</button>
           </span>
