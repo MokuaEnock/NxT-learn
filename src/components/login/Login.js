@@ -57,7 +57,7 @@ function Login() {
     <section id="login">
       <section>
         <form id="get_started" onSubmit={submitStart}>
-          <span>Get Started</span>
+          <h2>Get Started</h2>
           <span>
             <input
               type="text"
@@ -131,7 +131,7 @@ function Login() {
         </form>
 
         <form id="log_in" onSubmit={submitLogin}>
-          <span>Log In</span>
+          <h2>Log In</h2>
           <span>
             <label></label>
             <input
