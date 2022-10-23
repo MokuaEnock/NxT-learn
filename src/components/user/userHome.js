@@ -3,6 +3,7 @@ import UserAside from "./userAside";
 import UserFooter from "./userFooter";
 function UserHome({ courses }) {
   let [view, setView] = useState([]);
+  let [cart, setCart] = useState([]);
   /* let itemList = item.map((e, index) => {
     let instructors = e.visible_instructors;
     let insts = instructors.map((i, index) => {
@@ -30,45 +31,43 @@ function UserHome({ courses }) {
     return setView([newItem]);
   };
 
-  /* create  */
+  /* function to add handle add to cart */
 
+  let handlePath = (index) => () => {
+    let newItem = courses[index];
+    setCart([...cart, newItem]);
+  };
+
+  /* add items to the dom */
   let items = courses.map((i, index) => {
     return (
       <li id="course_card" key={i.course_id}>
         <h2 id="course_card_title">{i.course_title}</h2>
         <ul id="course_card_instructors"></ul>
         <span id="course_card_buttons">
-          <button>Add to Path</button>
+          <button onClick={handlePath(index)}>Add to Path</button>
           <button onClick={handleView(index)}>View</button>
         </span>
       </li>
     );
   });
 
-  console.log(view);
+  /* create a unique list of cart items */
+  const uniqueCart = [...new Set(cart)];
 
-  /*   let itemDescriptor = newItem.map((e) => {
+  let itemDescriptor = view.map((e) => {
     return (
-      <li key={e.id}>
-        <h2>{e.title}</h2>
+      <li key={e.course_id}>
+        <h2>{e.course_title}</h2>
       </li>
     );
-  }); */
+  });
 
-  /*  let cartItems = cart.map((e, index) => {
-    let instructors = e.visible_instructors;
-    let insts = instructors.map((i, index) => {
-      return (
-        <a href={i.url} key={index}>
-          <img src={i.image_100x100} alt="instructor" />
-        </a>
-      );
-    });
+  let cartItems = uniqueCart.map((e, index) => {
     return (
       <li id="cart_card" key={index}>
-        <h2 id="cart_title">{e.title}</h2>
+        <h2 id="cart_title">{e.course_title}</h2>
         <span id="cart_details">{e.headline}</span>
-        <span id="cart_instructors">{insts}</span>
         <span id="cart_requires"></span>
         <span id="cart_buttons">
           <button id="remove">Remove</button>
@@ -77,7 +76,7 @@ function UserHome({ courses }) {
         </span>
       </li>
     );
-  });*/
+  });
 
   function displayCart(e) {
     e.preventDefault();
@@ -121,13 +120,17 @@ function UserHome({ courses }) {
             <option value="svelte">Svelte</option>
           </select>
 
-          <button onClick={displayCart}>{} Courses Selected</button>
+          <button onClick={displayCart}>
+            {uniqueCart.length} Courses Selected
+          </button>
         </form>
 
         <div id="user_home_container">
           <ul id="course_list">{items}</ul>
-          <ul id="course_detail">{}</ul>
-          <ul id="items_cart" style={{ display: "none" }}></ul>
+          <ul id="course_detail">{itemDescriptor}</ul>
+          <ul id="items_cart" style={{ display: "none" }}>
+            {cartItems}
+          </ul>
         </div>
       </section>
       <UserFooter />
