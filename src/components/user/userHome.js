@@ -46,8 +46,19 @@ function UserHome({ courses }) {
   const uniqueCart = [...new Set(cart)];
   let itemDescriptor = view.map((e) => {
     return (
-      <li key={e.course_id}>
-        <h2>{e.course_title}</h2>
+      <li key={e.course_id} className="card_detail">
+        <h2 className="card_detail_title">{e.course_title}</h2>
+        <span className="card_detail_info">
+          <p>{e.rating}</p>
+          <p> {e.course_instructional_level}</p>
+          <p> {e.course_hours}</p>
+        </span>
+        <span className="card_detail_instructors"></span>
+        <span className="card_detail_details">{e.course_description}</span>
+        <span className="card_detail_objectives">Course Objectives</span>
+        <h3 className="card_detail_module_title">Course Modules Details</h3>
+        <span className="card_detail_modules">Course Modules</span>
+        <span className="card_detail_requirements">course requirements</span>
       </li>
     );
   });
