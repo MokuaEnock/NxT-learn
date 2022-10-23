@@ -568,7 +568,7 @@ select:focus {
   width: 100%;
   height: 100%;
   border: thin solid;
-  background-color: white;
+  background-color: azure;
   list-style: none;
   column-gap: 1vw;
   overflow-y: scroll;
@@ -576,66 +576,84 @@ select:focus {
   grid-template-columns: repeat(3, 27vw);
 }
 
-#course_card {
+.course_card {
   font-size: 1.3vw;
   width: 20vw;
   height: 25vw;
-  margin-top: .5vw;
+  margin-top: 1vw;
   border: thin solid #81d4fa;
   background-color: #81D4FA;
-  margin-bottom: .5vw;
+  margin-bottom: 1vw;
   border-radius: .5vw;
   margin-left: 14%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-#course_card_title {
-  width: 100%;
-  height: 22%;
+
+
+.course_card_image {
+  width: 98%;
+  height: 40%;
+  background-color: azure;
   border-radius: inherit;
-  background-color: white;
-  text-align: center;
+}
+
+.course_card_rating {
+  width: 98%;
+  height: 10%;
+  background-color: aliceblue;
+  border-radius: inherit;
   font-size: 1.5vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.course_card_rating>p {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-#course_card_instructors {
-  width: 100%;
+
+
+.course_card_title {
+  width: 98%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 1.6vw;
+  border-radius: inherit;
+  background-color: aliceblue;
+}
+
+.course_card_detail {
+  width: 98%;
   height: 20%;
   border-radius: inherit;
-  border: thin solid white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-
-#course_card_instructos>a {
-  width: 20%;
-  height: 100%;
-  border-radius: 50%;
+  background-color: aliceblue;
+  text-align: justify;
+  font-size: 1.3vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-#course_card_instructors>a>img {
-  width: 90%;
-  height: 100%;
-  border-radius: 50%;
-  border: thin solid white;
-}
-
-#course_card_buttons {
-  background-color: white;
+.course_card_buttons {
+  background-color: azure;
   width: 100%;
   height: 15%;
   display: flex;
@@ -645,13 +663,19 @@ select:focus {
   border-radius: inherit;
 }
 
-#course_card_buttons>button {
+.course_card_buttons>button {
   border-radius: inherit;
   background-color: #81D4FA;
+  font-weight: 800;
   width: 45%;
   height: 90%;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   border: thin solid #81D4FA;
+}
+
+.course_card_buttons>button:hover {
+  border: double 0.4vw #81D4FA;
+  background-color: aliceblue;
 }
 
 #cart_card {
