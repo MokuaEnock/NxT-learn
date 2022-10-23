@@ -778,27 +778,104 @@ select:focus {
 .card_detail_modules {
   margin-top: .5vw;
   width: 100%;
-  height: 6vw;
+  height: 30vw;
   border: thin solid #81D4FA;
-  background-color: #81D4FA;
+  overflow-y: scroll;
+
+}
+
+.card_detail_modules>li {
+  width: 100%;
+  height: 7vw;
+  border: thin solid #81D4FA;
+  border-radius: .5vw;
+  margin-top: .4vw;
+  margin-bottom: .4vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
+
+.card_detail_modules>li>.header {
+  width: 14%;
+  height: 95%;
+
+  background-color: azure;
+
+}
+
+.card_detail_modules>li>.details {
+  width: 70%;
+  height: 95%;
+  background-color: #81D4FA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.card_detail_modules>li>.details>.head {
+  background-color: azure;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card_detail_modules>li>.details>.info {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card_detail_modules>li>.footer {
+  background-color: azure;
+
+  width: 14%;
+  height: 95%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_detail_modules>li>.footer>a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  border-radius: .3vw;
+  height: 50%;
+  background-color: #81D4FA;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  letter-spacing: .3vw;
+}
+
+
 
 .card_detail_objectives {
   margin-top: .5vw;
   width: 100%;
-  height: 10vw;
+  height: max-content;
   border: thin solid #81D4FA;
-  background-color: #81D4FA;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  border-radius: 0.2vw;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.5vw;
 }
-
 
 .card_detail_requirements {
   margin-top: .5vw;

@@ -45,6 +45,24 @@ function UserHome({ courses }) {
   /* create a unique list of cart items */
   const uniqueCart = [...new Set(cart)];
   let itemDescriptor = view.map((e) => {
+    let course_objectives = e.course_objectives.map((i, index) => {
+      return <p key={index}>{i}</p>;
+    });
+
+    let course_modules = e.course_modules.map((i, index) => {
+      return (
+        <li key={index}>
+          <span className="header"></span>
+          <span className="details">
+            <h3 className="head">{i.name}</h3>
+            <span className="info"></span>
+          </span>
+          <span className="footer">
+            <a href={i.forks_url}>Fork</a>
+          </span>
+        </li>
+      );
+    });
     return (
       <li key={e.course_id} className="card_detail">
         <h2 className="card_detail_title">{e.course_title}</h2>
@@ -55,9 +73,9 @@ function UserHome({ courses }) {
         </span>
         <span className="card_detail_instructors"></span>
         <span className="card_detail_details">{e.course_description}</span>
-        <span className="card_detail_objectives">Course Objectives</span>
+        <ul className="card_detail_objectives">{course_objectives}</ul>
         <h3 className="card_detail_module_title">Course Modules Details</h3>
-        <span className="card_detail_modules">Course Modules</span>
+        <ul className="card_detail_modules">{course_modules}</ul>
         <span className="card_detail_requirements">course requirements</span>
       </li>
     );
