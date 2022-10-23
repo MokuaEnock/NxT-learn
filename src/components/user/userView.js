@@ -69,7 +69,6 @@ function UserView() {
   };
 
   let courses = [introductionToPython, machineLearning];
-  console.log(courses);
 
   return (
     <>

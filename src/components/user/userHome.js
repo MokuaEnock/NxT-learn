@@ -2,27 +2,8 @@ import React, { useState, useEffect } from "react";
 import UserAside from "./userAside";
 import UserFooter from "./userFooter";
 function UserHome({ courses }) {
-  let [item, setItem] = useState([]);
-  let [newItem, setNewItem] = useState([]);
-  let [cart, setCart] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:8000/results")
-      .then((r) => r.json())
-      .then((r) => setItem(r));
-  }, []);
-
-  const handler = (index) => () => {
-    let newItem = item[index];
-    return setNewItem([newItem]);
-  };
-
-  let addnew = (index) => () => {
-    let newItem = item[index];
-    setCart([...cart, newItem]);
-  };
-
-  let itemList = item.map((e, index) => {
+  let [view, setView] = useState([]);
+  /* let itemList = item.map((e, index) => {
     let instructors = e.visible_instructors;
     let insts = instructors.map((i, index) => {
       return (
@@ -41,17 +22,40 @@ function UserHome({ courses }) {
         </span>
       </li>
     );
+  }); */
+
+  /* create function to handleview button */
+  let handleView = (index) => () => {
+    let newItem = courses[index];
+    return setView([newItem]);
+  };
+
+  /* create  */
+
+  let items = courses.map((i, index) => {
+    return (
+      <li id="course_card" key={i.course_id}>
+        <h2 id="course_card_title">{i.course_title}</h2>
+        <ul id="course_card_instructors"></ul>
+        <span id="course_card_buttons">
+          <button>Add to Path</button>
+          <button onClick={handleView(index)}>View</button>
+        </span>
+      </li>
+    );
   });
 
-  let itemDescriptor = newItem.map((e) => {
+  console.log(view);
+
+  /*   let itemDescriptor = newItem.map((e) => {
     return (
       <li key={e.id}>
         <h2>{e.title}</h2>
       </li>
     );
-  });
+  }); */
 
-  let cartItems = cart.map((e, index) => {
+  /*  let cartItems = cart.map((e, index) => {
     let instructors = e.visible_instructors;
     let insts = instructors.map((i, index) => {
       return (
@@ -73,7 +77,7 @@ function UserHome({ courses }) {
         </span>
       </li>
     );
-  });
+  });*/
 
   function displayCart(e) {
     e.preventDefault();
@@ -117,15 +121,13 @@ function UserHome({ courses }) {
             <option value="svelte">Svelte</option>
           </select>
 
-          <button onClick={displayCart}>{cart.length} Courses Selected</button>
+          <button onClick={displayCart}>{} Courses Selected</button>
         </form>
 
         <div id="user_home_container">
-          <ul id="course_list">{itemList}</ul>
-          <ul id="course_detail">{itemDescriptor}</ul>
-          <ul id="items_cart" style={{ display: "none" }}>
-            {cartItems}
-          </ul>
+          <ul id="course_list">{items}</ul>
+          <ul id="course_detail">{}</ul>
+          <ul id="items_cart" style={{ display: "none" }}></ul>
         </div>
       </section>
       <UserFooter />
