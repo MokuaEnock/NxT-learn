@@ -602,22 +602,28 @@ select:focus {
   border-radius: inherit;
 }
 
+.course_card_image>img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
 .course_card_rating {
   width: 98%;
   height: 10%;
   background-color: aliceblue;
   border-radius: inherit;
-  font-size: 1.5vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
 }
 
 .course_card_rating>p {
-  width: 40%;
+  width: 28%;
   height: 100%;
+  font-size: 1.3vw;
   display: flex;
   flex-direction: row;
   align-items: center;

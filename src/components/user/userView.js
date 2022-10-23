@@ -56,7 +56,7 @@ function UserView() {
     course_id: 2,
     course_title: "Machine Learning",
     course_description:
-      "A comprehensive introduction to machine learning consepts.",
+      "A comprehensive introduction to machine learning concepts.",
     course_category: ["Python"],
     "course_pre-requisets": [1, 2, 3, 4, 5],
     course_instructional_level: "Intermediate",

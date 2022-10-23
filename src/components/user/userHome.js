@@ -24,9 +24,12 @@ function UserHome({ courses }) {
   let items = courses.map((i, index) => {
     return (
       <li className="course_card" key={i.course_id}>
-        <span className="course_card_image"></span>
+        <span className="course_card_image">
+          <img src={i.course_image} alt="course" />
+        </span>
         <span className="course_card_rating">
           <p>{i.rating}</p>
+          <p> {i.course_instructional_level}</p>
           <p> {i.course_hours}</p>
         </span>
         <span className="course_card_title">{i.course_title}</span>
