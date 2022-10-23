@@ -49,6 +49,11 @@ function UserView() {
       "https://img-c.udemycdn.com/course/480x270/2776760_f176_10.jpg",
     course_instructors: ["MokuaEnock"],
     course_modules: intro_python,
+    course_objectives: [
+      "Differentiate between different python data types.",
+      "Understand the basic python syntax",
+    ],
+    course_requirements: ["None"],
     course_hours: `${intro_python.length * 1} hours`,
     rating: 4.6,
   };
@@ -64,6 +69,12 @@ function UserView() {
       "https://img-c.udemycdn.com/course/480x270/2776760_f176_10.jpg",
     course_instructors: ["MokuaEnock"],
     course_modules: mach_learn,
+    course_objectives: [
+      "Differentiate between supervised and unsupervised learning.",
+      "Differentiate between different machine learning problems",
+      "Apply machine learning to solve business problems.",
+    ],
+    course_requirements: ["Introduction to Python", "Pandas", "Numpy"],
     course_hours: `${mach_learn.length * 1} hours`,
     rating: 4.6,
   };
