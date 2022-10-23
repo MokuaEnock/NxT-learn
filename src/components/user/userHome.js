@@ -63,7 +63,7 @@ function UserHome({ courses }) {
             </span>
           </span>
           <span className="footer">
-            <a href={i.forks_url}>Fork</a>
+            <a href={i.clone_url} target="_blank" rel="noreferrer">Fork</a>
           </span>
         </li>
       );
