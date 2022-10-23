@@ -77,12 +77,10 @@ function UserHome({ courses }) {
           <p> {e.course_instructional_level}</p>
           <p> {e.course_hours}</p>
         </span>
-        <span className="card_detail_instructors"></span>
         <span className="card_detail_details">{e.course_description}</span>
         <ul className="card_detail_objectives">{course_objectives}</ul>
         <h3 className="card_detail_module_title">Course Modules Details</h3>
         <ul className="card_detail_modules">{course_modules}</ul>
-        <span className="card_detail_requirements">course requirements</span>
       </li>
     );
   });
