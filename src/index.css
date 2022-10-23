@@ -779,18 +779,19 @@ select:focus {
   margin-top: .5vw;
   width: 100%;
   height: 30vw;
-  border: thin solid #81D4FA;
   overflow-y: scroll;
+  background-color: white;
 
 }
 
 .card_detail_modules>li {
-  width: 100%;
+  width: 95%;
   height: 7vw;
+  margin-left: 1vw;
   border: thin solid #81D4FA;
   border-radius: .5vw;
-  margin-top: .4vw;
-  margin-bottom: .4vw;
+  margin-top: .5vw;
+  margin-bottom: .5vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -798,14 +799,26 @@ select:focus {
 }
 
 .card_detail_modules>li>.header {
-  width: 14%;
+  border-radius: inherit;
+  width: 15%;
   height: 95%;
-
   background-color: azure;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
 }
 
+.card_detail_modules>li>.header>img {
+  height: 90%;
+  width: 100%;
+}
+
+
 .card_detail_modules>li>.details {
+  border-radius: inherit;
+
   width: 70%;
   height: 95%;
   background-color: #81D4FA;
@@ -820,6 +833,7 @@ select:focus {
   background-color: azure;
   width: 100%;
   height: 50%;
+  font-size: 1.8vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -835,12 +849,16 @@ select:focus {
   justify-content: space-evenly;
 }
 
+.card_detail_modules>li>.details>.info {
+  font-size: 1.3vw;
+}
+
 .card_detail_modules>li>.footer {
+  border-radius: inherit;
+
   background-color: azure;
-
-  width: 14%;
+  width: 15%;
   height: 95%;
-
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -52,10 +52,16 @@ function UserHome({ courses }) {
     let course_modules = e.course_modules.map((i, index) => {
       return (
         <li key={index}>
-          <span className="header"></span>
+          <span className="header">
+            <img src={e.course_image} alt="course" />
+          </span>
           <span className="details">
             <h3 className="head">{i.name}</h3>
-            <span className="info"></span>
+            <span className="info">
+              <p>{e.rating}</p>
+              <p> {e.course_instructional_level}</p>
+              <p> {e.course_hours}</p>
+            </span>
           </span>
           <span className="footer">
             <a href={i.forks_url}>Fork</a>
