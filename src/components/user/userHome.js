@@ -6,7 +6,6 @@ function UserHome({ courses }) {
   let [view, setView] = useState([]);
   let [cart, setCart] = useState([]);
 
-  console.log(courses);
 
   /* create function to handleview button */
   let handleView = (index) => () => {
