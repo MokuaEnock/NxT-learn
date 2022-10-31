@@ -1,5 +1,6 @@
 import React from "react";
 import arrow from "../assets/right-arrow.png";
+import arrow2 from "../assets/arrow.png";
 
 function Main() {
   /*   useEffect(() => {
@@ -16,9 +17,11 @@ function Main() {
           <span></span>
           <span>
             <button>
-              Get Started <img src={arrow} alt="arrow" />
+              <span>Get Started</span> <img src={arrow2} alt="arrow" />
             </button>
-            <button>Continue</button>
+            <button>
+              <span>Continue</span> <img src={arrow2} alt="arrow" />
+            </button>
           </span>
         </div>
         <div id="container2"></div>
