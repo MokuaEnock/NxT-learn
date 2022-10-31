@@ -79,7 +79,6 @@ button {
   align-items: center;
   color: #e9ffdb;
   background-color: #1b4d3e;
-  border-bottom: thin solid white;
 }
 
 main {
@@ -95,7 +94,6 @@ main {
 main>div {
   width: 50%;
   height: 100%;
-  border: thin solid #81D4FA;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -104,7 +102,6 @@ main>div {
 
 main>div>span {
   width: 100%;
-  border: thin solid #000080;
   height: 20%;
   display: flex;
   flex-direction: row;
@@ -151,7 +148,8 @@ main>div>span>button>img {
 #main_section {
   width: 100%;
   height: 45vw;
-  background-color: white;
+  background-color: #ffffff;
+  color: #1b4d3e;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -226,8 +224,8 @@ main>div>span>button>img {
 #sect_container2>li {
   width: 22%;
   height: 95%;
-  border: thin solid #81D4FA;
-  background-color: #81D4FA;
+  border: thin solid #1b4d3e;
+  background-color: #1b4d3e;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -237,7 +235,7 @@ main>div>span>button>img {
 #sect_container2>li>#image {
   width: 40%;
   height: 30%;
-  background-color: azure;
+  background-color: #e9ffdb;
   margin-left: 1%;
 }
 
@@ -245,7 +243,7 @@ main>div>span>button>img {
   width: 98%;
   margin-left: 1%;
   height: 20%;
-  background-color: azure;
+  background-color: #e9ffdb;
 
 }
 
@@ -253,7 +251,7 @@ main>div>span>button>img {
   width: 98%;
   margin-left: 1%;
   height: 40%;
-  background-color: azure;
+  background-color: #e9ffdb;
 }
 
 
@@ -295,12 +293,32 @@ main>div>span>button>img {
 
 
 #main_container1>span>button {
-  width: 25%;
-  height: 30%;
-  border: thin solid #81D4FA;
-  background-color: #81D4FA;
+  width: 30%;
+  height: 25%;
+  border: thin solid #1b4d3e;
+  background-color: #1b4d3e;
   font-size: 1.5vw;
   border-radius: .3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#main_container1>span>button>span {
+  width: 70%;
+  height: 90%;
+  color: #e9ffdb;
+  border-right: 0.2vw solid #e9ffdb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#main_container1>span>button>img {
+  width: 25%;
 }
 
 #main_container2 {
@@ -314,10 +332,10 @@ main>div>span>button>img {
 }
 
 #main_container2>li {
-  width: 25%;
-  height: 95%;
-  border: thin solid #81D4FA;
-  background-color: #81D4FA;
+  width: 23%;
+  height: 85%;
+  border: thin solid #1b4d3e;
+  background-color: #1b4d3e;
   border-radius: 0.5vw;
   display: flex;
   flex-direction: column;
@@ -327,8 +345,8 @@ main>div>span>button>img {
 
 #main_container2>li>span {
   width: 95%;
-  border: thin solid azure;
-  background-color: azure;
+  border: thin solid #e9ffdb;
+  background-color: #e9ffdb;
 }
 
 #main_container2>li>#instructors {
@@ -344,12 +362,38 @@ main>div>span>button>img {
 }
 
 #main_container2>li>button {
-  height: 15%;
+  height: 12%;
   width: 50%;
   font-size: 1.7vw;
-  border: thin solid #81D4FA;
-  background-color: azure;
-  border-radius: .5vw;
+  border: thin solid #e9ffdb;
+  background-color: #e9ffdb;
+  color: #1b4d3e;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: center;
+}
+
+#main_container2>li>button>span {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-right: 0.2vw solid #e9ffdb;
+}
+
+#main_container2>li>button>img {
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
 }
 
 footer {
@@ -357,6 +401,10 @@ footer {
   height: 10vw;
   border: thin solid white;
   background-color: #81D4FA;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
 }
 

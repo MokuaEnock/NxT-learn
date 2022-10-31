@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import arrow from "../assets/right-arrow.png";
 import arrow2 from "../assets/arrow.png";
@@ -63,7 +64,9 @@ function Main() {
           <span id="span1"> Our popular courses as voted by our students</span>
           <span id="span2">
             <p>View in demand courses on our site.</p>
-            <button>View all courses</button>
+            <button>
+              <span>View Courses</span> <img src={arrow2} alt="arrow" />
+            </button>
           </span>
         </div>
         <ul id="main_container2">
@@ -71,19 +74,25 @@ function Main() {
             <span id="instructors"></span>
             <span id="card_rating"></span>
             <span id="card_title"></span>
-            <button>Enroll Course</button>
+            <button>
+              <span>Enroll</span> <img src={arrow} alt="arrow" />
+            </button>
           </li>
           <li>
             <span id="instructors"></span>
             <span id="card_rating"></span>
             <span id="card_title"></span>
-            <button>Enroll Course</button>
+            <button>
+              <span>Enroll</span> <img src={arrow} alt="arrow" />
+            </button>
           </li>
           <li>
             <span id="instructors"></span>
             <span id="card_rating"></span>
             <span id="card_title"></span>
-            <button>Enroll Course</button>
+            <button>
+              <span>Enroll</span> <img src={arrow} alt="arrow" />
+            </button>
           </li>
         </ul>
       </section>
