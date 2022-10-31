@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import arrow from "../assets/right-arrow.png";
+import arrow2 from "../assets/arrow.png";
 
 function Login() {
   let [start, setStart] = useState({
@@ -122,7 +124,9 @@ function Login() {
             />
           </span>
           <span>
-            <button type="submit">Get Started</button>
+            <button type="submit">
+              <span>Continue</span> <img src={arrow2} alt="arrow" />
+            </button>
           </span>
 
           <span>
@@ -154,7 +158,9 @@ function Login() {
             />
           </span>
           <span>
-            <button type="submit">Log In</button>
+            <button type="submit">
+              <span>Log In</span> <img src={arrow2} alt="arrow" />
+            </button>
           </span>
           <span>
             Not a member <a href="#">Join Us</a>
