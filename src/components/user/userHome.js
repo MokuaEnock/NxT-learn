@@ -6,7 +6,6 @@ function UserHome({ courses }) {
   let [view, setView] = useState([]);
   let [cart, setCart] = useState([]);
 
-
   /* create function to handleview button */
   let handleView = (index) => () => {
     let newItem = courses[index];
@@ -63,7 +62,9 @@ function UserHome({ courses }) {
             </span>
           </span>
           <span className="footer">
-            <a href={i.clone_url} target="_blank" rel="noreferrer">Fork</a>
+            <a href={i.clone_url} target="_blank" rel="noreferrer">
+              Fork
+            </a>
           </span>
         </li>
       );
@@ -83,6 +84,8 @@ function UserHome({ courses }) {
       </li>
     );
   });
+
+  /* create function to export to path */
 
   /* log cart items */
   let cartItems = uniqueCart.map((e, index) => {

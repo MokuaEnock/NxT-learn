@@ -25,13 +25,26 @@ code {
   margin: 0;
 }
 
+/*
 body {
-  background-color: azure;
+    color: #1b4d3e;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1b4d3e;
+    color: #e9ffdb;
+}
+*/
+
+body {
+  background-color: #e9ffdb;
 
 }
 
 #root {
-  background-color: azure;
+  background-color: #e9ffdb;
   width: 100%;
   height: max-content;
 }
@@ -64,7 +77,8 @@ button {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #81D4FA;
+  color: #e9ffdb;
+  background-color: #1b4d3e;
   border-bottom: thin solid white;
 }
 
@@ -99,8 +113,20 @@ main>div>span {
 }
 
 main>div>span>button {
+  background-color: #1b4d3e;
+  color: #e9ffdb;
   width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 
+}
+
+main>div>span>button>img {
+  width: 25%;
+  height: 100%;
+  border-radius: inherit;
 }
 
 #main_section {

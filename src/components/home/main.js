@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import arrow from "../assets/right-arrow.png";
 
 function Main() {
   /*   useEffect(() => {
@@ -14,7 +15,9 @@ function Main() {
           <span>Develop Tech skills form the best source.</span>
           <span></span>
           <span>
-            <button>Get Started</button>
+            <button>
+              Get Started <img src={arrow} alt="arrow" />
+            </button>
             <button>Continue</button>
           </span>
         </div>
